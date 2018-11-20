@@ -54,6 +54,13 @@
 		FFED83DF21A45CFD00470DD4 /* BOKiN */ = {
 			isa = PBXGroup;
 			children = (
+				FFED83F821A4678100470DD4 /* Extension */,
+				FFED83F721A4677B00470DD4 /* Utility */,
+				FFED83F621A4676E00470DD4 /* Storyboard */,
+				FFED83F521A4676B00470DD4 /* View */,
+				FFED83F421A4675000470DD4 /* ViewModel */,
+				FFED83F321A4674A00470DD4 /* Model */,
+				FFED83F221A4673B00470DD4 /* Controller */,
 				FFED83E021A45CFD00470DD4 /* AppDelegate.swift */,
 				FFED83E221A45CFD00470DD4 /* ViewController.swift */,
 				FFED83E421A45CFD00470DD4 /* Main.storyboard */,
@@ -62,6 +69,55 @@
 				FFED83EC21A45D0000470DD4 /* Info.plist */,
 			);
 			path = BOKiN;
+			sourceTree = "<group>";
+		};
+		FFED83F221A4673B00470DD4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FFED83F321A4674A00470DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFED83F421A4675000470DD4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFED83F521A4676B00470DD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFED83F621A4676E00470DD4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FFED83F721A4677B00470DD4 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		FFED83F821A4678100470DD4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
