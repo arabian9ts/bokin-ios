@@ -17,7 +17,18 @@ final class BokinAPI {
         let method: HTTPMethod = .get
         let params: Parameters? = [
 //            "key": "value"
+            :
         ]
+        
+        init() {}
+    }
+    
+    struct getUser {
+        typealias Response = UserResponse
+        
+        let path: String = "/users"
+        let method: HTTPMethod = .get
+        let params: Parameters? = [:]
         
         init() {}
     }
