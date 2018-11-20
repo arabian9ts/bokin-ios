@@ -11,7 +11,7 @@ import Alamofire
 class APIClient {
     static let shared = APIClient()
     
-    func send<Request: RepositoryRequest>(request: Request, completion: @escaping (Result<Request.Response?>) -> Void) {
+    func send<Request: BokinRequest>(request: Request, completion: @escaping (Result<Request.Response?>) -> Void) {
         let dataRequest = request.buildDataRequest()
         
         dataRequest
@@ -24,7 +24,7 @@ class APIClient {
                 else {
                     switch response.result {
                     case .failure(let error):
-                        let apiError = error as? GitHubAPIError
+                        let apiError = error as? BokinAPIError
                         completion(Result.failure(APIClientError.apiError(apiError!)))
                     case .success:
                         let responseModel = request.response(from: response.result.value)

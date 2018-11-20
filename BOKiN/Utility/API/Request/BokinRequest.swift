@@ -21,8 +21,7 @@ protocol BokinRequest {
 
 extension BokinRequest {
     var baseURL: URL {
-        return URL(string: "https://github-trending-api.now.sh")!
-        //        return URL(string: "http://localhost:3000")!
+        return URL(string: "https://bokin.1060ki.com/api/v1")!
     }
     
     var headers: HTTPHeaders? {
@@ -49,16 +48,16 @@ extension BokinRequest {
     
     // == for a json response
     
-    //    func response(from data: Any?) -> Response? {
-    //        let response = Mapper<Response>().map(JSONObject: data!)
-    //        return response
-    //    }
+        func response(from data: Any?) -> Response? {
+            let response = Mapper<Response>().map(JSONObject: data!)
+            return response
+        }
     
     
     // == for an array response
     
-    func response(from data: Any?) -> Response? {
-        let response = Mapper<Response>().map(JSONObject: ["entities" : data!])
-        return response
-    }
+//    func response(from data: Any?) -> Response? {
+//        let response = Mapper<Response>().map(JSONObject: ["entities" : data!])
+//        return response
+//    }
 }
