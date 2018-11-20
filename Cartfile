@@ -1,5 +1,4 @@
 github "Alamofire/Alamofire"
 github "Hearst-DD/ObjectMapper"
-github "satoshi-takano/OpenGraph"
 github "kean/Nuke"
 github "ReactiveX/RxSwift"
