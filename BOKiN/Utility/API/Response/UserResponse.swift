@@ -18,6 +18,6 @@ class UserResponse: Mappable {
     }
     
     func mapping(map: Map) {
-        user <- map["user"]
+        user <- map["entities"]
     }
 }

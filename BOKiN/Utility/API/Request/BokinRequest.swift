@@ -48,10 +48,10 @@ extension BokinRequest {
     
     // == for a json response
     
-        func response(from data: Any?) -> Response? {
-            let response = Mapper<Response>().map(JSONObject: data!)
-            return response
-        }
+    func response(from data: Any?) -> Response? {
+        let response = Mapper<Response>().map(JSONObject: ["entities" : data!])
+        return response
+    }
     
     
     // == for an array response

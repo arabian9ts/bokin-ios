@@ -23,12 +23,15 @@ final class BokinAPI {
         init() {}
     }
     
-    struct getUser {
+    struct getUser: BokinRequest {
         typealias Response = UserResponse
         
-        let path: String = "/users"
+        let path: String = "/users/me"
         let method: HTTPMethod = .get
         let params: Parameters? = [:]
+        let headers: HTTPHeaders? = [
+            "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.p0QTGHEptZedRFErL-RUytE_q4hJpPPBRiBZHunHyDU"
+        ]
         
         init() {}
     }
