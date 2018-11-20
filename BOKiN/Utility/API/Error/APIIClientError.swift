@@ -6,4 +6,7 @@
 //  Copyright © 2018 RedBottleCoffee. All rights reserved.
 //
 
-import Foundation
+enum APIClientError: Error {
+    case connectionError(Error)
+    case apiError(BokinAPIError)
+}

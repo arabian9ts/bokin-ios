@@ -22,6 +22,13 @@
 		FFED840521A4687500470DD4 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFED840321A4687500470DD4 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFED840721A4688A00470DD4 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFED840621A4688A00470DD4 /* RxSwift.framework */; };
 		FFED840821A4688A00470DD4 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFED840621A4688A00470DD4 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFED840C21A46A4500470DD4 /* APICliient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED840B21A46A4500470DD4 /* APICliient.swift */; };
+		FFED840F21A46A7700470DD4 /* APIIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED840E21A46A7700470DD4 /* APIIClientError.swift */; };
+		FFED841121A46A9400470DD4 /* BokinAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED841021A46A9400470DD4 /* BokinAPIError.swift */; };
+		FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED841321A46AB900470DD4 /* DisasterResponse.swift */; };
+		FFED841721A46B1900470DD4 /* DisasterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED841621A46B1900470DD4 /* DisasterRequest.swift */; };
+		FFED841921A46BA100470DD4 /* BokinRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED841821A46BA100470DD4 /* BokinRequest.swift */; };
+		FFED841B21A46C3700470DD4 /* Disaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED841A21A46C3700470DD4 /* Disaster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +62,13 @@
 		FFED840021A4685B00470DD4 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		FFED840321A4687500470DD4 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		FFED840621A4688A00470DD4 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		FFED840B21A46A4500470DD4 /* APICliient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICliient.swift; sourceTree = "<group>"; };
+		FFED840E21A46A7700470DD4 /* APIIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIIClientError.swift; sourceTree = "<group>"; };
+		FFED841021A46A9400470DD4 /* BokinAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokinAPIError.swift; sourceTree = "<group>"; };
+		FFED841321A46AB900470DD4 /* DisasterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterResponse.swift; sourceTree = "<group>"; };
+		FFED841621A46B1900470DD4 /* DisasterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterRequest.swift; sourceTree = "<group>"; };
+		FFED841821A46BA100470DD4 /* BokinRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokinRequest.swift; sourceTree = "<group>"; };
+		FFED841A21A46C3700470DD4 /* Disaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disaster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +138,7 @@
 		FFED83F321A4674A00470DD4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FFED841A21A46C3700470DD4 /* Disaster.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +167,7 @@
 		FFED83F721A4677B00470DD4 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				FFED840A21A46A2A00470DD4 /* API */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -161,6 +177,43 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FFED840A21A46A2A00470DD4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FFED841521A46B0300470DD4 /* Request */,
+				FFED841221A46AA600470DD4 /* Response */,
+				FFED840D21A46A6600470DD4 /* Error */,
+				FFED840B21A46A4500470DD4 /* APICliient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FFED840D21A46A6600470DD4 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				FFED840E21A46A7700470DD4 /* APIIClientError.swift */,
+				FFED841021A46A9400470DD4 /* BokinAPIError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		FFED841221A46AA600470DD4 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				FFED841321A46AB900470DD4 /* DisasterResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		FFED841521A46B0300470DD4 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FFED841621A46B1900470DD4 /* DisasterRequest.swift */,
+				FFED841821A46BA100470DD4 /* BokinRequest.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +314,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFED841121A46A9400470DD4 /* BokinAPIError.swift in Sources */,
+				FFED841921A46BA100470DD4 /* BokinRequest.swift in Sources */,
+				FFED841B21A46C3700470DD4 /* Disaster.swift in Sources */,
+				FFED840F21A46A7700470DD4 /* APIIClientError.swift in Sources */,
 				FFED83E321A45CFD00470DD4 /* ViewController.swift in Sources */,
+				FFED841721A46B1900470DD4 /* DisasterRequest.swift in Sources */,
 				FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */,
+				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
+				FFED840C21A46A4500470DD4 /* APICliient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

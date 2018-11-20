@@ -6,4 +6,13 @@
 //  Copyright © 2018 RedBottleCoffee. All rights reserved.
 //
 
-import Foundation
+struct BokinAPIError: Error {
+    struct FieldError {
+        let resource: String
+        let field: String
+        let code: String
+    }
+    
+    let message: String
+    let fieldErros: [FieldError]
+}

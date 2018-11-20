@@ -6,4 +6,19 @@
 //  Copyright © 2018 RedBottleCoffee. All rights reserved.
 //
 
-import Foundation
+import Alamofire
+
+final class BokinAPI {
+    
+    struct GetDisasters: BokinRequest {
+        typealias Response = DisasterResponse
+        
+        let path: String = "/disasters"
+        let method: HTTPMethod = .get
+        let params: Parameters? = [
+//            "key": "value"
+        ]
+        
+        init() {}
+    }
+}
