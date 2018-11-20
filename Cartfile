@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire"
+github "Hearst-DD/ObjectMapper"
+github "kean/Nuke"
+github "ReactiveX/RxSwift"

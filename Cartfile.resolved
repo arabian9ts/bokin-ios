@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "4.7.3"
+github "Hearst-DD/ObjectMapper" "3.4.1"
+github "ReactiveX/RxSwift" "4.4.0"
+github "kean/Nuke" "7.5.1"
