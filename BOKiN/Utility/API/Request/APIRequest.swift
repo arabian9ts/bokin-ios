@@ -30,7 +30,7 @@ final class BokinAPI {
         let method: HTTPMethod = .get
         let params: Parameters? = [:]
         let headers: HTTPHeaders? = [
-            "Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.p0QTGHEptZedRFErL-RUytE_q4hJpPPBRiBZHunHyDU"
+            "Authorization" : KeyChainManager.shared.getBearerToken()
         ]
         
         init() {}
