@@ -123,10 +123,7 @@
 				FFED83F321A4674A00470DD4 /* Model */,
 				FFED83F221A4673B00470DD4 /* Controller */,
 				FFED83E021A45CFD00470DD4 /* AppDelegate.swift */,
-				FFED83E221A45CFD00470DD4 /* ViewController.swift */,
-				FFED83E421A45CFD00470DD4 /* Main.storyboard */,
 				FFED83E721A45D0000470DD4 /* Assets.xcassets */,
-				FFED83E921A45D0000470DD4 /* LaunchScreen.storyboard */,
 				FFED83EC21A45D0000470DD4 /* Info.plist */,
 			);
 			path = BOKiN;
@@ -135,6 +132,7 @@
 		FFED83F221A4673B00470DD4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FFED83E221A45CFD00470DD4 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +163,8 @@
 		FFED83F621A4676E00470DD4 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				FFED83E421A45CFD00470DD4 /* Main.storyboard */,
+				FFED83E921A45D0000470DD4 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
