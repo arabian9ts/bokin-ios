@@ -31,6 +31,7 @@
 		FFED841B21A46C3700470DD4 /* Disaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED841A21A46C3700470DD4 /* Disaster.swift */; };
 		FFED841D21A46D4100470DD4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED841C21A46D4100470DD4 /* User.swift */; };
 		FFED841F21A46EDD00470DD4 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED841E21A46EDD00470DD4 /* UserResponse.swift */; };
+		FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED842321A47B1300470DD4 /* KeyChainManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +74,7 @@
 		FFED841A21A46C3700470DD4 /* Disaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disaster.swift; sourceTree = "<group>"; };
 		FFED841C21A46D4100470DD4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FFED841E21A46EDD00470DD4 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		FFED842321A47B1300470DD4 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		FFED83F721A4677B00470DD4 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				FFED842221A47AE600470DD4 /* Manager */,
 				FFED840A21A46A2A00470DD4 /* API */,
 			);
 			path = Utility;
@@ -220,6 +223,14 @@
 				FFED841821A46BA100470DD4 /* BokinRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		FFED842221A47AE600470DD4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FFED842321A47B1300470DD4 /* KeyChainManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +338,7 @@
 				FFED83E321A45CFD00470DD4 /* ViewController.swift in Sources */,
 				FFED841721A46B1900470DD4 /* APIRequest.swift in Sources */,
 				FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */,
+				FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */,
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
 				FFED841D21A46D4100470DD4 /* User.swift in Sources */,
 				FFED840C21A46A4500470DD4 /* APICliient.swift in Sources */,
