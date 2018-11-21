@@ -25,6 +25,7 @@ class NewsTableViewCell: UITableViewCell {
     
     public func setupCell(news: News) {
         newsTitleLabel.text = news.title
+        descriptionTextView.text = news.summary
         newsView.layer.cornerRadius  = 10.0
         newsView.layer.masksToBounds = true
     }
