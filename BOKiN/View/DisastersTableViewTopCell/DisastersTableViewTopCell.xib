@@ -23,14 +23,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="179.5"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018/08/25 15:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xb-uY-BU0">
-                        <rect key="frame" x="10" y="158.5" width="79" height="11"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <rect key="frame" x="10" y="158.5" width="85" height="11"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="9"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="桂川町、道路水没！一部通行止め" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDT-Td-qcz">
-                        <rect key="frame" x="10" y="136" width="275.5" height="21.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21日07:28 [ 最大震度 ] 震度 2 [ 震源地 ] 千葉県北東部&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDT-Td-qcz">
+                        <rect key="frame" x="10" y="110.5" width="300" height="43"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -38,16 +38,23 @@
                 <constraints>
                     <constraint firstItem="2xb-uY-BU0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3VK-WC-r0G"/>
                     <constraint firstItem="eZv-cn-01F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="65K-g2-Zo0"/>
+                    <constraint firstAttribute="trailing" secondItem="NDT-Td-qcz" secondAttribute="trailing" constant="10" id="9ki-UU-Ofq"/>
+                    <constraint firstItem="2xb-uY-BU0" firstAttribute="top" secondItem="NDT-Td-qcz" secondAttribute="bottom" constant="5" id="E0u-qF-kTl"/>
                     <constraint firstItem="eZv-cn-01F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FCW-nW-Tz1"/>
                     <constraint firstAttribute="bottom" secondItem="eZv-cn-01F" secondAttribute="bottom" id="IJI-59-fGA"/>
-                    <constraint firstItem="NDT-Td-qcz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="JQc-qR-nhp"/>
                     <constraint firstAttribute="bottom" secondItem="2xb-uY-BU0" secondAttribute="bottom" constant="10" id="RgJ-kh-rld"/>
-                    <constraint firstItem="2xb-uY-BU0" firstAttribute="top" secondItem="NDT-Td-qcz" secondAttribute="bottom" constant="1" id="aQV-vD-RDv"/>
+                    <constraint firstItem="NDT-Td-qcz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="d52-Rb-Euc"/>
+                    <constraint firstItem="NDT-Td-qcz" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="hOA-4b-55b"/>
                     <constraint firstAttribute="trailing" secondItem="eZv-cn-01F" secondAttribute="trailing" id="yMd-bj-v6j"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="34" y="93.5"/>
+            <connections>
+                <outlet property="disasterDateTimeLabel" destination="2xb-uY-BU0" id="JFD-L2-1VN"/>
+                <outlet property="disasterImageView" destination="eZv-cn-01F" id="izW-Fz-1v4"/>
+                <outlet property="disasterTitleLabel" destination="NDT-Td-qcz" id="tvb-EO-0Vz"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="92.653673163418304"/>
         </tableViewCell>
     </objects>
     <resources>

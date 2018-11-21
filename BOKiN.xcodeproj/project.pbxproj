@@ -47,6 +47,7 @@
 		FFED846621A5583700470DD4 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED846521A5583700470DD4 /* News.swift */; };
 		FFED846821A559A400470DD4 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED846721A559A400470DD4 /* NewsViewModel.swift */; };
 		FFED846A21A55D1200470DD4 /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED846921A55D1200470DD4 /* NewsResponse.swift */; };
+		FFED846C21A57EB400470DD4 /* Nuke+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED846B21A57EB400470DD4 /* Nuke+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -105,6 +106,7 @@
 		FFED846521A5583700470DD4 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		FFED846721A559A400470DD4 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		FFED846921A55D1200470DD4 /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
+		FFED846B21A57EB400470DD4 /* Nuke+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nuke+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 			children = (
 				FFED843A21A525FC00470DD4 /* TableView+.swift */,
 				FFED843C21A5275700470DD4 /* ClassName.swift */,
+				FFED846B21A57EB400470DD4 /* Nuke+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */,
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
 				FFED841D21A46D4100470DD4 /* User.swift in Sources */,
+				FFED846C21A57EB400470DD4 /* Nuke+.swift in Sources */,
 				FFED845921A5457000470DD4 /* DisastersTableViewCell.swift in Sources */,
 				FFED840C21A46A4500470DD4 /* APICliient.swift in Sources */,
 				FFED845C21A5457000470DD4 /* DisastersTableViewTopCell.swift in Sources */,
