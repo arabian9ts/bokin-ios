@@ -62,12 +62,16 @@ class DisastersDataSource: NSObject, UITableViewDelegate, UITableViewDataSource,
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let disaster = items[indexPath.row]
+        
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(with: DisastersTableViewTopCell.self, for: indexPath)
+            cell.setupCell(disaster: disaster)
             return cell
         }
         else {
             let cell = tableView.dequeueReusableCell(with: DisastersTableViewCell.self, for: indexPath)
+            cell.setupCell(disaster: disaster)
             return cell
         }
     }

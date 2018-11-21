@@ -10,14 +10,22 @@ import UIKit
 
 class DisastersTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var disasterTitleLabel: UILabel!
+    @IBOutlet weak var disasterDateTimeLabel: UILabel!
+    @IBOutlet weak var disasterImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    public func setupCell(disaster: Disaster) {
+        disasterTitleLabel.numberOfLines = 0
+        disasterTitleLabel.text = disaster.title
+        disasterDateTimeLabel.text = disaster.datetime
+        loadImageWithNuke(url: disaster.imageUrl, imageView: disasterImageView)
     }
 }

@@ -44,18 +44,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6K2-zB-Zd1" userLabel="TitleWrapView">
                                         <rect key="frame" x="0.0" y="0.0" width="275" height="60"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="九州北部で未曽有の豪雨！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kf-VN-eOe">
-                                                <rect key="frame" x="5" y="10" width="245" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="九州北部で未曽有の豪雨！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kf-VN-eOe">
+                                                <rect key="frame" x="5" y="0.0" width="265" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="0kf-VN-eOe" firstAttribute="top" secondItem="Lsy-9X-uJr" secondAttribute="top" constant="10" id="K8B-nE-baF"/>
+                                            <constraint firstItem="Lsy-9X-uJr" firstAttribute="trailing" secondItem="0kf-VN-eOe" secondAttribute="trailing" constant="5" id="0S7-Zd-9Rc"/>
+                                            <constraint firstItem="0kf-VN-eOe" firstAttribute="top" secondItem="Lsy-9X-uJr" secondAttribute="top" id="K8B-nE-baF"/>
                                             <constraint firstAttribute="height" constant="60" id="dhj-9s-fmW"/>
                                             <constraint firstItem="0kf-VN-eOe" firstAttribute="leading" secondItem="Lsy-9X-uJr" secondAttribute="leading" constant="5" id="iU7-Iy-7xq"/>
+                                            <constraint firstItem="Lsy-9X-uJr" firstAttribute="bottom" secondItem="0kf-VN-eOe" secondAttribute="bottom" constant="10" id="jUr-eb-q9t"/>
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="Lsy-9X-uJr"/>
                                     </view>
@@ -132,6 +134,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="disasterDateTimeLabel" destination="dZ4-t9-6ig" id="uAU-AO-fBp"/>
+                <outlet property="disasterImageView" destination="BOf-4h-HGQ" id="rXa-cN-NP5"/>
+                <outlet property="disasterTitleLabel" destination="0kf-VN-eOe" id="PeC-0Y-Pbi"/>
+            </connections>
             <point key="canvasLocation" x="2688.5" y="-127"/>
         </tableViewCell>
     </objects>
