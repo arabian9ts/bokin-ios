@@ -51,7 +51,7 @@
             </objects>
             <point key="canvasLocation" x="397.60000000000002" y="-530.28485757121439"/>
         </scene>
-        <!--Item-->
+        <!--News-->
         <scene sceneID="XjO-Tw-Fdz">
             <objects>
                 <viewController id="1ME-B2-bgC" customClass="NewsViewController" customModule="BOKiN" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,7 +83,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cl2-m9-XSo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="4pc-fO-YGY" userLabel="News"/>
+                    <tabBarItem key="tabBarItem" title="News" id="4pc-fO-YGY" userLabel="News"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="newsTableView" destination="u6g-wA-JTO" id="UHL-jZ-vFR"/>

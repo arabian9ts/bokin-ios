@@ -11,6 +11,8 @@ import RxSwift
 import RxCocoa
 
 class NewsViewController: UIViewController {
+    
+    let viewModel = NewsViewModele()
 
     @IBOutlet weak var newsTableView: UITableView!
     
@@ -21,7 +23,18 @@ class NewsViewController: UIViewController {
 }
 
 
-class NewsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTableViewDataSourceType {
-    typealias Element = [News]
-    
-}
+//class NewsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTableViewDataSourceType {
+//    typealias Element = [News]
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, observedEvent: Event<[News]>) {
+//        <#code#>
+//    }
+//}
