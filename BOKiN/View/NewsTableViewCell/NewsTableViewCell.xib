@@ -12,23 +12,42 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="197" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="BOKiN" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="BOKiN" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="196.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AG5-dG-9Eo">
-                        <rect key="frame" x="11" y="11" width="293" height="33"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AG5-dG-9Eo">
+                        <rect key="frame" x="10" y="10" width="300" height="41"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tXp-AA-bmH">
+                        <rect key="frame" x="10" y="51" width="300" height="135.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="AG5-dG-9Eo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="4nM-6O-pml"/>
+                    <constraint firstAttribute="bottom" secondItem="tXp-AA-bmH" secondAttribute="bottom" constant="10" id="Hm3-ba-6TI"/>
+                    <constraint firstItem="tXp-AA-bmH" firstAttribute="top" secondItem="AG5-dG-9Eo" secondAttribute="bottom" id="hxk-Gk-8uG"/>
+                    <constraint firstItem="tXp-AA-bmH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jin-iV-mTT"/>
+                    <constraint firstItem="AG5-dG-9Eo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ka0-b5-t47"/>
+                    <constraint firstAttribute="trailing" secondItem="AG5-dG-9Eo" secondAttribute="trailing" constant="10" id="rUc-6Q-1tZ"/>
+                    <constraint firstAttribute="trailing" secondItem="tXp-AA-bmH" secondAttribute="trailing" constant="10" id="v1c-vV-9a2"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionTextView" destination="tXp-AA-bmH" id="D0N-b3-bhN"/>
+                <outlet property="newsTitleLabel" destination="AG5-dG-9Eo" id="Ea8-3N-0nV"/>
+            </connections>
             <point key="canvasLocation" x="137.59999999999999" y="85.907046476761622"/>
         </tableViewCell>
     </objects>

@@ -10,15 +10,19 @@ import UIKit
 
 class NewsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var newsTitleLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    public func setupCell(news: News) {
+        newsTitleLabel.text = news.title
     }
     
 }
