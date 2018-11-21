@@ -42,7 +42,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZCN-4S-Mjb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="HEX-Oo-hni"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="HEX-Oo-hni" userLabel="災害"/>
                     <connections>
                         <outlet property="disastersTableView" destination="eW9-RY-pfw" id="6Se-58-XdH"/>
                     </connections>
@@ -50,6 +50,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vi-fC-OYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="397.60000000000002" y="-530.28485757121439"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="XjO-Tw-Fdz">
+            <objects>
+                <viewController id="1ME-B2-bgC" customClass="NewsViewController" customModule="BOKiN" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gbk-ix-rnu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cl2-m9-XSo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="4pc-fO-YGY" userLabel="News"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8D-oR-045" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-334" y="18"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="8nn-AN-764">
@@ -61,7 +78,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Q5O-83-92f"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="ITW-aS-eOr"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="ITW-aS-eOr" userLabel="不明"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Meb-og-t5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,6 +96,7 @@
                     <connections>
                         <segue destination="0QT-fu-w0p" kind="relationship" relationship="viewControllers" id="Ger-UN-zFG"/>
                         <segue destination="h3A-GH-77U" kind="relationship" relationship="viewControllers" id="drY-23-pjF"/>
+                        <segue destination="1ME-B2-bgC" kind="relationship" relationship="viewControllers" id="nMl-o1-XWW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUl-XV-LQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
