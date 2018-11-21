@@ -19,6 +19,5 @@ class NewsResponse: Mappable {
     
     func mapping(map: Map) {
         news <- map["entities"]
-        print(news)
     }
 }
