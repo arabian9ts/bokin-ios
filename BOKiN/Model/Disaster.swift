@@ -15,6 +15,7 @@ class Disaster: Mappable {
     var scale:          String    =   ""
     var category:       String    =   ""
     var datetime:       String    =   ""
+    var imageUrl:       String    =   ""
     var description:    String    =   ""
     
     func mapping(map: Map) {
@@ -24,6 +25,7 @@ class Disaster: Mappable {
         scale          <-    map["scale"]
         category       <-    map["category"]
         datetime       <-    map["datetime"]
+        imageUrl       <-    map["image_url"]
         description    <-    map["description"]
     }
     
