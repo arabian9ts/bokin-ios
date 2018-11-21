@@ -21,6 +21,7 @@ class News: Mappable {
     func mapping(map: Map) {
         id            <-  map["id"]
         title         <-  map["title"]
+        summary       <-  map["summary"]
         detailUrl     <-  map["url"]
         imageUrl      <-  map["thumbnail_image"]
         datetime      <-  map["datetime"]
