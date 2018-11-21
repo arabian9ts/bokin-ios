@@ -9,7 +9,7 @@
 import RxSwift
 
 class DisastersViewModele {
-    var disasters: Variable<[Disaster]> = Variable([])
+    var disasters: Variable<[Disaster]> = Variable([Disaster(), Disaster(), Disaster(), Disaster(), Disaster(), Disaster()])
     
     init() {
         fetchDisasters()

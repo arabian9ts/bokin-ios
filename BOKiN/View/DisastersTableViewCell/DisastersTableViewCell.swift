@@ -3,13 +3,13 @@
 //  BOKiN
 //
 //  Created by arabian9ts on 2018/11/21.
-//  Copyright © 2018 RedBottleCoffee. All rights reserved.
+//  Copyright © 2018年 RedBottleCoffee. All rights reserved.
 //
 
 import UIKit
 
 class DisastersTableViewCell: UITableViewCell {
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +20,4 @@ class DisastersTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }

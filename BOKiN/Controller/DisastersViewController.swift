@@ -21,12 +21,17 @@ class DisastersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        disastersTableView.dataSource = dataSource
+        disastersTableView.delegate = dataSource
         
         setupRx()
     }
     
-    func setupRx() {
+    private func setupRx() {
+        disastersTableView.register(cellType: DisastersTableViewCell.self)
+        viewModel.disasters
+            .asObservable()
+            .bind(to: disastersTableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
     }
 }
 
@@ -46,15 +51,21 @@ class DisastersDataSource: NSObject, UITableViewDelegate, UITableViewDataSource,
         return 1
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DisastersTableViewCell
+        let cell = tableView.dequeueReusableCell(with: DisastersTableViewCell.self, for: indexPath)
         return cell
     }
     
     func tableView(_ tableView: UITableView, observedEvent: Event<[Disaster]>) {
         Binder(self) { dataSource, element in
             dataSource.items = element
-            tableView.reloadData()
+            DispatchQueue.main.async {
+                tableView.reloadData()
+            }
         }
         .on(observedEvent)
     }
