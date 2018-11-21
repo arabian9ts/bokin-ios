@@ -22,7 +22,7 @@ class NewsViewController: UIViewController {
         super.viewDidLoad()
         
         newsTableView.delegate = dataSource
-        newsTableView.backgroundColor = .lightGray
+        newsTableView.backgroundColor = #colorLiteral(red: 0.9427082911, green: 0.72054101, blue: 0.2288987002, alpha: 1)
         
         setupRx()
     }
@@ -58,7 +58,7 @@ class NewsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTa
             return UITableView.automaticDimension
         }
         else {
-            return 120
+            return 150
         }
     }
     
