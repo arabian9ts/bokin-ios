@@ -11,7 +11,9 @@ import RxSwift
 class DisastersViewModele {
     var disasters: Variable<[Disaster]> = Variable([])
     
-    init() {}
+    init() {
+        fetchDisasters()
+    }
     
     func fetchDisasters() {
         let request = BokinAPI.GetDisasters()
