@@ -10,8 +10,10 @@ import UIKit
 
 class NewsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var newsView: UIView!
     @IBOutlet weak var newsTitleLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +25,8 @@ class NewsTableViewCell: UITableViewCell {
     
     public func setupCell(news: News) {
         newsTitleLabel.text = news.title
+        newsView.layer.cornerRadius  = 10.0
+        newsView.layer.masksToBounds = true
     }
     
 }
