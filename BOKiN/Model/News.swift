@@ -16,6 +16,7 @@ class News: Mappable {
     var imageUrl:       String    =   ""
     var datetime:       String    =   ""
     var disaster_id:    Int       =   0
+    var opend:          Bool      =   false
     
     func mapping(map: Map) {
         id            <-  map["id"]
@@ -29,5 +30,9 @@ class News: Mappable {
     required convenience init?(map: Map) {
         self.init()
         mapping(map: map)
+    }
+    
+    public func toggleNews() {
+        opend = !opend
     }
 }
