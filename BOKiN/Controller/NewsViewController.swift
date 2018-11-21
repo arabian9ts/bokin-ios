@@ -13,16 +13,25 @@ import RxCocoa
 class NewsViewController: UIViewController {
     
     let disposeBag = DisposeBag()
+    let dataSource = NewsDataSource()
     let viewModel  = NewsViewModele()
-    let dataSource = DisastersDataSource()
 
     @IBOutlet weak var newsTableView: UITableView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         newsTableView.delegate = dataSource
+        
+        setupRx()
+    }
+    
+    private func setupRx() {
+        newsTableView.register(cellType: NewsTableViewCell.self)
+        viewModel.news
+            .asObservable()
+            .bind(to: newsTableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
     }
 }
 
