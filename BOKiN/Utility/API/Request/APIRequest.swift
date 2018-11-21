@@ -23,7 +23,7 @@ final class BokinAPI {
         init() {}
     }
     
-    struct getUser: BokinRequest {
+    struct GetUser: BokinRequest {
         typealias Response = UserResponse
         
         let path: String = "/users/me"

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E021A45CFD00470DD4 /* AppDelegate.swift */; };
-		FFED83E321A45CFD00470DD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E221A45CFD00470DD4 /* ViewController.swift */; };
+		FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */; };
 		FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED83E421A45CFD00470DD4 /* Main.storyboard */; };
 		FFED83E821A45D0000470DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFED83E721A45D0000470DD4 /* Assets.xcassets */; };
 		FFED83EB21A45D0000470DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED83E921A45D0000470DD4 /* LaunchScreen.storyboard */; };
@@ -32,6 +32,15 @@
 		FFED841D21A46D4100470DD4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED841C21A46D4100470DD4 /* User.swift */; };
 		FFED841F21A46EDD00470DD4 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED841E21A46EDD00470DD4 /* UserResponse.swift */; };
 		FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED842321A47B1300470DD4 /* KeyChainManager.swift */; };
+		FFED842D21A5188F00470DD4 /* DisastersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED842C21A5188F00470DD4 /* DisastersViewModel.swift */; };
+		FFED843B21A525FC00470DD4 /* TableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED843A21A525FC00470DD4 /* TableView+.swift */; };
+		FFED843D21A5275700470DD4 /* ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED843C21A5275700470DD4 /* ClassName.swift */; };
+		FFED843F21A52F8D00470DD4 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFED843E21A52F8C00470DD4 /* RxAtomic.framework */; };
+		FFED844021A52F8D00470DD4 /* RxAtomic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFED843E21A52F8C00470DD4 /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFED845921A5457000470DD4 /* DisastersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED845321A5456F00470DD4 /* DisastersTableViewCell.swift */; };
+		FFED845A21A5457000470DD4 /* DisastersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFED845421A5456F00470DD4 /* DisastersTableViewCell.xib */; };
+		FFED845C21A5457000470DD4 /* DisastersTableViewTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED845721A5457000470DD4 /* DisastersTableViewTopCell.swift */; };
+		FFED845D21A5457000470DD4 /* DisastersTableViewTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFED845821A5457000470DD4 /* DisastersTableViewTopCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +55,7 @@
 				FFED840221A4685B00470DD4 /* ObjectMapper.framework in Embed Frameworks */,
 				FFED83FB21A4683100470DD4 /* Alamofire.framework in Embed Frameworks */,
 				FFED83FF21A4684200470DD4 /* Nuke.framework in Embed Frameworks */,
+				FFED844021A52F8D00470DD4 /* RxAtomic.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,7 +65,7 @@
 /* Begin PBXFileReference section */
 		FFED83DD21A45CFD00470DD4 /* BOKiN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOKiN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFED83E021A45CFD00470DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFED83E221A45CFD00470DD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisastersViewController.swift; sourceTree = "<group>"; };
 		FFED83E521A45CFD00470DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFED83E721A45D0000470DD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFED83EA21A45D0000470DD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +85,14 @@
 		FFED841C21A46D4100470DD4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FFED841E21A46EDD00470DD4 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		FFED842321A47B1300470DD4 /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
+		FFED842C21A5188F00470DD4 /* DisastersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisastersViewModel.swift; sourceTree = "<group>"; };
+		FFED843A21A525FC00470DD4 /* TableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+.swift"; sourceTree = "<group>"; };
+		FFED843C21A5275700470DD4 /* ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassName.swift; sourceTree = "<group>"; };
+		FFED843E21A52F8C00470DD4 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
+		FFED845321A5456F00470DD4 /* DisastersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisastersTableViewCell.swift; sourceTree = "<group>"; };
+		FFED845421A5456F00470DD4 /* DisastersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisastersTableViewCell.xib; sourceTree = "<group>"; };
+		FFED845721A5457000470DD4 /* DisastersTableViewTopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisastersTableViewTopCell.swift; sourceTree = "<group>"; };
+		FFED845821A5457000470DD4 /* DisastersTableViewTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisastersTableViewTopCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +105,7 @@
 				FFED840121A4685B00470DD4 /* ObjectMapper.framework in Frameworks */,
 				FFED83FA21A4683100470DD4 /* Alamofire.framework in Frameworks */,
 				FFED83FE21A4684200470DD4 /* Nuke.framework in Frameworks */,
+				FFED843F21A52F8D00470DD4 /* RxAtomic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +115,7 @@
 		FFED83D421A45CFD00470DD4 = {
 			isa = PBXGroup;
 			children = (
+				FFED843E21A52F8C00470DD4 /* RxAtomic.framework */,
 				FFED840621A4688A00470DD4 /* RxSwift.framework */,
 				FFED840321A4687500470DD4 /* RxCocoa.framework */,
 				FFED840021A4685B00470DD4 /* ObjectMapper.framework */,
@@ -134,7 +154,7 @@
 		FFED83F221A4673B00470DD4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FFED83E221A45CFD00470DD4 /* ViewController.swift */,
+				FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +171,7 @@
 		FFED83F421A4675000470DD4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FFED842C21A5188F00470DD4 /* DisastersViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -158,6 +179,8 @@
 		FFED83F521A4676B00470DD4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FFED845221A5456F00470DD4 /* DisastersTableViewCell */,
+				FFED845521A5457000470DD4 /* DisastersTableViewTopCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +206,8 @@
 		FFED83F821A4678100470DD4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FFED843A21A525FC00470DD4 /* TableView+.swift */,
+				FFED843C21A5275700470DD4 /* ClassName.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -233,6 +258,24 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		FFED845221A5456F00470DD4 /* DisastersTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FFED845321A5456F00470DD4 /* DisastersTableViewCell.swift */,
+				FFED845421A5456F00470DD4 /* DisastersTableViewCell.xib */,
+			);
+			path = DisastersTableViewCell;
+			sourceTree = "<group>";
+		};
+		FFED845521A5457000470DD4 /* DisastersTableViewTopCell */ = {
+			isa = PBXGroup;
+			children = (
+				FFED845721A5457000470DD4 /* DisastersTableViewTopCell.swift */,
+				FFED845821A5457000470DD4 /* DisastersTableViewTopCell.xib */,
+			);
+			path = DisastersTableViewTopCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,10 +284,10 @@
 			buildConfigurationList = FFED83EF21A45D0000470DD4 /* Build configuration list for PBXNativeTarget "BOKiN" */;
 			buildPhases = (
 				FFED83D921A45CFD00470DD4 /* Sources */,
+				FFED840921A468AE00470DD4 /* Carthage */,
 				FFED83DA21A45CFD00470DD4 /* Frameworks */,
 				FFED83DB21A45CFD00470DD4 /* Resources */,
 				FFED83FC21A4683100470DD4 /* Embed Frameworks */,
-				FFED840921A468AE00470DD4 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -294,6 +337,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFED845D21A5457000470DD4 /* DisastersTableViewTopCell.xib in Resources */,
+				FFED845A21A5457000470DD4 /* DisastersTableViewCell.xib in Resources */,
 				FFED83EB21A45D0000470DD4 /* LaunchScreen.storyboard in Resources */,
 				FFED83E821A45D0000470DD4 /* Assets.xcassets in Resources */,
 				FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */,
@@ -315,6 +360,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -336,13 +382,18 @@
 				FFED841921A46BA100470DD4 /* BokinRequest.swift in Sources */,
 				FFED841B21A46C3700470DD4 /* Disaster.swift in Sources */,
 				FFED840F21A46A7700470DD4 /* APIIClientError.swift in Sources */,
-				FFED83E321A45CFD00470DD4 /* ViewController.swift in Sources */,
+				FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */,
 				FFED841721A46B1900470DD4 /* APIRequest.swift in Sources */,
 				FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */,
+				FFED843D21A5275700470DD4 /* ClassName.swift in Sources */,
+				FFED843B21A525FC00470DD4 /* TableView+.swift in Sources */,
 				FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */,
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
 				FFED841D21A46D4100470DD4 /* User.swift in Sources */,
+				FFED845921A5457000470DD4 /* DisastersTableViewCell.swift in Sources */,
 				FFED840C21A46A4500470DD4 /* APICliient.swift in Sources */,
+				FFED845C21A5457000470DD4 /* DisastersTableViewTopCell.swift in Sources */,
+				FFED842D21A5188F00470DD4 /* DisastersViewModel.swift in Sources */,
 				FFED841F21A46EDD00470DD4 /* UserResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
