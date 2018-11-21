@@ -27,7 +27,8 @@ class DisastersViewController: UIViewController {
     }
     
     private func setupRx() {
-        disastersTableView.register(cellType: DisastersTableViewCell.self)
+        disastersTableView.register(
+            cellTypes: [DisastersTableViewTopCell.self, DisastersTableViewCell.self])
         viewModel.disasters
             .asObservable()
             .bind(to: disastersTableView.rx.items(dataSource: dataSource))
@@ -52,12 +53,23 @@ class DisastersDataSource: NSObject, UITableViewDelegate, UITableViewDataSource,
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        if indexPath.row == 0 {
+            return 160
+        }
+        else {
+            return 80
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(with: DisastersTableViewCell.self, for: indexPath)
-        return cell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(with: DisastersTableViewTopCell.self, for: indexPath)
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(with: DisastersTableViewCell.self, for: indexPath)
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, observedEvent: Event<[Disaster]>) {

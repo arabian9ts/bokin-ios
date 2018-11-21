@@ -39,8 +39,8 @@
 		FFED844021A52F8D00470DD4 /* RxAtomic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFED843E21A52F8C00470DD4 /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFED845921A5457000470DD4 /* DisastersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED845321A5456F00470DD4 /* DisastersTableViewCell.swift */; };
 		FFED845A21A5457000470DD4 /* DisastersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFED845421A5456F00470DD4 /* DisastersTableViewCell.xib */; };
-		FFED845C21A5457000470DD4 /* MainCharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED845721A5457000470DD4 /* MainCharityTableViewCell.swift */; };
-		FFED845D21A5457000470DD4 /* MainCharityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFED845821A5457000470DD4 /* MainCharityTableViewCell.xib */; };
+		FFED845C21A5457000470DD4 /* DisastersTableViewTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED845721A5457000470DD4 /* DisastersTableViewTopCell.swift */; };
+		FFED845D21A5457000470DD4 /* DisastersTableViewTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFED845821A5457000470DD4 /* DisastersTableViewTopCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,8 +91,8 @@
 		FFED843E21A52F8C00470DD4 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
 		FFED845321A5456F00470DD4 /* DisastersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisastersTableViewCell.swift; sourceTree = "<group>"; };
 		FFED845421A5456F00470DD4 /* DisastersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisastersTableViewCell.xib; sourceTree = "<group>"; };
-		FFED845721A5457000470DD4 /* MainCharityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCharityTableViewCell.swift; sourceTree = "<group>"; };
-		FFED845821A5457000470DD4 /* MainCharityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCharityTableViewCell.xib; sourceTree = "<group>"; };
+		FFED845721A5457000470DD4 /* DisastersTableViewTopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisastersTableViewTopCell.swift; sourceTree = "<group>"; };
+		FFED845821A5457000470DD4 /* DisastersTableViewTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisastersTableViewTopCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,8 +270,8 @@
 		FFED845521A5457000470DD4 /* DisastersTableViewTopCell */ = {
 			isa = PBXGroup;
 			children = (
-				FFED845721A5457000470DD4 /* MainCharityTableViewCell.swift */,
-				FFED845821A5457000470DD4 /* MainCharityTableViewCell.xib */,
+				FFED845721A5457000470DD4 /* DisastersTableViewTopCell.swift */,
+				FFED845821A5457000470DD4 /* DisastersTableViewTopCell.xib */,
 			);
 			path = DisastersTableViewTopCell;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFED845D21A5457000470DD4 /* MainCharityTableViewCell.xib in Resources */,
+				FFED845D21A5457000470DD4 /* DisastersTableViewTopCell.xib in Resources */,
 				FFED845A21A5457000470DD4 /* DisastersTableViewCell.xib in Resources */,
 				FFED83EB21A45D0000470DD4 /* LaunchScreen.storyboard in Resources */,
 				FFED83E821A45D0000470DD4 /* Assets.xcassets in Resources */,
@@ -392,7 +392,7 @@
 				FFED841D21A46D4100470DD4 /* User.swift in Sources */,
 				FFED845921A5457000470DD4 /* DisastersTableViewCell.swift in Sources */,
 				FFED840C21A46A4500470DD4 /* APICliient.swift in Sources */,
-				FFED845C21A5457000470DD4 /* MainCharityTableViewCell.swift in Sources */,
+				FFED845C21A5457000470DD4 /* DisastersTableViewTopCell.swift in Sources */,
 				FFED842D21A5188F00470DD4 /* DisastersViewModel.swift in Sources */,
 				FFED841F21A46EDD00470DD4 /* UserResponse.swift in Sources */,
 			);
