@@ -12,7 +12,8 @@ class NewsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var newsView: UIView!
     @IBOutlet weak var newsTitleLabel: UILabel!
-    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var newsDateTimeLabel: UILabel!
+    @IBOutlet weak var summaryTextView: UITextView!
     
     
     override func awakeFromNib() {
@@ -24,10 +25,11 @@ class NewsTableViewCell: UITableViewCell {
     }
     
     public func setupCell(news: News) {
-        newsTitleLabel.text = news.title
-        descriptionTextView.text = news.summary
-        newsView.layer.cornerRadius  = 10.0
-        newsView.layer.masksToBounds = true
+        newsTitleLabel.text            =   news.title
+        summaryTextView.text           =   news.summary
+        newsDateTimeLabel.text         =   news.datetime
+        newsView.layer.cornerRadius    =   10.0
+        newsView.layer.masksToBounds   =   true
     }
     
 }
