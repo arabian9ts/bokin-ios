@@ -21,6 +21,8 @@ class NewsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        newsTableView.estimatedRowHeight = 180
+//        newsTableView.rowHeight = UITableView.automaticDimension
         newsTableView.delegate = dataSource
         
         setupRx()
@@ -50,7 +52,16 @@ class NewsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTa
         let cell = tableView.dequeueReusableCell(with: NewsTableViewCell.self, for: indexPath)
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if items[indexPath.row].opend {
+            return UITableView.automaticDimension
+        }
+        else {
+            return 80
+        }
+    }
+    
     func tableView(_ tableView: UITableView, observedEvent: Event<[News]>) {
         Binder(self) { dataSource, element in
             dataSource.items = element
@@ -62,6 +73,7 @@ class NewsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedNews.onNext(items[indexPath.row])
+        items[indexPath.row].toggleNews()
+        tableView.reloadRows(at: tableView.indexPathsForVisibleRows!, with: UITableView.RowAnimation.fade)
     }
 }
