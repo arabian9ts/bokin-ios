@@ -7,10 +7,21 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class NewsViewController: UIViewController {
 
+    @IBOutlet weak var newsTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+}
+
+
+class NewsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTableViewDataSourceType {
+    typealias Element = [News]
+    
 }

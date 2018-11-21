@@ -58,15 +58,40 @@
                     <view key="view" contentMode="scaleToFill" id="gbk-ix-rnu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u6g-wA-JTO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bAd-Om-Nie" customClass="NewsTableViewCell" customModule="BOKiN" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bAd-Om-Nie" id="ml7-jA-SCp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u6g-wA-JTO" firstAttribute="leading" secondItem="cl2-m9-XSo" secondAttribute="leading" id="JfO-nV-ewu"/>
+                            <constraint firstItem="u6g-wA-JTO" firstAttribute="top" secondItem="gbk-ix-rnu" secondAttribute="top" id="LQd-4C-PUs"/>
+                            <constraint firstItem="u6g-wA-JTO" firstAttribute="bottom" secondItem="cl2-m9-XSo" secondAttribute="bottom" id="cIb-aU-KuT"/>
+                            <constraint firstItem="u6g-wA-JTO" firstAttribute="trailing" secondItem="cl2-m9-XSo" secondAttribute="trailing" id="zYt-fg-Hno"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cl2-m9-XSo"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="4pc-fO-YGY" userLabel="News"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="u6g-wA-JTO" id="UHL-jZ-vFR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8D-oR-045" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-334" y="18"/>
+            <point key="canvasLocation" x="-335.19999999999999" y="17.541229385307346"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="8nn-AN-764">
