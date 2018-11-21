@@ -21,9 +21,8 @@ class NewsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        newsTableView.estimatedRowHeight = 180
-//        newsTableView.rowHeight = UITableView.automaticDimension
         newsTableView.delegate = dataSource
+        newsTableView.backgroundColor = .lightGray
         
         setupRx()
     }
@@ -50,6 +49,7 @@ class NewsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTa
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(with: NewsTableViewCell.self, for: indexPath)
+        cell.setupCell(news: items[indexPath.row])
         return cell
     }
     
@@ -58,7 +58,7 @@ class NewsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTa
             return UITableView.automaticDimension
         }
         else {
-            return 80
+            return 120
         }
     }
     
