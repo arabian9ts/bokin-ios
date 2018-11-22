@@ -6,4 +6,18 @@
 //  Copyright © 2018 RedBottleCoffee. All rights reserved.
 //
 
-import Foundation
+import ObjectMapper
+
+class PrefectureResponse: Mappable {
+    
+    var prefectures: [Prefecture] = []
+    
+    required convenience init?(map: Map) {
+        self.init()
+        mapping(map: map)
+    }
+    
+    func mapping(map: Map) {
+        prefectures <- map["entities"]
+    }
+}
