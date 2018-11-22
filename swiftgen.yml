@@ -1,0 +1,10 @@
+xcassets:
+  paths:
+   - BOKiN/Assets.xcassets/
+  templateName: swift4
+  output: BOKiN/Generated/assets-images.swift
+storyboards:
+  paths:
+   - BOKiN/Storyboard/
+  templateName: swift4
+  output: BOKiN/Generated/storyboards.swift
