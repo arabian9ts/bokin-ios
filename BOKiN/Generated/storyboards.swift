@@ -3,6 +3,7 @@
 // swiftlint:disable sorted_imports
 import Foundation
 import UIKit
+import BOKiN
 
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
@@ -82,6 +83,9 @@ internal enum StoryboardScene {
     internal static let storyboardName = "OriginalNewsSite"
 
     internal static let initialScene = InitialSceneType<BOKiN.OriginalNewsSiteViewController>(storyboard: OriginalNewsSite.self)
+  }
+  internal enum SettlementModel: StoryboardType {
+    internal static let storyboardName = "SettlementModel"
   }
 }
 
