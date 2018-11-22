@@ -57,7 +57,8 @@ class NewsViewController: UIViewController {
 
 extension NewsViewController: Transitioner {
     func transition(to: UIViewController, animated: Bool, completion: (() -> ())?) {
-        present(to, animated: animated, completion: completion)
+//        present(to, animated: animated, completion: completion)
+        show(to, sender: nil)
     }
 }
 

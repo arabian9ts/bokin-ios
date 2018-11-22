@@ -15,6 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         KeyChainManager.shared.restoreFromStorage()
+        
+        let navigator: UINavigationController?
+        let firstVC = StoryboardScene.Main.initialScene.instantiate()
+        navigator = UINavigationController(rootViewController: firstVC)
+        
+//        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "direction_left")
+//        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "direction_left")
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.9427082911, green: 0.72054101, blue: 0.2288987002, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        navigator?.navigationBar.isTranslucent = true
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = navigator
+
         return true
     }
 

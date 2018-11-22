@@ -13,7 +13,6 @@
         <!--Disaster-->
         <scene sceneID="yz3-8Q-z3u">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RYk-fy-0sU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="FSD-Wh-idi" userLabel="Disaster" customClass="DisastersViewController" customModule="BOKiN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I21-PM-J5g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -45,11 +44,21 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="fAP-ar-Jzs" userLabel="災害"/>
                     <connections>
-                        <outlet property="disastersTableView" destination="MNx-hc-een" id="edR-8O-Y3k"/>
+                        <outlet property="disastersTableView" destination="MNx-hc-een" id="Qrc-tF-hVg"/>
+                        <segue destination="VGQ-GO-0nQ" kind="show" id="s14-km-U8J"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYk-fy-0sU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="397.60000000000002" y="-530.28485757121439"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="4MD-gD-SI4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="News" id="VGQ-GO-0nQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ui-4m-cRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="-531"/>
         </scene>
     </scenes>
 </document>
