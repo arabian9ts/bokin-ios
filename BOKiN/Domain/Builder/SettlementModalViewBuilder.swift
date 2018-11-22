@@ -6,4 +6,11 @@
 //  Copyright © 2018 RedBottleCoffee. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class SettlementModalViewBuilder {
+    func build() -> SettlementModalViewController {
+        let settlementModalVC = StoryboardScene.SettlementModel.initialScene.instantiate()
+        return settlementModalVC
+    }
+}
