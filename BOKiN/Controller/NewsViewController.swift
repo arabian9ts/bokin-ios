@@ -40,7 +40,7 @@ class NewsViewController: UIViewController {
         dataSource.selectedNews
             .subscribe(onNext: { news in
                 OriginalNewsSiteWireframeImpl(transitioner: self)
-                    .transitionToOriginalNewsSitePage(url: "\(String(describing: news.detailUrl))")
+                    .transitionToOriginalNewsSitePage(urlString: "\(String(describing: news.detailUrl))")
             })
             .disposed(by: disposeBag)
         

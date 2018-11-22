@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 
 protocol OriginalNewsSiteWireframe {
-    func transitionToOriginalNewsSitePage(url: String)
+    func transitionToOriginalNewsSitePage(urlString: String)
 }
 
 class OriginalNewsSiteWireframeImpl: OriginalNewsSiteWireframe {
@@ -20,9 +20,9 @@ class OriginalNewsSiteWireframeImpl: OriginalNewsSiteWireframe {
         self.transitioner = transitioner
     }
     
-    func transitionToOriginalNewsSitePage(url: String) {
+    func transitionToOriginalNewsSitePage(urlString: String) {
         let originalNewsSiteVC = OriginalNewsSiteBuilder().build()
-        originalNewsSiteVC.urlString.value = url
+        originalNewsSiteVC.urlString.value = urlString
         transitioner.transition(to: originalNewsSiteVC, animated: true, completion: nil)
     }
 }
