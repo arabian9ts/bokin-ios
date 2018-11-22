@@ -6,4 +6,11 @@
 //  Copyright © 2018 RedBottleCoffee. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class DisasterDetailViewBuilder {
+    func build() -> DisasterDetailViewController {
+        let disasterDetailVC = StoryboardScene.DisasterDetail.initialScene.instantiate()
+        return disasterDetailVC
+    }
+}
