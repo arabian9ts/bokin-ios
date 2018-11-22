@@ -61,7 +61,17 @@ internal enum StoryboardScene {
   internal enum Main: StoryboardType {
     internal static let storyboardName = "Main"
 
-    internal static let initialScene = InitialSceneType<UITabBarController>(storyboard: Main.self)
+    internal static let initialScene = InitialSceneType<BOKiN.DisastersViewController>(storyboard: Main.self)
+  }
+  internal enum News: StoryboardType {
+    internal static let storyboardName = "News"
+
+    internal static let initialScene = InitialSceneType<BOKiN.NewsViewController>(storyboard: News.self)
+  }
+  internal enum OriginalNewsSite: StoryboardType {
+    internal static let storyboardName = "OriginalNewsSite"
+
+    internal static let initialScene = InitialSceneType<BOKiN.OriginalNewsSiteViewController>(storyboard: OriginalNewsSite.self)
   }
 }
 

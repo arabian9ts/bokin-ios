@@ -15,6 +15,8 @@ class NewsViewController: UIViewController {
     let disposeBag = DisposeBag()
     let dataSource = NewsDataSource()
     let viewModel  = NewsViewModele()
+    
+    var disasterId: Variable<Int> = Variable(0)
 
     @IBOutlet weak var newsTableView: UITableView!
     
@@ -29,10 +31,33 @@ class NewsViewController: UIViewController {
     
     private func setupRx() {
         newsTableView.register(cellType: NewsTableViewCell.self)
+        
         viewModel.news
             .asObservable()
             .bind(to: newsTableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
+        
+        dataSource.selectedNews
+            .subscribe(onNext: { news in
+                OriginalNewsSiteWireframeImpl(transitioner: self)
+                    .transitionToOriginalNewsSitePage(urlString: "\(String(describing: news.detailUrl))")
+            })
+            .disposed(by: disposeBag)
+        
+        disasterId
+            .asObservable()
+            .filter{ $0 != 0 }
+            .subscribe(onNext: { id in
+                self.viewModel.fetchNews(id: id)
+            })
+            .disposed(by: disposeBag)
+    }
+}
+
+
+extension NewsViewController: Transitioner {
+    func transition(to: UIViewController, animated: Bool, completion: (() -> ())?) {
+        present(to, animated: animated, completion: completion)
     }
 }
 
@@ -75,5 +100,6 @@ class NewsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         items[indexPath.row].toggleNews()
         tableView.reloadRows(at: tableView.indexPathsForVisibleRows!, with: UITableView.RowAnimation.fade)
+        selectedNews.onNext(items[indexPath.row])
     }
 }

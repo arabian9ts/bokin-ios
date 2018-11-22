@@ -39,11 +39,13 @@ final class BokinAPI {
     struct GetNews: BokinRequest {
         typealias Response = NewsResponse
         
-        let path: String = "/disaster_news"
+        var path: String = "/disasters/:id/disaster_news"
         let method: HTTPMethod = .get
         let params: Parameters? = [:]
         let headers: HTTPHeaders? = [:]
         
-        init() {}
+        init(id: Int = 0) {
+            path = "/disasters/\(id)/disaster_news"
+        }
     }
 }

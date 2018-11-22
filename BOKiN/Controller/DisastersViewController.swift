@@ -29,13 +29,27 @@ class DisastersViewController: UIViewController {
     private func setupRx() {
         disastersTableView.register(
             cellTypes: [DisastersTableViewTopCell.self, DisastersTableViewCell.self])
+        
         viewModel.disasters
             .asObservable()
             .bind(to: disastersTableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
+        
+        dataSource.selectedDisaster
+            .subscribe(onNext: { disaster in
+                NewsWireframeImpl(transitioner: self)
+                    .transitionToNewsPage(disasterId: disaster.id)
+            })
+            .disposed(by: disposeBag)
     }
 }
 
+
+extension DisastersViewController: Transitioner {
+    func transition(to: UIViewController, animated: Bool, completion: (() -> ())?) {
+        present(to, animated: animated, completion: completion)
+    }
+}
 
 
 class DisastersDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTableViewDataSourceType {
