@@ -48,6 +48,7 @@
 		FFED846821A559A400470DD4 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED846721A559A400470DD4 /* NewsViewModel.swift */; };
 		FFED846A21A55D1200470DD4 /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED846921A55D1200470DD4 /* NewsResponse.swift */; };
 		FFED846C21A57EB400470DD4 /* Nuke+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED846B21A57EB400470DD4 /* Nuke+.swift */; };
+		FFED847421A6628A00470DD4 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED847321A6628A00470DD4 /* News.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,6 +108,7 @@
 		FFED846721A559A400470DD4 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		FFED846921A55D1200470DD4 /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
 		FFED846B21A57EB400470DD4 /* Nuke+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nuke+.swift"; sourceTree = "<group>"; };
+		FFED847321A6628A00470DD4 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			children = (
 				FFED83E421A45CFD00470DD4 /* Main.storyboard */,
 				FFED83E921A45D0000470DD4 /* LaunchScreen.storyboard */,
+				FFED847321A6628A00470DD4 /* News.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				FFED845D21A5457000470DD4 /* DisastersTableViewTopCell.xib in Resources */,
 				FFED845A21A5457000470DD4 /* DisastersTableViewCell.xib in Resources */,
 				FFED83EB21A45D0000470DD4 /* LaunchScreen.storyboard in Resources */,
+				FFED847421A6628A00470DD4 /* News.storyboard in Resources */,
 				FFED83E821A45D0000470DD4 /* Assets.xcassets in Resources */,
 				FFED846421A556B100470DD4 /* NewsTableViewCell.xib in Resources */,
 				FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */,
