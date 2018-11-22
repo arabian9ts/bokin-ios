@@ -28,8 +28,9 @@ class DisasterDetailViewController: UIViewController {
     
     private func setupRx() {
         bokinButton.rx.tap
-            .subscribe { _ in
-                SettlementModalViewWireframeImpl(transitioner: self).transitionToSettlementModalViewPage()
+            .subscribe { [self] _ in
+                let bokinVC = SettlementModalViewBuilder().build()
+                self.view.addSubview(bokinVC.view)
         }
         .disposed(by: disposeBag)
     }
