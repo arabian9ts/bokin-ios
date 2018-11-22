@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 
 protocol NewsWireframe {
-    func transitionToNewsPage()
+    func transitionToNewsPage(disasterId: Int)
 }
 
 class NewsWireframeImpl: NewsWireframe {
@@ -20,8 +20,9 @@ class NewsWireframeImpl: NewsWireframe {
         self.transitioner = transitioner
     }
     
-    func transitionToNewsPage() {
+    func transitionToNewsPage(disasterId: Int) {
         let newsVC = NewsBuilder().build()
+        newsVC.disasterId.value = disasterId
         transitioner.transition(to: newsVC, animated: true, completion: nil)
     }
 }
