@@ -45,12 +45,12 @@
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="newsTableView" destination="Iyi-ha-fH2" id="oqU-Ht-qRf"/>
+                        <outlet property="newsTableView" destination="Iyi-ha-fH2" id="t3r-io-oPi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vty-n6-Lzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-335.19999999999999" y="17.541229385307346"/>
+            <point key="canvasLocation" x="-90" y="-15"/>
         </scene>
     </scenes>
 </document>
