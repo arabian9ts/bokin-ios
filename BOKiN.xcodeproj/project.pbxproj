@@ -68,6 +68,7 @@
 		FFED84A921A6C46100470DD4 /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84A821A6C46100470DD4 /* Prefecture.swift */; };
 		FFED84AE21A6E17A00470DD4 /* SettlementModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED84AD21A6E17A00470DD4 /* SettlementModel.storyboard */; };
 		FFED84B021A6E1F100470DD4 /* SettlementModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84AF21A6E1F100470DD4 /* SettlementModalViewController.swift */; };
+		FFED84B221A6E5F000470DD4 /* SettlementModalViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84B121A6E5F000470DD4 /* SettlementModalViewWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -147,6 +148,7 @@
 		FFED84A821A6C46100470DD4 /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
 		FFED84AD21A6E17A00470DD4 /* SettlementModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettlementModel.storyboard; sourceTree = "<group>"; };
 		FFED84AF21A6E1F100470DD4 /* SettlementModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementModalViewController.swift; sourceTree = "<group>"; };
+		FFED84B121A6E5F000470DD4 /* SettlementModalViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementModalViewWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,6 +385,7 @@
 				FFED848221A66A0600470DD4 /* NewsWireframe.swift */,
 				FFED848C21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift */,
 				FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */,
+				FFED84B121A6E5F000470DD4 /* SettlementModalViewWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				FFED841B21A46C3700470DD4 /* Disaster.swift in Sources */,
 				FFED848321A66A0600470DD4 /* NewsWireframe.swift in Sources */,
 				FFED840F21A46A7700470DD4 /* APIIClientError.swift in Sources */,
+				FFED84B221A6E5F000470DD4 /* SettlementModalViewWireframe.swift in Sources */,
 				FFED846821A559A400470DD4 /* NewsViewModel.swift in Sources */,
 				FFED84A721A6C40E00470DD4 /* PrefectureResponse.swift in Sources */,
 				FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */,
