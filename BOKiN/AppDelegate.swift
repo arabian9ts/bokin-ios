@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "direction_left")
 //        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "direction_left")
-        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.2431372549, green: 0.8117647059, blue: 0.9843137255, alpha: 1)
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.9427082911, green: 0.72054101, blue: 0.2288987002, alpha: 1)
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
