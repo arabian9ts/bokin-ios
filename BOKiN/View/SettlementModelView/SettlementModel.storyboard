@@ -87,6 +87,9 @@
                                                                 <rect key="frame" x="37" y="27.5" width="28.5" height="45"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                                 <state key="normal" title="+"/>
+                                                                <connections>
+                                                                    <action selector="plusCharity:" destination="AZ7-Pp-VEt" eventType="touchUpInside" id="zKb-aT-bx5"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -176,6 +179,9 @@
                                                         <rect key="frame" x="141" y="25" width="62" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="募金する"/>
+                                                        <connections>
+                                                            <action selector="tapDoCharityButton:" destination="AZ7-Pp-VEt" eventType="touchUpInside" id="Xwg-tt-1Ci"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,7 +203,7 @@
                                 <viewLayoutGuide key="safeArea" id="94C-2x-r3X"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.52129600249999997" green="0.52129600249999997" blue="0.52129600249999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="TWA-YC-ome" firstAttribute="trailing" secondItem="Ijs-TL-PSZ" secondAttribute="trailing" constant="15" id="Swa-Zo-RBK"/>
                             <constraint firstItem="Ijs-TL-PSZ" firstAttribute="leading" secondItem="TWA-YC-ome" secondAttribute="leading" constant="15" id="XNu-NF-YXn"/>
