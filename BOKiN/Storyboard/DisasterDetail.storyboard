@@ -97,6 +97,7 @@
                     </view>
                     <size key="freeformSize" width="375" height="800"/>
                     <connections>
+                        <outlet property="bokinButton" destination="Wkd-5I-yaY" id="oux-Rt-2PN"/>
                         <outlet property="disasterDetailDescription" destination="UE8-VN-kaW" id="vnT-la-z23"/>
                     </connections>
                 </viewController>
