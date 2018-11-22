@@ -15,7 +15,7 @@ class DisasterDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        disasterDetailDescription.textContainerInset = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 10)
+        disasterDetailDescription.textContainerInset = UIEdgeInsets(top: 15, left: 30, bottom: 0, right: 30)
         disasterDetailDescription.sizeToFit()
     }
     
