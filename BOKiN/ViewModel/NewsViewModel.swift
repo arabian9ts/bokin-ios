@@ -11,12 +11,10 @@ import RxSwift
 class NewsViewModele {
     var news: Variable<[News]> = Variable([])
     
-    init() {
-        fetchNews()
-    }
+    init() {}
     
-    func fetchNews() {
-        let request = BokinAPI.GetNews()
+    func fetchNews(id: Int) {
+        let request = BokinAPI.GetNews.init(id: id)
         APIClient().send(request: request) { result in
             switch result {
             case .success(let model):
