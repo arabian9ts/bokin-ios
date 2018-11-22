@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class DisasterDetailViewController: UIViewController {
     
+    private let disposeBag = DisposeBag()
+    
+    @IBOutlet weak var bokinButton: UIButton!
     @IBOutlet weak var disasterDetailDescription: UITextView!
     
     override func viewDidLoad() {
@@ -17,10 +22,16 @@ class DisasterDetailViewController: UIViewController {
 
         disasterDetailDescription.textContainerInset = UIEdgeInsets(top: 15, left: 30, bottom: 0, right: 30)
         disasterDetailDescription.sizeToFit()
+        
+        setupRx()
     }
     
-    @IBAction func readNewsHandler(_ sender: UIButton) {
-        
+    private func setupRx() {
+        bokinButton.rx.tap
+            .subscribe { _ in
+                SettlementModalViewWireframeImpl(transitioner: self).transitionToSettlementModalViewPage()
+        }
+        .disposed(by: disposeBag)
     }
     
 }
