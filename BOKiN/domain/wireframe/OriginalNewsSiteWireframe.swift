@@ -6,4 +6,23 @@
 //  Copyright © 2018 RedBottleCoffee. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import RxSwift
+
+protocol OriginalNewsSiteWireframe {
+    func transitionToOriginalNewsSitePage(url: String)
+}
+
+class OriginalNewsSiteWireframeImpl: OriginalNewsSiteWireframe {
+    private var transitioner: Transitioner!
+    
+    init(transitioner: Transitioner) {
+        self.transitioner = transitioner
+    }
+    
+    func transitionToOriginalNewsSitePage(url: String) {
+        let originalNewsSiteVC = OriginalNewsSiteBuilder().build()
+        originalNewsSiteVC.urlString.value = url
+        transitioner.transition(to: originalNewsSiteVC, animated: true, completion: nil)
+    }
+}
