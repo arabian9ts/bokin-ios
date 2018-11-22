@@ -57,6 +57,7 @@
 		FFED848721A66B5800470DD4 /* OriginalNewsSiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED848621A66B5800470DD4 /* OriginalNewsSiteBuilder.swift */; };
 		FFED848921A66C5500470DD4 /* OriginalNewsSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED848821A66C5500470DD4 /* OriginalNewsSiteViewController.swift */; };
 		FFED848B21A66CA600470DD4 /* OriginalNewsSite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED848A21A66CA600470DD4 /* OriginalNewsSite.storyboard */; };
+		FFED848D21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED848C21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,6 +126,7 @@
 		FFED848621A66B5800470DD4 /* OriginalNewsSiteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalNewsSiteBuilder.swift; sourceTree = "<group>"; };
 		FFED848821A66C5500470DD4 /* OriginalNewsSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalNewsSiteViewController.swift; sourceTree = "<group>"; };
 		FFED848A21A66CA600470DD4 /* OriginalNewsSite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OriginalNewsSite.storyboard; sourceTree = "<group>"; };
+		FFED848C21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalNewsSiteWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +353,7 @@
 			children = (
 				FFED847B21A666BC00470DD4 /* Transitioner.swift */,
 				FFED848221A66A0600470DD4 /* NewsWireframe.swift */,
+				FFED848C21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift */,
 			);
 			path = wireframe;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
 				FFED841D21A46D4100470DD4 /* User.swift in Sources */,
 				FFED846C21A57EB400470DD4 /* Nuke+.swift in Sources */,
+				FFED848D21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift in Sources */,
 				FFED848021A6676C00470DD4 /* assets-images.swift in Sources */,
 				FFED845921A5457000470DD4 /* DisastersTableViewCell.swift in Sources */,
 				FFED840C21A46A4500470DD4 /* APICliient.swift in Sources */,
