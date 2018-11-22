@@ -83,6 +83,11 @@ internal enum StoryboardScene {
 
     internal static let initialScene = InitialSceneType<BOKiN.OriginalNewsSiteViewController>(storyboard: OriginalNewsSite.self)
   }
+  internal enum SettlementModel: StoryboardType {
+    internal static let storyboardName = "SettlementModel"
+
+    internal static let initialScene = InitialSceneType<BOKiN.SettlementModalViewController>(storyboard: SettlementModel.self)
+  }
 }
 
 internal enum StoryboardSegue {

@@ -6,5 +6,6 @@ xcassets:
 storyboards:
   paths:
    - BOKiN/Storyboard/
+   - BOKiN/View/
   templateName: swift4
   output: BOKiN/Generated/storyboards.swift

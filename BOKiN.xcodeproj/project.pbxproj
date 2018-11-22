@@ -1,4 +1,4 @@
-  // !$*UTF8*$!
+// !$*UTF8*$!
 {
 	archiveVersion = 1;
 	classes = {
@@ -66,6 +66,10 @@
 		FFED84A521A6C30800470DD4 /* BokinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84A421A6C30800470DD4 /* BokinViewController.swift */; };
 		FFED84A721A6C40E00470DD4 /* PrefectureResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84A621A6C40E00470DD4 /* PrefectureResponse.swift */; };
 		FFED84A921A6C46100470DD4 /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84A821A6C46100470DD4 /* Prefecture.swift */; };
+		FFED84AE21A6E17A00470DD4 /* SettlementModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED84AD21A6E17A00470DD4 /* SettlementModel.storyboard */; };
+		FFED84B021A6E1F100470DD4 /* SettlementModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84AF21A6E1F100470DD4 /* SettlementModalViewController.swift */; };
+		FFED84B221A6E5F000470DD4 /* SettlementModalViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84B121A6E5F000470DD4 /* SettlementModalViewWireframe.swift */; };
+		FFED84B421A6E61200470DD4 /* SettlementModalViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84B321A6E61200470DD4 /* SettlementModalViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -143,6 +147,10 @@
 		FFED84A421A6C30800470DD4 /* BokinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokinViewController.swift; sourceTree = "<group>"; };
 		FFED84A621A6C40E00470DD4 /* PrefectureResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureResponse.swift; sourceTree = "<group>"; };
 		FFED84A821A6C46100470DD4 /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
+		FFED84AD21A6E17A00470DD4 /* SettlementModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettlementModel.storyboard; sourceTree = "<group>"; };
+		FFED84AF21A6E1F100470DD4 /* SettlementModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementModalViewController.swift; sourceTree = "<group>"; };
+		FFED84B121A6E5F000470DD4 /* SettlementModalViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementModalViewWireframe.swift; sourceTree = "<group>"; };
+		FFED84B321A6E61200470DD4 /* SettlementModalViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementModalViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +246,7 @@
 		FFED83F521A4676B00470DD4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FFED84AA21A6DFFA00470DD4 /* SettlementModelView */,
 				FFED846021A5569300470DD4 /* NewsTableViewCell */,
 				FFED845221A5456F00470DD4 /* DisastersTableViewCell */,
 				FFED845521A5457000470DD4 /* DisastersTableViewTopCell */,
@@ -367,6 +376,7 @@
 				FFED847821A6662700470DD4 /* NewsBuilder.swift */,
 				FFED848621A66B5800470DD4 /* OriginalNewsSiteBuilder.swift */,
 				FFED849821A6BF6100470DD4 /* DisasterDetailViewBuilder.swift */,
+				FFED84B321A6E61200470DD4 /* SettlementModalViewBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -378,6 +388,7 @@
 				FFED848221A66A0600470DD4 /* NewsWireframe.swift */,
 				FFED848C21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift */,
 				FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */,
+				FFED84B121A6E5F000470DD4 /* SettlementModalViewWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -389,6 +400,15 @@
 				FFED847F21A6676C00470DD4 /* storyboards.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		FFED84AA21A6DFFA00470DD4 /* SettlementModelView */ = {
+			isa = PBXGroup;
+			children = (
+				FFED84AD21A6E17A00470DD4 /* SettlementModel.storyboard */,
+				FFED84AF21A6E1F100470DD4 /* SettlementModalViewController.swift */,
+			);
+			path = SettlementModelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,6 +479,7 @@
 				FFED83EB21A45D0000470DD4 /* LaunchScreen.storyboard in Resources */,
 				FFED849521A6A5BD00470DD4 /* DisasterDetail.storyboard in Resources */,
 				FFED847421A6628A00470DD4 /* News.storyboard in Resources */,
+				FFED84AE21A6E17A00470DD4 /* SettlementModel.storyboard in Resources */,
 				FFED83E821A45D0000470DD4 /* Assets.xcassets in Resources */,
 				FFED84A321A6C2D600470DD4 /* Bokin.storyboard in Resources */,
 				FFED846421A556B100470DD4 /* NewsTableViewCell.xib in Resources */,
@@ -523,7 +544,9 @@
 				FFED847C21A666BC00470DD4 /* Transitioner.swift in Sources */,
 				FFED841B21A46C3700470DD4 /* Disaster.swift in Sources */,
 				FFED848321A66A0600470DD4 /* NewsWireframe.swift in Sources */,
+				FFED84B421A6E61200470DD4 /* SettlementModalViewBuilder.swift in Sources */,
 				FFED840F21A46A7700470DD4 /* APIIClientError.swift in Sources */,
+				FFED84B221A6E5F000470DD4 /* SettlementModalViewWireframe.swift in Sources */,
 				FFED846821A559A400470DD4 /* NewsViewModel.swift in Sources */,
 				FFED84A721A6C40E00470DD4 /* PrefectureResponse.swift in Sources */,
 				FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */,
@@ -534,6 +557,7 @@
 				FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */,
 				FFED848121A6676C00470DD4 /* storyboards.swift in Sources */,
 				FFED848921A66C5500470DD4 /* OriginalNewsSiteViewController.swift in Sources */,
+				FFED84B021A6E1F100470DD4 /* SettlementModalViewController.swift in Sources */,
 				FFED849721A6A5D000470DD4 /* DisasterDetailViewController.swift in Sources */,
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
 				FFED849921A6BF6100470DD4 /* DisasterDetailViewBuilder.swift in Sources */,
