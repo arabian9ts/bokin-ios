@@ -43,9 +43,6 @@
                                                                 <rect key="frame" x="36.5" y="27.5" width="30" height="45"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                                 <state key="normal" title="−"/>
-                                                                <connections>
-                                                                    <action selector="minusCharity:" destination="AZ7-Pp-VEt" eventType="touchUpInside" id="gnX-me-Cur"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,7 +54,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBW-Es-XG6">
                                                         <rect key="frame" x="102.5" y="0.0" width="140" height="100"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-eS-ZIa" customClass="BoundLabel" customModule="BOKiN_Prototype" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-eS-ZIa" customClass="BoundLabel" customModule="BOKiN" customModuleProvider="target">
                                                                 <rect key="frame" x="42" y="32.5" width="56" height="35"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                                                 <nil key="textColor"/>
@@ -206,7 +203,7 @@
                                 <viewLayoutGuide key="safeArea" id="94C-2x-r3X"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.52129600249999997" green="0.52129600249999997" blue="0.52129600249999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="TWA-YC-ome" firstAttribute="trailing" secondItem="Ijs-TL-PSZ" secondAttribute="trailing" constant="15" id="Swa-Zo-RBK"/>
                             <constraint firstItem="Ijs-TL-PSZ" firstAttribute="leading" secondItem="TWA-YC-ome" secondAttribute="leading" constant="15" id="XNu-NF-YXn"/>
@@ -214,11 +211,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TWA-YC-ome"/>
                     </view>
-                    <connections>
-                        <outlet property="backgroundView" destination="IXG-Hi-TJs" id="PhE-CG-BsW"/>
-                        <outlet property="charityMoney" destination="tPn-eS-ZIa" id="YzG-95-JR4"/>
-                        <outlet property="cheerTextField" destination="sdU-Xp-YeN" id="pfz-rF-bwU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tpR-x7-NJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
