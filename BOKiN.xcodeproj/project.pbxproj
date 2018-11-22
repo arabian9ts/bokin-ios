@@ -196,7 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				FFED847D21A6676C00470DD4 /* Generated */,
-				FFED847521A665AF00470DD4 /* domain */,
+				FFED847521A665AF00470DD4 /* Domain */,
 				FFED83F821A4678100470DD4 /* Extension */,
 				FFED83F721A4677B00470DD4 /* Utility */,
 				FFED83F621A4676E00470DD4 /* Storyboard */,
@@ -362,16 +362,16 @@
 			path = NewsTableViewCell;
 			sourceTree = "<group>";
 		};
-		FFED847521A665AF00470DD4 /* domain */ = {
+		FFED847521A665AF00470DD4 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				FFED847721A665BB00470DD4 /* wireframe */,
-				FFED847621A665B500470DD4 /* builder */,
+				FFED847721A665BB00470DD4 /* Wireframe */,
+				FFED847621A665B500470DD4 /* Builder */,
 			);
-			path = domain;
+			path = Domain;
 			sourceTree = "<group>";
 		};
-		FFED847621A665B500470DD4 /* builder */ = {
+		FFED847621A665B500470DD4 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
 				FFED847821A6662700470DD4 /* NewsBuilder.swift */,
@@ -379,10 +379,10 @@
 				FFED849821A6BF6100470DD4 /* DisasterDetailViewBuilder.swift */,
 				FFED849C21A6C14800470DD4 /* StripeViewBuilder.swift */,
 			);
-			path = builder;
+			path = Builder;
 			sourceTree = "<group>";
 		};
-		FFED847721A665BB00470DD4 /* wireframe */ = {
+		FFED847721A665BB00470DD4 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
 				FFED847B21A666BC00470DD4 /* Transitioner.swift */,
@@ -391,7 +391,7 @@
 				FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */,
 				FFED84A021A6C1B300470DD4 /* StripeViewWireframe.swift */,
 			);
-			path = wireframe;
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		FFED847D21A6676C00470DD4 /* Generated */ = {
