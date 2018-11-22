@@ -49,6 +49,8 @@
 		FFED846A21A55D1200470DD4 /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED846921A55D1200470DD4 /* NewsResponse.swift */; };
 		FFED846C21A57EB400470DD4 /* Nuke+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED846B21A57EB400470DD4 /* Nuke+.swift */; };
 		FFED847421A6628A00470DD4 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED847321A6628A00470DD4 /* News.storyboard */; };
+		FFED847921A6662700470DD4 /* NewsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED847821A6662700470DD4 /* NewsBuilder.swift */; };
+		FFED847C21A666BC00470DD4 /* Transitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED847B21A666BC00470DD4 /* Transitioner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -109,6 +111,8 @@
 		FFED846921A55D1200470DD4 /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
 		FFED846B21A57EB400470DD4 /* Nuke+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nuke+.swift"; sourceTree = "<group>"; };
 		FFED847321A6628A00470DD4 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		FFED847821A6662700470DD4 /* NewsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBuilder.swift; sourceTree = "<group>"; };
+		FFED847B21A666BC00470DD4 /* Transitioner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitioner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +325,7 @@
 		FFED847621A665B500470DD4 /* builder */ = {
 			isa = PBXGroup;
 			children = (
+				FFED847821A6662700470DD4 /* NewsBuilder.swift */,
 			);
 			path = builder;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 		FFED847721A665BB00470DD4 /* wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				FFED847B21A666BC00470DD4 /* Transitioner.swift */,
 			);
 			path = wireframe;
 			sourceTree = "<group>";
@@ -339,6 +345,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFED83EF21A45D0000470DD4 /* Build configuration list for PBXNativeTarget "BOKiN" */;
 			buildPhases = (
+				FFED847A21A6667600470DD4 /* swiftgen */,
 				FFED83D921A45CFD00470DD4 /* Sources */,
 				FFED840921A468AE00470DD4 /* Carthage */,
 				FFED83DA21A45CFD00470DD4 /* Frameworks */,
@@ -429,6 +436,24 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		FFED847A21A6667600470DD4 /* swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "swiftgen/bin/swiftgen\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -436,8 +461,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFED847921A6662700470DD4 /* NewsBuilder.swift in Sources */,
 				FFED841121A46A9400470DD4 /* BokinAPIError.swift in Sources */,
 				FFED841921A46BA100470DD4 /* BokinRequest.swift in Sources */,
+				FFED847C21A666BC00470DD4 /* Transitioner.swift in Sources */,
 				FFED841B21A46C3700470DD4 /* Disaster.swift in Sources */,
 				FFED840F21A46A7700470DD4 /* APIIClientError.swift in Sources */,
 				FFED846821A559A400470DD4 /* NewsViewModel.swift in Sources */,
