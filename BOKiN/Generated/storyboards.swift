@@ -68,6 +68,11 @@ internal enum StoryboardScene {
 
     internal static let initialScene = InitialSceneType<BOKiN.NewsViewController>(storyboard: News.self)
   }
+  internal enum OriginalNewsSite: StoryboardType {
+    internal static let storyboardName = "OriginalNewsSite"
+
+    internal static let initialScene = InitialSceneType<BOKiN.OriginalNewsSiteViewController>(storyboard: OriginalNewsSite.self)
+  }
 }
 
 internal enum StoryboardSegue {
