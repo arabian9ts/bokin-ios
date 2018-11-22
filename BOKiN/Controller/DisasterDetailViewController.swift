@@ -38,7 +38,6 @@ class DisasterDetailViewController: UIViewController {
 
 extension DisasterDetailViewController: Transitioner {
     func transition(to: UIViewController, animated: Bool, completion: (() -> ())?) {
-        //        present(to, animated: animated, completion: completion)
-        show(to, sender: nil)
+        present(to, animated: animated, completion: completion)
     }
 }
