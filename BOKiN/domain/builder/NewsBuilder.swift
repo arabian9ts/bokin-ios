@@ -10,7 +10,7 @@ import UIKit
 
 class NewsBuilder {
     func build() -> NewsViewController {
-        let newsVC = StoryboardSegue.News.initialScene.instantiate()
+        let newsVC = StoryboardScene.News.initialScene.instantiate()
         return newsVC
     }
 }
