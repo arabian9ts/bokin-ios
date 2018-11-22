@@ -53,6 +53,7 @@
 		FFED847C21A666BC00470DD4 /* Transitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED847B21A666BC00470DD4 /* Transitioner.swift */; };
 		FFED848021A6676C00470DD4 /* assets-images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED847E21A6676C00470DD4 /* assets-images.swift */; };
 		FFED848121A6676C00470DD4 /* storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED847F21A6676C00470DD4 /* storyboards.swift */; };
+		FFED848321A66A0600470DD4 /* NewsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED848221A66A0600470DD4 /* NewsWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -117,6 +118,7 @@
 		FFED847B21A666BC00470DD4 /* Transitioner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitioner.swift; sourceTree = "<group>"; };
 		FFED847E21A6676C00470DD4 /* assets-images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "assets-images.swift"; sourceTree = "<group>"; };
 		FFED847F21A6676C00470DD4 /* storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyboards.swift; sourceTree = "<group>"; };
+		FFED848221A66A0600470DD4 /* NewsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				FFED847B21A666BC00470DD4 /* Transitioner.swift */,
+				FFED848221A66A0600470DD4 /* NewsWireframe.swift */,
 			);
 			path = wireframe;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				FFED841921A46BA100470DD4 /* BokinRequest.swift in Sources */,
 				FFED847C21A666BC00470DD4 /* Transitioner.swift in Sources */,
 				FFED841B21A46C3700470DD4 /* Disaster.swift in Sources */,
+				FFED848321A66A0600470DD4 /* NewsWireframe.swift in Sources */,
 				FFED840F21A46A7700470DD4 /* APIIClientError.swift in Sources */,
 				FFED846821A559A400470DD4 /* NewsViewModel.swift in Sources */,
 				FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */,
