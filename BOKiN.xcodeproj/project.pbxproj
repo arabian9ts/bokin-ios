@@ -54,6 +54,7 @@
 		FFED848021A6676C00470DD4 /* assets-images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED847E21A6676C00470DD4 /* assets-images.swift */; };
 		FFED848121A6676C00470DD4 /* storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED847F21A6676C00470DD4 /* storyboards.swift */; };
 		FFED848321A66A0600470DD4 /* NewsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED848221A66A0600470DD4 /* NewsWireframe.swift */; };
+		FFED848721A66B5800470DD4 /* OriginalNewsSiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED848621A66B5800470DD4 /* OriginalNewsSiteBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,6 +120,7 @@
 		FFED847E21A6676C00470DD4 /* assets-images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "assets-images.swift"; sourceTree = "<group>"; };
 		FFED847F21A6676C00470DD4 /* storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyboards.swift; sourceTree = "<group>"; };
 		FFED848221A66A0600470DD4 /* NewsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWireframe.swift; sourceTree = "<group>"; };
+		FFED848621A66B5800470DD4 /* OriginalNewsSiteBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalNewsSiteBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				FFED847821A6662700470DD4 /* NewsBuilder.swift */,
+				FFED848621A66B5800470DD4 /* OriginalNewsSiteBuilder.swift */,
 			);
 			path = builder;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				FFED845F21A5563F00470DD4 /* NewsViewController.swift in Sources */,
 				FFED842D21A5188F00470DD4 /* DisastersViewModel.swift in Sources */,
 				FFED841F21A46EDD00470DD4 /* UserResponse.swift in Sources */,
+				FFED848721A66B5800470DD4 /* OriginalNewsSiteBuilder.swift in Sources */,
 				FFED846A21A55D1200470DD4 /* NewsResponse.swift in Sources */,
 				FFED846621A5583700470DD4 /* News.swift in Sources */,
 				FFED846321A556B100470DD4 /* NewsTableViewCell.swift in Sources */,
