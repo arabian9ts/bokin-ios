@@ -48,4 +48,17 @@ final class BokinAPI {
             path = "/disasters/\(id)/disaster_news"
         }
     }
+    
+    struct GetPrefectures {
+        typealias Response = PrefectureResponse
+        
+        var path: String = "/disasters/:id/prefectures"
+        let method: HTTPMethod = .get
+        let params: Parameters? = [:]
+        let headers: HTTPHeaders? = [:]
+        
+        init(id: Int = 0) {
+            path = "/disasters/\(id)/prefectures"
+        }
+    }
 }
