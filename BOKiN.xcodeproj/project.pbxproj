@@ -66,6 +66,7 @@
 		FFED849B21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */; };
 		FFED849D21A6C14800470DD4 /* StripeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED849C21A6C14800470DD4 /* StripeViewBuilder.swift */; };
 		FFED84A121A6C1B300470DD4 /* StripeViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84A021A6C1B300470DD4 /* StripeViewWireframe.swift */; };
+		FFED84A321A6C2D600470DD4 /* Bokin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED84A221A6C2D600470DD4 /* Bokin.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -143,6 +144,7 @@
 		FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterDetailViewWireframe.swift; sourceTree = "<group>"; };
 		FFED849C21A6C14800470DD4 /* StripeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeViewBuilder.swift; sourceTree = "<group>"; };
 		FFED84A021A6C1B300470DD4 /* StripeViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeViewWireframe.swift; sourceTree = "<group>"; };
+		FFED84A221A6C2D600470DD4 /* Bokin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bokin.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 				FFED848A21A66CA600470DD4 /* OriginalNewsSite.storyboard */,
 				FFED849021A69E7700470DD4 /* Stripe.storyboard */,
 				FFED849421A6A5BD00470DD4 /* DisasterDetail.storyboard */,
+				FFED84A221A6C2D600470DD4 /* Bokin.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				FFED849521A6A5BD00470DD4 /* DisasterDetail.storyboard in Resources */,
 				FFED847421A6628A00470DD4 /* News.storyboard in Resources */,
 				FFED83E821A45D0000470DD4 /* Assets.xcassets in Resources */,
+				FFED84A321A6C2D600470DD4 /* Bokin.storyboard in Resources */,
 				FFED849121A69E7700470DD4 /* Stripe.storyboard in Resources */,
 				FFED846421A556B100470DD4 /* NewsTableViewCell.xib in Resources */,
 				FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */,
