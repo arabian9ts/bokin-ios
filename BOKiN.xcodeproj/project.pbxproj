@@ -153,6 +153,7 @@
 		FFED83DF21A45CFD00470DD4 /* BOKiN */ = {
 			isa = PBXGroup;
 			children = (
+				FFED847521A665AF00470DD4 /* domain */,
 				FFED83F821A4678100470DD4 /* Extension */,
 				FFED83F721A4677B00470DD4 /* Utility */,
 				FFED83F621A4676E00470DD4 /* Storyboard */,
@@ -306,6 +307,29 @@
 				FFED846221A556B100470DD4 /* NewsTableViewCell.xib */,
 			);
 			path = NewsTableViewCell;
+			sourceTree = "<group>";
+		};
+		FFED847521A665AF00470DD4 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				FFED847721A665BB00470DD4 /* wireframe */,
+				FFED847621A665B500470DD4 /* builder */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		FFED847621A665B500470DD4 /* builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = builder;
+			sourceTree = "<group>";
+		};
+		FFED847721A665BB00470DD4 /* wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = wireframe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
