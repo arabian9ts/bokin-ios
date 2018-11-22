@@ -68,6 +68,7 @@
 		FFED84A121A6C1B300470DD4 /* StripeViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84A021A6C1B300470DD4 /* StripeViewWireframe.swift */; };
 		FFED84A321A6C2D600470DD4 /* Bokin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED84A221A6C2D600470DD4 /* Bokin.storyboard */; };
 		FFED84A521A6C30800470DD4 /* BokinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84A421A6C30800470DD4 /* BokinViewController.swift */; };
+		FFED84A721A6C40E00470DD4 /* PrefectureResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84A621A6C40E00470DD4 /* PrefectureResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -147,6 +148,7 @@
 		FFED84A021A6C1B300470DD4 /* StripeViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeViewWireframe.swift; sourceTree = "<group>"; };
 		FFED84A221A6C2D600470DD4 /* Bokin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bokin.storyboard; sourceTree = "<group>"; };
 		FFED84A421A6C30800470DD4 /* BokinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokinViewController.swift; sourceTree = "<group>"; };
+		FFED84A621A6C40E00470DD4 /* PrefectureResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 				FFED841321A46AB900470DD4 /* DisasterResponse.swift */,
 				FFED841E21A46EDD00470DD4 /* UserResponse.swift */,
 				FFED846921A55D1200470DD4 /* NewsResponse.swift */,
+				FFED84A621A6C40E00470DD4 /* PrefectureResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				FFED848321A66A0600470DD4 /* NewsWireframe.swift in Sources */,
 				FFED840F21A46A7700470DD4 /* APIIClientError.swift in Sources */,
 				FFED846821A559A400470DD4 /* NewsViewModel.swift in Sources */,
+				FFED84A721A6C40E00470DD4 /* PrefectureResponse.swift in Sources */,
 				FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */,
 				FFED841721A46B1900470DD4 /* APIRequest.swift in Sources */,
 				FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */,
