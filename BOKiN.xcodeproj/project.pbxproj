@@ -51,6 +51,8 @@
 		FFED847421A6628A00470DD4 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED847321A6628A00470DD4 /* News.storyboard */; };
 		FFED847921A6662700470DD4 /* NewsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED847821A6662700470DD4 /* NewsBuilder.swift */; };
 		FFED847C21A666BC00470DD4 /* Transitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED847B21A666BC00470DD4 /* Transitioner.swift */; };
+		FFED848021A6676C00470DD4 /* assets-images.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED847E21A6676C00470DD4 /* assets-images.swift */; };
+		FFED848121A6676C00470DD4 /* storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED847F21A6676C00470DD4 /* storyboards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -113,6 +115,8 @@
 		FFED847321A6628A00470DD4 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		FFED847821A6662700470DD4 /* NewsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsBuilder.swift; sourceTree = "<group>"; };
 		FFED847B21A666BC00470DD4 /* Transitioner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitioner.swift; sourceTree = "<group>"; };
+		FFED847E21A6676C00470DD4 /* assets-images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "assets-images.swift"; sourceTree = "<group>"; };
+		FFED847F21A6676C00470DD4 /* storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = storyboards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 		FFED83DF21A45CFD00470DD4 /* BOKiN */ = {
 			isa = PBXGroup;
 			children = (
+				FFED847D21A6676C00470DD4 /* Generated */,
 				FFED847521A665AF00470DD4 /* domain */,
 				FFED83F821A4678100470DD4 /* Extension */,
 				FFED83F721A4677B00470DD4 /* Utility */,
@@ -338,6 +343,15 @@
 			path = wireframe;
 			sourceTree = "<group>";
 		};
+		FFED847D21A6676C00470DD4 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				FFED847E21A6676C00470DD4 /* assets-images.swift */,
+				FFED847F21A6676C00470DD4 /* storyboards.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -474,9 +488,11 @@
 				FFED843D21A5275700470DD4 /* ClassName.swift in Sources */,
 				FFED843B21A525FC00470DD4 /* TableView+.swift in Sources */,
 				FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */,
+				FFED848121A6676C00470DD4 /* storyboards.swift in Sources */,
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
 				FFED841D21A46D4100470DD4 /* User.swift in Sources */,
 				FFED846C21A57EB400470DD4 /* Nuke+.swift in Sources */,
+				FFED848021A6676C00470DD4 /* assets-images.swift in Sources */,
 				FFED845921A5457000470DD4 /* DisastersTableViewCell.swift in Sources */,
 				FFED840C21A46A4500470DD4 /* APICliient.swift in Sources */,
 				FFED845C21A5457000470DD4 /* DisastersTableViewTopCell.swift in Sources */,
