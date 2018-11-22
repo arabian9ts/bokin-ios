@@ -6,4 +6,11 @@
 //  Copyright © 2018 RedBottleCoffee. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class NewsBuilder {
+    func build() -> NewsViewController {
+        let newsVC = StoryboardSegue.News.initialScene.instantiate()
+        return newsVC
+    }
+}
