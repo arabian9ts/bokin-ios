@@ -37,8 +37,8 @@ class DisastersViewController: UIViewController {
         
         dataSource.selectedDisaster
             .subscribe(onNext: { disaster in
-                NewsWireframeImpl(transitioner: self)
-                    .transitionToNewsPage(disasterId: disaster.id)
+                DisasterDetailViewWireframeImpl(transitioner: self)
+                    .transitionToDisasterDetailViewPage(disaster: disaster)
             })
             .disposed(by: disposeBag)
     }
