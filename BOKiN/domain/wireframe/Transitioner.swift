@@ -6,4 +6,8 @@
 //  Copyright © 2018 RedBottleCoffee. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol Transitioner {
+    func transition(to: UIViewController, animated: Bool, completion: (() -> ())?)
+}
