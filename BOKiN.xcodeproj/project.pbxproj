@@ -63,6 +63,7 @@
 		FFED849521A6A5BD00470DD4 /* DisasterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED849421A6A5BD00470DD4 /* DisasterDetail.storyboard */; };
 		FFED849721A6A5D000470DD4 /* DisasterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED849621A6A5D000470DD4 /* DisasterDetailViewController.swift */; };
 		FFED849921A6BF6100470DD4 /* DisasterDetailViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED849821A6BF6100470DD4 /* DisasterDetailViewBuilder.swift */; };
+		FFED849B21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -137,6 +138,7 @@
 		FFED849421A6A5BD00470DD4 /* DisasterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DisasterDetail.storyboard; sourceTree = "<group>"; };
 		FFED849621A6A5D000470DD4 /* DisasterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterDetailViewController.swift; sourceTree = "<group>"; };
 		FFED849821A6BF6100470DD4 /* DisasterDetailViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterDetailViewBuilder.swift; sourceTree = "<group>"; };
+		FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterDetailViewWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +371,7 @@
 				FFED847B21A666BC00470DD4 /* Transitioner.swift */,
 				FFED848221A66A0600470DD4 /* NewsWireframe.swift */,
 				FFED848C21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift */,
+				FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */,
 			);
 			path = wireframe;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				FFED846A21A55D1200470DD4 /* NewsResponse.swift in Sources */,
 				FFED849321A6A03900470DD4 /* StripeViewController.swift in Sources */,
 				FFED846621A5583700470DD4 /* News.swift in Sources */,
+				FFED849B21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift in Sources */,
 				FFED846321A556B100470DD4 /* NewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
