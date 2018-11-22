@@ -43,14 +43,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aDd-AQ-pdK"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Dio-eo-5P8"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="newsTableView" destination="Iyi-ha-fH2" id="t3r-io-oPi"/>
+                        <segue destination="Fks-se-1nY" kind="showDetail" id="jDI-kS-MMY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vty-n6-Lzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-90" y="-15"/>
+            <point key="canvasLocation" x="848.79999999999995" y="-15.742128935532236"/>
+        </scene>
+        <!--OriginalNewsSite-->
+        <scene sceneID="9rX-lC-uYJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OriginalNewsSite" id="Fks-se-1nY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WLB-iQ-hEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1399.2" y="-16.191904047976013"/>
         </scene>
     </scenes>
 </document>
