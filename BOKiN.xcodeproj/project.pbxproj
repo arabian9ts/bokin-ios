@@ -62,6 +62,8 @@
 		FFED849321A6A03900470DD4 /* StripeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED849221A6A03900470DD4 /* StripeViewController.swift */; };
 		FFED849521A6A5BD00470DD4 /* DisasterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED849421A6A5BD00470DD4 /* DisasterDetail.storyboard */; };
 		FFED849721A6A5D000470DD4 /* DisasterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED849621A6A5D000470DD4 /* DisasterDetailViewController.swift */; };
+		FFED849921A6BF6100470DD4 /* DisasterDetailViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED849821A6BF6100470DD4 /* DisasterDetailViewBuilder.swift */; };
+		FFED849B21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -135,6 +137,8 @@
 		FFED849221A6A03900470DD4 /* StripeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeViewController.swift; sourceTree = "<group>"; };
 		FFED849421A6A5BD00470DD4 /* DisasterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DisasterDetail.storyboard; sourceTree = "<group>"; };
 		FFED849621A6A5D000470DD4 /* DisasterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterDetailViewController.swift; sourceTree = "<group>"; };
+		FFED849821A6BF6100470DD4 /* DisasterDetailViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterDetailViewBuilder.swift; sourceTree = "<group>"; };
+		FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterDetailViewWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +360,7 @@
 			children = (
 				FFED847821A6662700470DD4 /* NewsBuilder.swift */,
 				FFED848621A66B5800470DD4 /* OriginalNewsSiteBuilder.swift */,
+				FFED849821A6BF6100470DD4 /* DisasterDetailViewBuilder.swift */,
 			);
 			path = builder;
 			sourceTree = "<group>";
@@ -366,6 +371,7 @@
 				FFED847B21A666BC00470DD4 /* Transitioner.swift */,
 				FFED848221A66A0600470DD4 /* NewsWireframe.swift */,
 				FFED848C21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift */,
+				FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */,
 			);
 			path = wireframe;
 			sourceTree = "<group>";
@@ -523,6 +529,7 @@
 				FFED848921A66C5500470DD4 /* OriginalNewsSiteViewController.swift in Sources */,
 				FFED849721A6A5D000470DD4 /* DisasterDetailViewController.swift in Sources */,
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
+				FFED849921A6BF6100470DD4 /* DisasterDetailViewBuilder.swift in Sources */,
 				FFED841D21A46D4100470DD4 /* User.swift in Sources */,
 				FFED846C21A57EB400470DD4 /* Nuke+.swift in Sources */,
 				FFED848D21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift in Sources */,
@@ -537,6 +544,7 @@
 				FFED846A21A55D1200470DD4 /* NewsResponse.swift in Sources */,
 				FFED849321A6A03900470DD4 /* StripeViewController.swift in Sources */,
 				FFED846621A5583700470DD4 /* News.swift in Sources */,
+				FFED849B21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift in Sources */,
 				FFED846321A556B100470DD4 /* NewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
