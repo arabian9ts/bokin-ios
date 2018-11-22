@@ -16,7 +16,7 @@ class DisastersViewModele {
     }
     
     func fetchDisasters() {
-        let request = BokinAPI.GetDisasters()
+        let request = BokinAPI.GetDisasters.init()
         APIClient().send(request: request) { result in
             switch result {
             case .success(let model):
