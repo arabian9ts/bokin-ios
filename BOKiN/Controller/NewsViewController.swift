@@ -33,6 +33,20 @@ class NewsViewController: UIViewController {
             .asObservable()
             .bind(to: newsTableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
+        
+        dataSource.selectedNews
+            .subscribe(onNext: { news in
+                OriginalNewsSiteWireframeImpl(transitioner: self)
+                    .transitionToOriginalNewsSitePage(url: "/\(String(describing: news.detailUrl))")
+            })
+            .disposed(by: disposeBag)
+    }
+}
+
+
+extension NewsViewController: Transitioner {
+    func transition(to: UIViewController, animated: Bool, completion: (() -> ())?) {
+        present(to, animated: animated, completion: completion)
     }
 }
 
@@ -75,5 +89,6 @@ class NewsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         items[indexPath.row].toggleNews()
         tableView.reloadRows(at: tableView.indexPathsForVisibleRows!, with: UITableView.RowAnimation.fade)
+        selectedNews.onNext(items[indexPath.row])
     }
 }
