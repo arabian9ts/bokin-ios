@@ -15,6 +15,8 @@ class NewsViewController: UIViewController {
     let disposeBag = DisposeBag()
     let dataSource = NewsDataSource()
     let viewModel  = NewsViewModele()
+    
+    var disasterId: Variable<Int> = Variable(0)
 
     @IBOutlet weak var newsTableView: UITableView!
     
@@ -29,6 +31,7 @@ class NewsViewController: UIViewController {
     
     private func setupRx() {
         newsTableView.register(cellType: NewsTableViewCell.self)
+        
         viewModel.news
             .asObservable()
             .bind(to: newsTableView.rx.items(dataSource: dataSource))
@@ -38,6 +41,14 @@ class NewsViewController: UIViewController {
             .subscribe(onNext: { news in
                 OriginalNewsSiteWireframeImpl(transitioner: self)
                     .transitionToOriginalNewsSitePage(url: "/\(String(describing: news.detailUrl))")
+            })
+            .disposed(by: disposeBag)
+        
+        disasterId
+            .asObservable()
+            .filter{ $0 != 0 }
+            .subscribe(onNext: { id in
+                self.viewModel.fetchNews(id: id)
             })
             .disposed(by: disposeBag)
     }
