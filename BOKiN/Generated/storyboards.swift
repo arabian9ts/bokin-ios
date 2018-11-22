@@ -3,7 +3,6 @@
 // swiftlint:disable sorted_imports
 import Foundation
 import UIKit
-import BOKiN
 
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
@@ -86,6 +85,8 @@ internal enum StoryboardScene {
   }
   internal enum SettlementModel: StoryboardType {
     internal static let storyboardName = "SettlementModel"
+
+    internal static let initialScene = InitialSceneType<BOKiN.SettlementModalViewController>(storyboard: SettlementModel.self)
   }
 }
 
