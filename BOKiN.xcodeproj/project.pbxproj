@@ -1,4 +1,4 @@
-// !$*UTF8*$!
+  // !$*UTF8*$!
 {
 	archiveVersion = 1;
 	classes = {
@@ -58,7 +58,6 @@
 		FFED848921A66C5500470DD4 /* OriginalNewsSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED848821A66C5500470DD4 /* OriginalNewsSiteViewController.swift */; };
 		FFED848B21A66CA600470DD4 /* OriginalNewsSite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED848A21A66CA600470DD4 /* OriginalNewsSite.storyboard */; };
 		FFED848D21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED848C21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift */; };
-		FFED849121A69E7700470DD4 /* Stripe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED849021A69E7700470DD4 /* Stripe.storyboard */; };
 		FFED849521A6A5BD00470DD4 /* DisasterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED849421A6A5BD00470DD4 /* DisasterDetail.storyboard */; };
 		FFED849721A6A5D000470DD4 /* DisasterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED849621A6A5D000470DD4 /* DisasterDetailViewController.swift */; };
 		FFED849921A6BF6100470DD4 /* DisasterDetailViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED849821A6BF6100470DD4 /* DisasterDetailViewBuilder.swift */; };
@@ -136,7 +135,6 @@
 		FFED848821A66C5500470DD4 /* OriginalNewsSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalNewsSiteViewController.swift; sourceTree = "<group>"; };
 		FFED848A21A66CA600470DD4 /* OriginalNewsSite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OriginalNewsSite.storyboard; sourceTree = "<group>"; };
 		FFED848C21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalNewsSiteWireframe.swift; sourceTree = "<group>"; };
-		FFED849021A69E7700470DD4 /* Stripe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stripe.storyboard; sourceTree = "<group>"; };
 		FFED849421A6A5BD00470DD4 /* DisasterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DisasterDetail.storyboard; sourceTree = "<group>"; };
 		FFED849621A6A5D000470DD4 /* DisasterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterDetailViewController.swift; sourceTree = "<group>"; };
 		FFED849821A6BF6100470DD4 /* DisasterDetailViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterDetailViewBuilder.swift; sourceTree = "<group>"; };
@@ -254,7 +252,6 @@
 				FFED83E921A45D0000470DD4 /* LaunchScreen.storyboard */,
 				FFED847321A6628A00470DD4 /* News.storyboard */,
 				FFED848A21A66CA600470DD4 /* OriginalNewsSite.storyboard */,
-				FFED849021A69E7700470DD4 /* Stripe.storyboard */,
 				FFED849421A6A5BD00470DD4 /* DisasterDetail.storyboard */,
 				FFED84A221A6C2D600470DD4 /* Bokin.storyboard */,
 			);
@@ -464,7 +461,6 @@
 				FFED847421A6628A00470DD4 /* News.storyboard in Resources */,
 				FFED83E821A45D0000470DD4 /* Assets.xcassets in Resources */,
 				FFED84A321A6C2D600470DD4 /* Bokin.storyboard in Resources */,
-				FFED849121A69E7700470DD4 /* Stripe.storyboard in Resources */,
 				FFED846421A556B100470DD4 /* NewsTableViewCell.xib in Resources */,
 				FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */,
 			);
