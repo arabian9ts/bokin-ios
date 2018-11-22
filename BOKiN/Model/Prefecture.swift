@@ -6,4 +6,20 @@
 //  Copyright © 2018 RedBottleCoffee. All rights reserved.
 //
 
-import Foundation
+import ObjectMapper
+
+class Prefecture: Mappable {
+    var id:    Int     =   0
+    var name:  String  =   ""
+    
+    func mapping(map: Map) {
+        id     <-  map["id"]
+        name   <-  map["name"]
+    }
+    
+    required convenience init?(map: Map) {
+        self.init()
+        mapping(map: map)
+    }
+}
+
