@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA1B9C1C21A82ADD00F9AC5E /* ApplePaySettlementModalView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1B9C1B21A82ADD00F9AC5E /* ApplePaySettlementModalView.storyboard */; };
+		DA1B9C1E21A82C6900F9AC5E /* ApplePaySettlementModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B9C1D21A82C6900F9AC5E /* ApplePaySettlementModalViewController.swift */; };
+		DA1B9C2021A82CBD00F9AC5E /* AdvertisementSettlementModalView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1B9C1F21A82CBD00F9AC5E /* AdvertisementSettlementModalView.storyboard */; };
+		DA1B9C2221A82CE500F9AC5E /* AdvertisementSettlementModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B9C2121A82CE500F9AC5E /* AdvertisementSettlementModalViewController.swift */; };
+		DAA74CBB21A86B5200B87819 /* UILabel+BoundAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA74CBA21A86B5200B87819 /* UILabel+BoundAnimation.swift */; };
 		DABAC96A21A7ECC7000A625A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */; };
 		DABAC96C21A7EDB0000A625A /* AdMobViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC96B21A7EDB0000A625A /* AdMobViewWireframe.swift */; };
 		DABAC96E21A7EDDE000A625A /* AdMobBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC96D21A7EDDE000A625A /* AdMobBuilder.swift */; };
@@ -110,6 +115,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA1B9C1B21A82ADD00F9AC5E /* ApplePaySettlementModalView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ApplePaySettlementModalView.storyboard; sourceTree = "<group>"; };
+		DA1B9C1D21A82C6900F9AC5E /* ApplePaySettlementModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePaySettlementModalViewController.swift; sourceTree = "<group>"; };
+		DA1B9C1F21A82CBD00F9AC5E /* AdvertisementSettlementModalView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdvertisementSettlementModalView.storyboard; sourceTree = "<group>"; };
+		DA1B9C2121A82CE500F9AC5E /* AdvertisementSettlementModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementSettlementModalViewController.swift; sourceTree = "<group>"; };
+		DAA74CBA21A86B5200B87819 /* UILabel+BoundAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+BoundAnimation.swift"; sourceTree = "<group>"; };
 		DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		DABAC96B21A7EDB0000A625A /* AdMobViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobViewWireframe.swift; sourceTree = "<group>"; };
 		DABAC96D21A7EDDE000A625A /* AdMobBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobBuilder.swift; sourceTree = "<group>"; };
@@ -207,6 +217,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA1B9C1821A82A0100F9AC5E /* ApplePaySettlementModalView */ = {
+			isa = PBXGroup;
+			children = (
+				DA1B9C1B21A82ADD00F9AC5E /* ApplePaySettlementModalView.storyboard */,
+				DA1B9C1D21A82C6900F9AC5E /* ApplePaySettlementModalViewController.swift */,
+			);
+			path = ApplePaySettlementModalView;
+			sourceTree = "<group>";
+		};
+		DA1B9C1A21A82A7600F9AC5E /* AdvertisementSettlementModalView */ = {
+			isa = PBXGroup;
+			children = (
+				DA1B9C1F21A82CBD00F9AC5E /* AdvertisementSettlementModalView.storyboard */,
+				DA1B9C2121A82CE500F9AC5E /* AdvertisementSettlementModalViewController.swift */,
+			);
+			path = AdvertisementSettlementModalView;
+			sourceTree = "<group>";
+		};
 		DABAC96821A7ECC6000A625A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +379,8 @@
 		FFED83F521A4676B00470DD4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA1B9C1A21A82A7600F9AC5E /* AdvertisementSettlementModalView */,
+				DA1B9C1821A82A0100F9AC5E /* ApplePaySettlementModalView */,
 				FF94BCA421A846D500860C65 /* DisasterDetailTableView */,
 				FF1B90D721A7BEAB007BCDED /* SettlementModalView */,
 				FFED846021A5569300470DD4 /* NewsTableViewCell */,
@@ -389,6 +419,7 @@
 				FFED843A21A525FC00470DD4 /* TableView+.swift */,
 				FFED843C21A5275700470DD4 /* ClassName.swift */,
 				FFED846B21A57EB400470DD4 /* Nuke+.swift */,
+				DAA74CBA21A86B5200B87819 /* UILabel+BoundAnimation.swift */,
 				FF94BCBE21A8699A00860C65 /* CollectionView+.swift */,
 				FF94BCC021A86D6100860C65 /* UIApplication+.swift */,
 			);
@@ -583,6 +614,7 @@
 				FFED845D21A5457000470DD4 /* DisastersTableViewTopCell.xib in Resources */,
 				FF94BCB821A8672900860C65 /* DisasterNewsViewCell.xib in Resources */,
 				FFED848B21A66CA600470DD4 /* OriginalNewsSite.storyboard in Resources */,
+				DA1B9C2021A82CBD00F9AC5E /* AdvertisementSettlementModalView.storyboard in Resources */,
 				FFED845A21A5457000470DD4 /* DisastersTableViewCell.xib in Resources */,
 				FF94BCB321A8510800860C65 /* DisasterBokinButtonViewCell.xib in Resources */,
 				FF94BCAB21A8473100860C65 /* DisasterInfoViewCell.xib in Resources */,
@@ -595,6 +627,7 @@
 				FFED84A321A6C2D600470DD4 /* Bokin.storyboard in Resources */,
 				FFED846421A556B100470DD4 /* NewsTableViewCell.xib in Resources */,
 				FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */,
+				DA1B9C1C21A82ADD00F9AC5E /* ApplePaySettlementModalView.storyboard in Resources */,
 				FF94BCBD21A867F100860C65 /* NewsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -667,10 +700,12 @@
 				FFED84A721A6C40E00470DD4 /* PrefectureResponse.swift in Sources */,
 				FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */,
 				FFED841721A46B1900470DD4 /* APIRequest.swift in Sources */,
+				DAA74CBB21A86B5200B87819 /* UILabel+BoundAnimation.swift in Sources */,
 				DABAC97221A7EE85000A625A /* AdMobViewController.swift in Sources */,
 				FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */,
 				FFED843D21A5275700470DD4 /* ClassName.swift in Sources */,
 				FFED843B21A525FC00470DD4 /* TableView+.swift in Sources */,
+				DA1B9C2221A82CE500F9AC5E /* AdvertisementSettlementModalViewController.swift in Sources */,
 				FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */,
 				FFED848121A6676C00470DD4 /* storyboards.swift in Sources */,
 				FFED848921A66C5500470DD4 /* OriginalNewsSiteViewController.swift in Sources */,
@@ -680,6 +715,7 @@
 				FFED849921A6BF6100470DD4 /* DisasterDetailViewBuilder.swift in Sources */,
 				FFED84A521A6C30800470DD4 /* BokinViewController.swift in Sources */,
 				FFED841D21A46D4100470DD4 /* User.swift in Sources */,
+				DA1B9C1E21A82C6900F9AC5E /* ApplePaySettlementModalViewController.swift in Sources */,
 				FF94BCAA21A8473100860C65 /* DisasterInfoViewCell.swift in Sources */,
 				FFED846C21A57EB400470DD4 /* Nuke+.swift in Sources */,
 				FFED848D21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift in Sources */,

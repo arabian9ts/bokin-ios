@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mxd-lw-8tS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Advertisement Settlement Modal View Controller-->
+        <scene sceneID="IuS-Ab-W2b">
+            <objects>
+                <viewController storyboardIdentifier="AdvertisementSettlementModalView" id="mxd-lw-8tS" customClass="AdvertisementSettlementModalViewController" customModule="BOKiN" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pol-Ow-L0m">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qVQ-kO-KDF">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="320"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-4t-Raq">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PgC-Im-Vxz"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="VSj-TL-4sf"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfD-l0-Pvy">
+                                        <rect key="frame" x="0.0" y="40" width="350" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMV-om-CPB" userLabel="Charit Money" customClass="BoundLabel" customModule="BOKiN" customModuleProvider="target">
+                                                <rect key="frame" x="153" y="5.5" width="44" height="49"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vz-u0-q0C" userLabel="￥">
+                                                <rect key="frame" x="127" y="28.5" width="18" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="18" id="dmC-0R-6fb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="8vz-u0-q0C" firstAttribute="baseline" secondItem="qMV-om-CPB" secondAttribute="firstBaseline" id="Bye-c8-2Pn"/>
+                                            <constraint firstAttribute="height" constant="60" id="Sui-jv-Cfd"/>
+                                            <constraint firstItem="qMV-om-CPB" firstAttribute="centerY" secondItem="TfD-l0-Pvy" secondAttribute="centerY" id="X6H-uP-Pin"/>
+                                            <constraint firstItem="8vz-u0-q0C" firstAttribute="firstBaseline" secondItem="qMV-om-CPB" secondAttribute="firstBaseline" id="oKj-DW-4aG"/>
+                                            <constraint firstItem="qMV-om-CPB" firstAttribute="leading" secondItem="8vz-u0-q0C" secondAttribute="trailing" constant="8" symbolic="YES" id="qz2-9o-cjY"/>
+                                            <constraint firstItem="qMV-om-CPB" firstAttribute="centerX" secondItem="TfD-l0-Pvy" secondAttribute="centerX" id="seJ-kS-Ofi"/>
+                                        </constraints>
+                                    </view>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ET9-cB-iK8">
+                                        <rect key="frame" x="0.0" y="100" width="350" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="cGN-5b-LNB"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oC-g0-fIv">
+                                        <rect key="frame" x="0.0" y="250" width="350" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbg-Dq-oF8">
+                                                <rect key="frame" x="25" y="0.0" width="300" height="40"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.75294117650000003" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="TpQ-tf-vvn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="広告を見て寄付する">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pushAdMobButton:" destination="mxd-lw-8tS" eventType="touchUpInside" id="Buj-aS-7cm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="4CI-vG-bb4"/>
+                                            <constraint firstItem="Jbg-Dq-oF8" firstAttribute="top" secondItem="qx2-32-Qxe" secondAttribute="top" id="5YA-lz-UtM"/>
+                                            <constraint firstItem="Jbg-Dq-oF8" firstAttribute="centerY" secondItem="4oC-g0-fIv" secondAttribute="centerY" id="9k2-37-lqG"/>
+                                            <constraint firstItem="Jbg-Dq-oF8" firstAttribute="centerX" secondItem="4oC-g0-fIv" secondAttribute="centerX" id="Jz4-aq-5F4"/>
+                                            <constraint firstItem="qx2-32-Qxe" firstAttribute="bottom" secondItem="Jbg-Dq-oF8" secondAttribute="bottom" id="w9e-g0-emL"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="qx2-32-Qxe"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugn-V0-dbj">
+                                        <rect key="frame" x="0.0" y="290" width="350" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qVQ-kO-KDF" firstAttribute="top" secondItem="hP2-FM-GHB" secondAttribute="top" id="g1z-1p-xLE"/>
+                            <constraint firstItem="qVQ-kO-KDF" firstAttribute="leading" secondItem="hP2-FM-GHB" secondAttribute="leading" id="i2V-Gy-6Qv"/>
+                            <constraint firstAttribute="trailing" secondItem="qVQ-kO-KDF" secondAttribute="trailing" id="q1H-Cp-ves"/>
+                            <constraint firstItem="hP2-FM-GHB" firstAttribute="bottom" secondItem="qVQ-kO-KDF" secondAttribute="bottom" id="wxm-GR-yRc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hP2-FM-GHB"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="370"/>
+                    <size key="freeformSize" width="350" height="320"/>
+                    <connections>
+                        <outlet property="adMobButton" destination="Jbg-Dq-oF8" id="Z9p-wb-8Dd"/>
+                        <outlet property="prefecturePicker" destination="ET9-cB-iK8" id="bjo-8u-s9H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sch-uS-D2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47.200000000000003" y="29.685157421289357"/>
+        </scene>
+    </scenes>
+</document>
