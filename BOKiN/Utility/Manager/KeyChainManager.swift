@@ -12,6 +12,9 @@ class KeyChainManager {
     
     var storage: KeyChainStorage? = nil
     
+    var adUnitID = "ca-app-pub-3940256099942544/1712485313"
+    var googleAdMobID = "ca-app-pub-3940256099942544~1458002511"
+
     // Singleton Setting
     static var shared: KeyChainManager = {
         return KeyChainManager()

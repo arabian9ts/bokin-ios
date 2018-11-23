@@ -18,7 +18,7 @@ class AdMobViewController: UIViewController, GADRewardBasedVideoAdDelegate {
         
         rewardBasedAd = GADRewardBasedVideoAd.sharedInstance()
         rewardBasedAd.delegate = self
-        rewardBasedAd.load(GADRequest(), withAdUnitID: "ca-app-pub-3940256099942544/1712485313")
+        rewardBasedAd.load(GADRequest(), withAdUnitID: KeyChainManager.shared.adUnitID)
     }
     
     func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd,

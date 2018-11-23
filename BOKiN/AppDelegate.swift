@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Initialize the Google Mobile Ads SDK.
         // Use Sample AdMob app ID
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
+        GADMobileAds.configure(withApplicationID: KeyChainManager.shared.adUnitID)
         
         let navigator: UINavigationController?
         let firstVC = StoryboardScene.Main.initialScene.instantiate()
