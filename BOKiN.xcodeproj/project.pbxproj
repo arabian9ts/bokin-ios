@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DABAC96A21A7ECC7000A625A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */; };
+		DABAC96C21A7EDB0000A625A /* AdMobViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC96B21A7EDB0000A625A /* AdMobViewWireframe.swift */; };
+		DABAC96E21A7EDDE000A625A /* AdMobBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC96D21A7EDDE000A625A /* AdMobBuilder.swift */; };
 		FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E021A45CFD00470DD4 /* AppDelegate.swift */; };
 		FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */; };
 		FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED83E421A45CFD00470DD4 /* Main.storyboard */; };
@@ -94,6 +96,8 @@
 
 /* Begin PBXFileReference section */
 		DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		DABAC96B21A7EDB0000A625A /* AdMobViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobViewWireframe.swift; sourceTree = "<group>"; };
+		DABAC96D21A7EDDE000A625A /* AdMobBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobBuilder.swift; sourceTree = "<group>"; };
 		FFED83DD21A45CFD00470DD4 /* BOKiN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOKiN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFED83E021A45CFD00470DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisastersViewController.swift; sourceTree = "<group>"; };
@@ -389,6 +393,7 @@
 				FFED848621A66B5800470DD4 /* OriginalNewsSiteBuilder.swift */,
 				FFED849821A6BF6100470DD4 /* DisasterDetailViewBuilder.swift */,
 				FFED84B321A6E61200470DD4 /* SettlementModalViewBuilder.swift */,
+				DABAC96D21A7EDDE000A625A /* AdMobBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				FFED848C21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift */,
 				FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */,
 				FFED84B121A6E5F000470DD4 /* SettlementModalViewWireframe.swift */,
+				DABAC96B21A7EDB0000A625A /* AdMobViewWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -570,6 +576,7 @@
 				FFED848121A6676C00470DD4 /* storyboards.swift in Sources */,
 				FFED848921A66C5500470DD4 /* OriginalNewsSiteViewController.swift in Sources */,
 				FFED84B021A6E1F100470DD4 /* SettlementModalViewController.swift in Sources */,
+				DABAC96C21A7EDB0000A625A /* AdMobViewWireframe.swift in Sources */,
 				FFED849721A6A5D000470DD4 /* DisasterDetailViewController.swift in Sources */,
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
 				FFED849921A6BF6100470DD4 /* DisasterDetailViewBuilder.swift in Sources */,
@@ -588,6 +595,7 @@
 				FFED848721A66B5800470DD4 /* OriginalNewsSiteBuilder.swift in Sources */,
 				FFED846A21A55D1200470DD4 /* NewsResponse.swift in Sources */,
 				FFED846621A5583700470DD4 /* News.swift in Sources */,
+				DABAC96E21A7EDDE000A625A /* AdMobBuilder.swift in Sources */,
 				FFED849B21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift in Sources */,
 				FFED846321A556B100470DD4 /* NewsTableViewCell.swift in Sources */,
 			);
