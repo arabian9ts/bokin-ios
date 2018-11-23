@@ -39,6 +39,9 @@
                                                         <rect key="frame" x="35" y="12" width="30" height="36"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <state key="normal" title="ー"/>
+                                                        <connections>
+                                                            <action selector="pushMinusButton:" destination="v3H-F4-CtF" eventType="touchUpInside" id="YNt-oh-P7E"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,15 +51,34 @@
                                                     <constraint firstItem="9dM-r2-69c" firstAttribute="centerY" secondItem="x84-o0-BDU" secondAttribute="centerY" id="kao-01-5bd"/>
                                                 </constraints>
                                             </view>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e57-bb-RSg">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3f-I9-CtN">
                                                 <rect key="frame" x="100" y="0.0" width="175" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2L-jg-RSv" userLabel="Charit Money" customClass="BoundLabel" customModule="BOKiN_Prototype" customModuleProvider="target">
+                                                        <rect key="frame" x="50" y="5.5" width="75" height="49"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1d-nq-b16" userLabel="￥">
+                                                        <rect key="frame" x="24" y="28.5" width="18" height="20.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="18" id="5eH-nr-R2d"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="175" id="2c6-dT-sLp"/>
+                                                    <constraint firstItem="x2L-jg-RSv" firstAttribute="centerX" secondItem="T3f-I9-CtN" secondAttribute="centerX" id="5hr-wE-SIO"/>
+                                                    <constraint firstItem="j1d-nq-b16" firstAttribute="baseline" secondItem="x2L-jg-RSv" secondAttribute="firstBaseline" id="CBQ-NU-AEQ"/>
+                                                    <constraint firstItem="x2L-jg-RSv" firstAttribute="centerY" secondItem="T3f-I9-CtN" secondAttribute="centerY" id="Tw7-tg-Bxn"/>
+                                                    <constraint firstItem="j1d-nq-b16" firstAttribute="firstBaseline" secondItem="x2L-jg-RSv" secondAttribute="firstBaseline" id="Y6i-lb-nqO"/>
+                                                    <constraint firstItem="x2L-jg-RSv" firstAttribute="leading" secondItem="j1d-nq-b16" secondAttribute="trailing" constant="8" symbolic="YES" id="gaH-Bq-nJV"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9w-gR-dPO">
                                                 <rect key="frame" x="275" y="0.0" width="100" height="60"/>
                                                 <subviews>
@@ -64,12 +86,15 @@
                                                         <rect key="frame" x="35" y="7.5" width="30" height="45"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                                         <state key="normal" title="＋"/>
+                                                        <connections>
+                                                            <action selector="pushPlusButton:" destination="v3H-F4-CtF" eventType="touchUpInside" id="NKC-8C-L9h"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="AiM-7R-rGj"/>
                                                     <constraint firstItem="DAW-PT-m0j" firstAttribute="centerY" secondItem="d9w-gR-dPO" secondAttribute="centerY" id="LDq-jD-gkB"/>
+                                                    <constraint firstAttribute="width" constant="100" id="Sh6-I8-L1J"/>
                                                     <constraint firstItem="DAW-PT-m0j" firstAttribute="centerX" secondItem="d9w-gR-dPO" secondAttribute="centerX" id="vb4-ZT-tD5"/>
                                                 </constraints>
                                             </view>
@@ -85,35 +110,57 @@
                                             <constraint firstAttribute="height" constant="150" id="WSV-Ne-6FW"/>
                                         </constraints>
                                     </pickerView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SR-sV-D4R">
-                                        <rect key="frame" x="0.0" y="250" width="375" height="30"/>
-                                        <state key="normal" title="寄付する"/>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIp-f0-vKl">
-                                        <rect key="frame" x="0.0" y="280" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="250" width="375" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SR-sV-D4R">
+                                                <rect key="frame" x="37.5" y="0.0" width="300" height="40"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.75294117650000003" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="6fB-Uf-Fku"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="寄付する">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0NM-qc-uES"/>
+                                            <constraint firstItem="5SR-sV-D4R" firstAttribute="top" secondItem="Opo-By-rw8" secondAttribute="top" id="MSf-Of-wa1"/>
+                                            <constraint firstItem="Opo-By-rw8" firstAttribute="bottom" secondItem="5SR-sV-D4R" secondAttribute="bottom" id="QNP-Vv-WfX"/>
+                                            <constraint firstItem="5SR-sV-D4R" firstAttribute="centerX" secondItem="bIp-f0-vKl" secondAttribute="centerX" id="eXA-g4-lY3"/>
+                                            <constraint firstItem="5SR-sV-D4R" firstAttribute="centerY" secondItem="bIp-f0-vKl" secondAttribute="centerY" id="xDI-dC-61E"/>
+                                        </constraints>
                                         <viewLayoutGuide key="safeArea" id="Opo-By-rw8"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-X9-cai">
+                                        <rect key="frame" x="0.0" y="290" width="375" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="b0j-Xa-KiO" firstAttribute="top" secondItem="qCN-jW-wm6" secondAttribute="top" id="0HO-L2-JB9"/>
-                            <constraint firstAttribute="bottom" secondItem="b0j-Xa-KiO" secondAttribute="bottom" id="CsM-wr-d64"/>
-                            <constraint firstItem="b0j-Xa-KiO" firstAttribute="leading" secondItem="qCN-jW-wm6" secondAttribute="leading" id="eHM-ql-eky"/>
-                            <constraint firstAttribute="trailing" secondItem="b0j-Xa-KiO" secondAttribute="trailing" id="oNK-2H-bla"/>
+                            <constraint firstItem="b0j-Xa-KiO" firstAttribute="leading" secondItem="qCN-jW-wm6" secondAttribute="leading" id="30i-1b-b06"/>
+                            <constraint firstAttribute="bottom" secondItem="b0j-Xa-KiO" secondAttribute="bottom" id="8Jo-xt-dgp"/>
+                            <constraint firstItem="qCN-jW-wm6" firstAttribute="trailing" secondItem="b0j-Xa-KiO" secondAttribute="trailing" id="gYY-Kw-prK"/>
+                            <constraint firstItem="b0j-Xa-KiO" firstAttribute="top" secondItem="qCN-jW-wm6" secondAttribute="top" id="z3J-p8-w7R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qCN-jW-wm6"/>
                     </view>
                     <size key="freeformSize" width="375" height="320"/>
                     <connections>
+                        <outlet property="charityMoney" destination="x2L-jg-RSv" id="ldO-ka-FuA"/>
                         <outlet property="prefecturePicker" destination="uSb-G4-xf8" id="53E-zk-0uW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVP-K6-vDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="69"/>
+            <point key="canvasLocation" x="112.8" y="68.365817091454275"/>
         </scene>
     </scenes>
 </document>

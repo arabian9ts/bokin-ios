@@ -12,12 +12,24 @@ class ApplePaySettlementModalViewController: UIViewController {
     
     @IBOutlet weak var prefecturePicker: UIPickerView!
     private var prefectureList = ["福岡県", "宮崎県", "熊本県", "佐賀県", "長崎県"]
-
+    
+    @IBOutlet weak var charityMoney: BoundLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         prefecturePicker.delegate = self
         prefecturePicker.dataSource = self
+    }
+    
+    @IBAction func pushMinusButton(_ sender: UIButton) {
+        let money = NSString(string: charityMoney.text!).integerValue
+        charityMoney.changeValue(value: money - 100)
+    }
+    
+    @IBAction func pushPlusButton(_ sender: UIButton) {
+        let money = NSString(string: charityMoney.text!).integerValue
+        charityMoney.changeValue(value: money + 100)
     }
     
 }
