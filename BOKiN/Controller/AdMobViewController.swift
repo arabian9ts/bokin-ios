@@ -23,40 +23,38 @@ class AdMobViewController: UIViewController, GADRewardBasedVideoAdDelegate {
     
     func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd,
                             didRewardUserWith reward: GADAdReward) {
-        print("Reward received with currency: \(reward.type), amount \(reward.amount).")
+//        print("Reward received with currency: \(reward.type), amount \(reward.amount).")
     }
     
     func rewardBasedVideoAdDidReceive(_ rewardBasedVideoAd:GADRewardBasedVideoAd) {
-        print("Reward based video ad is received.")
+//        print("Reward based video ad is received.")
         if rewardBasedAd.isReady == true {
             rewardBasedAd.present(fromRootViewController: self)
         }
     }
     
     func rewardBasedVideoAdDidOpen(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
-        print("Opened reward based video ad.")
+//        print("Opened reward based video ad.")
     }
     
     func rewardBasedVideoAdDidStartPlaying(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
-        print("Reward based video ad started playing.")
+//        print("Reward based video ad started playing.")
     }
     
     func rewardBasedVideoAdDidCompletePlaying(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
-        print("Reward based video ad has completed.")
+//        print("Reward based video ad has completed.")
     }
     
     func rewardBasedVideoAdDidClose(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
-        print("Reward based video ad is closed.")
+//        print("Reward based video ad is closed.")
     }
     
     func rewardBasedVideoAdWillLeaveApplication(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
-        print("Reward based video ad will leave application.")
+//        print("Reward based video ad will leave application.")
     }
     
     func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd,
                             didFailToLoadWithError error: Error) {
-        print("Reward based video ad failed to load.")
+//        print("Reward based video ad failed to load.")
     }
-    
-    
 }
