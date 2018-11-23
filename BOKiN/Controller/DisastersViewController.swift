@@ -20,6 +20,7 @@ class DisastersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setLogoImageView()
         
         disastersTableView.delegate = dataSource
         

@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
         navigator?.navigationBar.isTranslucent = true
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = navigator
 
