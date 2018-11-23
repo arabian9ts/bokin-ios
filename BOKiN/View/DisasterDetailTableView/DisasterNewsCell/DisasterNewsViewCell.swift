@@ -26,6 +26,10 @@ class DisasterNewsViewCell: UITableViewCell {
         newsCollectionView.delegate = dataSource
         newsCollectionView.backgroundColor = #colorLiteral(red: 0.9427082911, green: 0.72054101, blue: 0.2288987002, alpha: 1)
         
+        if let flowLayout = newsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.estimatedItemSize = CGSize(width: 300, height: 300)
+        }
+        
         setupRx()
     }
 

@@ -74,7 +74,7 @@ extension DisasterDetailViewController: UITableViewDelegate, UITableViewDataSour
         case 1:
             return 60
         case 2:
-            return 300
+            return 400
         default:
             return 50
         }
