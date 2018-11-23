@@ -15,9 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        STPPaymentConfiguration.shared().publishableKey = "sk_test_edlvpzqAtUq7sKfV8xD02G4x"
-        STPPaymentConfiguration.shared().appleMerchantIdentifier = "merchant.bokin.redbottlecoffee"
         KeyChainManager.shared.restoreFromStorage()
+        STPPaymentConfiguration.shared().publishableKey = KeyChainManager.shared.stripeKey
+        STPPaymentConfiguration.shared().appleMerchantIdentifier = KeyChainManager.shared.merchantId
         
         let navigator: UINavigationController?
         let firstVC = StoryboardScene.Main.initialScene.instantiate()
@@ -39,7 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillResignActive(_ application: UIApplication) {
         KeyChainManager.shared.updateStorage(
             name:  nil,
-            token: "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.p0QTGHEptZedRFErL-RUytE_q4hJpPPBRiBZHunHyDU")
+            token: "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.p0QTGHEptZedRFErL-RUytE_q4hJpPPBRiBZHunHyDU"
+        )
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
