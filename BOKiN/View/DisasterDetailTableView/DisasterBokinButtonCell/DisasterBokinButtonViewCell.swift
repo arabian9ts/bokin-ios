@@ -7,18 +7,29 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class DisasterBokinButtonViewCell: UITableViewCell {
 
+    let disposeBag = DisposeBag()
+    
+    @IBOutlet weak var bokinButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setupRx()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    private func setupRx() {
+        bokinButton.rx.tap
+            .subscribe { [self] _ in
+                SettlementModalViewWireframeImpl(transitioner: UIApplication.topViewController() as! Transitioner).transitionToSettlementModalViewPage()
+            }
+        .disposed(by: disposeBag)
+    }
 }
