@@ -28,7 +28,7 @@ class AdMobViewController: UIViewController, GADRewardBasedVideoAdDelegate {
     
     func rewardBasedVideoAdDidReceive(_ rewardBasedVideoAd:GADRewardBasedVideoAd) {
 //        print("Reward based video ad is received.")
-        if rewardBasedAd.isReady == true {
+        if rewardBasedAd.isReady {
             rewardBasedAd.present(fromRootViewController: self)
         }
     }
