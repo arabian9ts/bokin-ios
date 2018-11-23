@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Stripe
 import RxSwift
 import RxCocoa
 
-class SettlementModalViewController: UIViewController {
+class SettlementModalViewController: UIViewController, PKPaymentAuthorizationViewControllerDelegate {
     
     private let tapTopGesture = UITapGestureRecognizer()
     private let tapButtomGesture = UITapGestureRecognizer()
@@ -88,7 +89,6 @@ extension SettlementModalViewController: UIScrollViewDelegate {
         let pageWidth = contentsScrollView.frame.width
         let fractionalPage = Double(contentsScrollView.contentOffset.x / pageWidth)
         animateNavigationBottomLine(page: fractionalPage)
-        
     }
     
     fileprivate func animateNavigationBottomLine(page: Double) {
@@ -107,6 +107,36 @@ extension SettlementModalViewController: UIScrollViewDelegate {
         })
     }
     
+    private func applePay() {
+        let merchantId = KeyChainManager.shared.merchantId
+        let paymentRequest = Stripe.paymentRequest(withMerchantIdentifier: merchantId, country: "JP", currency: "JPY")
+        
+        paymentRequest.paymentSummaryItems = [
+            PKPaymentSummaryItem(label: "BOKiN", amount: 0),
+            PKPaymentSummaryItem(label: "Total", amount: 0),
+        ]
+        
+        let paymentAuthorizationViewController = PKPaymentAuthorizationViewController(paymentRequest: paymentRequest)!
+        paymentAuthorizationViewController.delegate = self
+        
+        self.present(paymentAuthorizationViewController, animated: true)
+    }
     
+    func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
+        dismiss(animated: true, completion: nil)
+    }
     
+    func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, completion: @escaping (PKPaymentAuthorizationStatus) -> Void) {
+        STPAPIClient.shared().createToken(with: payment) { (token: STPToken?, error: Error?) in
+            guard let _ = token else {
+                print(error?.localizedDescription ?? "")
+                return
+            }
+            completion(.success)
+        }
+    }
+    
+    @IBAction func donate(_ sender: UIButton) {
+        applePay()
+    }
 }
