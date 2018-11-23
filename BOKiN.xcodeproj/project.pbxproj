@@ -11,6 +11,8 @@
 		DA1B9C1E21A82C6900F9AC5E /* ApplePaySettlementModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B9C1D21A82C6900F9AC5E /* ApplePaySettlementModalViewController.swift */; };
 		DA1B9C2021A82CBD00F9AC5E /* AdvertisementSettlementModalView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1B9C1F21A82CBD00F9AC5E /* AdvertisementSettlementModalView.storyboard */; };
 		DA1B9C2221A82CE500F9AC5E /* AdvertisementSettlementModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B9C2121A82CE500F9AC5E /* AdvertisementSettlementModalViewController.swift */; };
+		DA8AA6B721A8C0580002DF9B /* DonatedModalView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8AA6B621A8C0580002DF9B /* DonatedModalView.storyboard */; };
+		DA8AA6B921A8C0710002DF9B /* DonatedModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AA6B821A8C0710002DF9B /* DonatedModalView.swift */; };
 		DAA74CBB21A86B5200B87819 /* UILabel+BoundAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA74CBA21A86B5200B87819 /* UILabel+BoundAnimation.swift */; };
 		DABAC96A21A7ECC7000A625A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */; };
 		DABAC96C21A7EDB0000A625A /* AdMobViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC96B21A7EDB0000A625A /* AdMobViewWireframe.swift */; };
@@ -120,6 +122,8 @@
 		DA1B9C1D21A82C6900F9AC5E /* ApplePaySettlementModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePaySettlementModalViewController.swift; sourceTree = "<group>"; };
 		DA1B9C1F21A82CBD00F9AC5E /* AdvertisementSettlementModalView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdvertisementSettlementModalView.storyboard; sourceTree = "<group>"; };
 		DA1B9C2121A82CE500F9AC5E /* AdvertisementSettlementModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementSettlementModalViewController.swift; sourceTree = "<group>"; };
+		DA8AA6B621A8C0580002DF9B /* DonatedModalView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DonatedModalView.storyboard; sourceTree = "<group>"; };
+		DA8AA6B821A8C0710002DF9B /* DonatedModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonatedModalView.swift; sourceTree = "<group>"; };
 		DAA74CBA21A86B5200B87819 /* UILabel+BoundAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+BoundAnimation.swift"; sourceTree = "<group>"; };
 		DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		DABAC96B21A7EDB0000A625A /* AdMobViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobViewWireframe.swift; sourceTree = "<group>"; };
@@ -235,6 +239,15 @@
 				DA1B9C2121A82CE500F9AC5E /* AdvertisementSettlementModalViewController.swift */,
 			);
 			path = AdvertisementSettlementModalView;
+			sourceTree = "<group>";
+		};
+		DA8AA6B521A8C0220002DF9B /* DonatedModalView */ = {
+			isa = PBXGroup;
+			children = (
+				DA8AA6B621A8C0580002DF9B /* DonatedModalView.storyboard */,
+				DA8AA6B821A8C0710002DF9B /* DonatedModalView.swift */,
+			);
+			path = DonatedModalView;
 			sourceTree = "<group>";
 		};
 		DABAC96821A7ECC6000A625A /* Frameworks */ = {
@@ -381,6 +394,7 @@
 		FFED83F521A4676B00470DD4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA8AA6B521A8C0220002DF9B /* DonatedModalView */,
 				DA1B9C1A21A82A7600F9AC5E /* AdvertisementSettlementModalView */,
 				DA1B9C1821A82A0100F9AC5E /* ApplePaySettlementModalView */,
 				FF94BCA421A846D500860C65 /* DisasterDetailTableView */,
@@ -617,6 +631,7 @@
 				FFED845D21A5457000470DD4 /* DisastersTableViewTopCell.xib in Resources */,
 				FF94BCB821A8672900860C65 /* DisasterNewsViewCell.xib in Resources */,
 				FFED848B21A66CA600470DD4 /* OriginalNewsSite.storyboard in Resources */,
+				DA8AA6B721A8C0580002DF9B /* DonatedModalView.storyboard in Resources */,
 				DA1B9C2021A82CBD00F9AC5E /* AdvertisementSettlementModalView.storyboard in Resources */,
 				FFED845A21A5457000470DD4 /* DisastersTableViewCell.xib in Resources */,
 				FF94BCB321A8510800860C65 /* DisasterBokinButtonViewCell.xib in Resources */,
@@ -697,6 +712,7 @@
 				FFED848321A66A0600470DD4 /* NewsWireframe.swift in Sources */,
 				FFED84B421A6E61200470DD4 /* SettlementModalViewBuilder.swift in Sources */,
 				FF1B90DB21A7BEAB007BCDED /* SettlementModalViewController.swift in Sources */,
+				DA8AA6B921A8C0710002DF9B /* DonatedModalView.swift in Sources */,
 				FFED840F21A46A7700470DD4 /* APIIClientError.swift in Sources */,
 				FFED84B221A6E5F000470DD4 /* SettlementModalViewWireframe.swift in Sources */,
 				FFED846821A559A400470DD4 /* NewsViewModel.swift in Sources */,
