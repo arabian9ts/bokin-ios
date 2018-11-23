@@ -12,10 +12,12 @@ import RxCocoa
 
 class SettlementModalViewController: UIViewController {
     
-    private let tapGesture = UITapGestureRecognizer()
+    private let tapTopGesture = UITapGestureRecognizer()
+    private let tapButtomGesture = UITapGestureRecognizer()
     private let disposeBag = DisposeBag()
     
-    @IBOutlet var coverView: UIView!
+    @IBOutlet var topCoverView: UIView!
+    @IBOutlet var buttomCoverView: UIView!
     
     @IBOutlet weak var prefecturePicker: UIPickerView!
     
@@ -35,7 +37,8 @@ class SettlementModalViewController: UIViewController {
         
         self.setupNavigationBottomLine()
         
-        coverView.addGestureRecognizer(tapGesture)
+        topCoverView.addGestureRecognizer(tapTopGesture)
+        buttomCoverView.addGestureRecognizer(tapButtomGesture)
         
         setupRx()
     }
@@ -55,7 +58,7 @@ class SettlementModalViewController: UIViewController {
     }
     
     private func setupRx() {
-        tapGesture.rx.event.bind(onNext: { [self] _ in
+        tapTopGesture.rx.event.bind(onNext: { [self] _ in
             self.view.alpha = 1.0
             UIView.animate(withDuration: 0.16, delay: 0.0, options: [.curveEaseOut], animations: {
                 self.view.alpha = 0.0
@@ -65,6 +68,17 @@ class SettlementModalViewController: UIViewController {
             }
         })
         .disposed(by: disposeBag)
+        
+        tapButtomGesture.rx.event.bind(onNext: { [self] _ in
+            self.view.alpha = 1.0
+            UIView.animate(withDuration: 0.16, delay: 0.0, options: [.curveEaseOut], animations: {
+                self.view.alpha = 0.0
+            }) { _ in
+                self.view.removeFromSuperview()
+                self.dismiss(animated: true)
+            }
+        })
+            .disposed(by: disposeBag)
     }
 }
 

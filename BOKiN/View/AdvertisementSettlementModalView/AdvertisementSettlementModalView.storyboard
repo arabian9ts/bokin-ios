@@ -15,15 +15,14 @@
             <objects>
                 <viewController storyboardIdentifier="AdvertisementSettlementModalView" id="mxd-lw-8tS" customClass="AdvertisementSettlementModalViewController" customModule="BOKiN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pol-Ow-L0m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qVQ-kO-KDF">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qVQ-kO-KDF">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="320"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-4t-Raq">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="PgC-Im-Vxz"/>
@@ -31,16 +30,16 @@
                                         <viewLayoutGuide key="safeArea" id="VSj-TL-4sf"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfD-l0-Pvy">
-                                        <rect key="frame" x="0.0" y="40" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="40" width="350" height="60"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMV-om-CPB" userLabel="Charit Money" customClass="BoundLabel" customModule="BOKiN_Prototype" customModuleProvider="target">
-                                                <rect key="frame" x="165.5" y="5.5" width="44" height="49"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMV-om-CPB" userLabel="Charit Money" customClass="BoundLabel" customModule="BOKiN" customModuleProvider="target">
+                                                <rect key="frame" x="153" y="5.5" width="44" height="49"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vz-u0-q0C" userLabel="￥">
-                                                <rect key="frame" x="139.5" y="28.5" width="18" height="20.5"/>
+                                                <rect key="frame" x="127" y="28.5" width="18" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="18" id="dmC-0R-6fb"/>
                                                 </constraints>
@@ -60,16 +59,16 @@
                                         </constraints>
                                     </view>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ET9-cB-iK8">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="150"/>
+                                        <rect key="frame" x="0.0" y="100" width="350" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="cGN-5b-LNB"/>
                                         </constraints>
                                     </pickerView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oC-g0-fIv">
-                                        <rect key="frame" x="0.0" y="250" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="250" width="350" height="40"/>
                                         <subviews>
                                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbg-Dq-oF8">
-                                                <rect key="frame" x="37.5" y="0.0" width="300" height="40"/>
+                                                <rect key="frame" x="25" y="0.0" width="300" height="40"/>
                                                 <color key="backgroundColor" red="0.96862745100000003" green="0.75294117650000003" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="TpQ-tf-vvn"/>
@@ -91,14 +90,24 @@
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="qx2-32-Qxe"/>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugn-V0-dbj">
+                                        <rect key="frame" x="0.0" y="290" width="350" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qVQ-kO-KDF" firstAttribute="top" secondItem="hP2-FM-GHB" secondAttribute="top" id="g1z-1p-xLE"/>
+                            <constraint firstItem="qVQ-kO-KDF" firstAttribute="leading" secondItem="hP2-FM-GHB" secondAttribute="leading" id="i2V-Gy-6Qv"/>
+                            <constraint firstAttribute="trailing" secondItem="qVQ-kO-KDF" secondAttribute="trailing" id="q1H-Cp-ves"/>
+                            <constraint firstItem="hP2-FM-GHB" firstAttribute="bottom" secondItem="qVQ-kO-KDF" secondAttribute="bottom" id="wxm-GR-yRc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hP2-FM-GHB"/>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="375" height="370"/>
-                    <size key="freeformSize" width="375" height="320"/>
+                    <size key="freeformSize" width="350" height="320"/>
                     <connections>
                         <outlet property="prefecturePicker" destination="ET9-cB-iK8" id="bjo-8u-s9H"/>
                     </connections>

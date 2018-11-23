@@ -15,14 +15,14 @@
             <objects>
                 <viewController storyboardIdentifier="ApplePaySettlementModalView" id="v3H-F4-CtF" customClass="ApplePaySettlementModalViewController" customModule="BOKiN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QPd-9q-0P1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b0j-Xa-KiO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="320"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ZT-NK-nKG">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="gOT-fE-Zrv"/>
@@ -30,7 +30,7 @@
                                         <viewLayoutGuide key="safeArea" id="8U9-Hw-aRb"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oi6-5Z-2N9">
-                                        <rect key="frame" x="0.0" y="40" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="40" width="350" height="60"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x84-o0-BDU">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
@@ -52,16 +52,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3f-I9-CtN">
-                                                <rect key="frame" x="100" y="0.0" width="175" height="60"/>
+                                                <rect key="frame" x="100" y="0.0" width="150" height="60"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2L-jg-RSv" userLabel="Charit Money" customClass="BoundLabel" customModule="BOKiN_Prototype" customModuleProvider="target">
-                                                        <rect key="frame" x="50" y="5.5" width="75" height="49"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2L-jg-RSv" userLabel="Charit Money" customClass="BoundLabel" customModule="BOKiN" customModuleProvider="target">
+                                                        <rect key="frame" x="37.5" y="5.5" width="75" height="49"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1d-nq-b16" userLabel="￥">
-                                                        <rect key="frame" x="24" y="28.5" width="18" height="20.5"/>
+                                                        <rect key="frame" x="11.5" y="28.5" width="18" height="20.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="18" id="5eH-nr-R2d"/>
                                                         </constraints>
@@ -80,7 +80,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9w-gR-dPO">
-                                                <rect key="frame" x="275" y="0.0" width="100" height="60"/>
+                                                <rect key="frame" x="250" y="0.0" width="100" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAW-PT-m0j">
                                                         <rect key="frame" x="35" y="7.5" width="30" height="45"/>
@@ -105,16 +105,16 @@
                                         <viewLayoutGuide key="safeArea" id="07p-XV-W9E"/>
                                     </stackView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSb-G4-xf8">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="150"/>
+                                        <rect key="frame" x="0.0" y="100" width="350" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="WSV-Ne-6FW"/>
                                         </constraints>
                                     </pickerView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIp-f0-vKl">
-                                        <rect key="frame" x="0.0" y="250" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="250" width="350" height="40"/>
                                         <subviews>
                                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SR-sV-D4R">
-                                                <rect key="frame" x="37.5" y="0.0" width="300" height="40"/>
+                                                <rect key="frame" x="25" y="0.0" width="300" height="40"/>
                                                 <color key="backgroundColor" red="0.96862745100000003" green="0.75294117650000003" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="6fB-Uf-Fku"/>
@@ -137,7 +137,7 @@
                                         <viewLayoutGuide key="safeArea" id="Opo-By-rw8"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-X9-cai">
-                                        <rect key="frame" x="0.0" y="290" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="290" width="350" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
@@ -152,7 +152,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qCN-jW-wm6"/>
                     </view>
-                    <size key="freeformSize" width="375" height="320"/>
+                    <size key="freeformSize" width="350" height="320"/>
                     <connections>
                         <outlet property="charityMoney" destination="x2L-jg-RSv" id="ldO-ka-FuA"/>
                         <outlet property="prefecturePicker" destination="uSb-G4-xf8" id="53E-zk-0uW"/>
