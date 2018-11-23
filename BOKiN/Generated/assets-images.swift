@@ -45,7 +45,7 @@ internal struct ColorAsset {
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
   internal static let disaster = ImageAsset(name: "disaster")
-  internal static let logo120 = ImageAsset(name: "logo_120")
+  internal static let logo = ImageAsset(name: "logo")
   internal static let ogp = ImageAsset(name: "ogp")
   internal static let paid = ImageAsset(name: "paid")
   internal static let timeIcon = ImageAsset(name: "timeIcon")
@@ -55,7 +55,7 @@ internal enum Asset {
   ]
   internal static let allImages: [ImageAsset] = [
     disaster,
-    logo120,
+    logo,
     ogp,
     paid,
     timeIcon,
