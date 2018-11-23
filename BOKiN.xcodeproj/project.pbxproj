@@ -16,6 +16,10 @@
 		FF1B90DD21A7C7CF007BCDED /* SettlementModalView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1B90DC21A7C7CF007BCDED /* SettlementModalView.storyboard */; };
 		FF1B90E021A7EABF007BCDED /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1B90DF21A7EABF007BCDED /* Stripe.framework */; };
 		FF1B90E121A7EABF007BCDED /* Stripe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF1B90DF21A7EABF007BCDED /* Stripe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF94BCAA21A8473100860C65 /* DisasterInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCA821A8473100860C65 /* DisasterInfoViewCell.swift */; };
+		FF94BCAB21A8473100860C65 /* DisasterInfoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF94BCA921A8473100860C65 /* DisasterInfoViewCell.xib */; };
+		FF94BCB221A8510800860C65 /* DisasterBokinButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCB021A8510800860C65 /* DisasterBokinButtonViewCell.swift */; };
+		FF94BCB321A8510800860C65 /* DisasterBokinButtonViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF94BCB121A8510800860C65 /* DisasterBokinButtonViewCell.xib */; };
 		FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E021A45CFD00470DD4 /* AppDelegate.swift */; };
 		FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */; };
 		FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED83E421A45CFD00470DD4 /* Main.storyboard */; };
@@ -109,6 +113,10 @@
 		FF1B90DC21A7C7CF007BCDED /* SettlementModalView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettlementModalView.storyboard; sourceTree = "<group>"; };
 		FF1B90DE21A7E7CC007BCDED /* BOKiN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BOKiN.entitlements; sourceTree = "<group>"; };
 		FF1B90DF21A7EABF007BCDED /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = Carthage/Build/iOS/Stripe.framework; sourceTree = "<group>"; };
+		FF94BCA821A8473100860C65 /* DisasterInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterInfoViewCell.swift; sourceTree = "<group>"; };
+		FF94BCA921A8473100860C65 /* DisasterInfoViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisasterInfoViewCell.xib; sourceTree = "<group>"; };
+		FF94BCB021A8510800860C65 /* DisasterBokinButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterBokinButtonViewCell.swift; sourceTree = "<group>"; };
+		FF94BCB121A8510800860C65 /* DisasterBokinButtonViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisasterBokinButtonViewCell.xib; sourceTree = "<group>"; };
 		FFED83DD21A45CFD00470DD4 /* BOKiN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOKiN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFED83E021A45CFD00470DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisastersViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +212,33 @@
 			path = SettlementModalView;
 			sourceTree = "<group>";
 		};
+		FF94BCA421A846D500860C65 /* DisasterDetailTableView */ = {
+			isa = PBXGroup;
+			children = (
+				FF94BCA721A8470600860C65 /* DisasterInfoViewCell */,
+				FF94BCA621A846FB00860C65 /* DisasterBokinButtonCell */,
+			);
+			path = DisasterDetailTableView;
+			sourceTree = "<group>";
+		};
+		FF94BCA621A846FB00860C65 /* DisasterBokinButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF94BCB021A8510800860C65 /* DisasterBokinButtonViewCell.swift */,
+				FF94BCB121A8510800860C65 /* DisasterBokinButtonViewCell.xib */,
+			);
+			path = DisasterBokinButtonCell;
+			sourceTree = "<group>";
+		};
+		FF94BCA721A8470600860C65 /* DisasterInfoViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF94BCA821A8473100860C65 /* DisasterInfoViewCell.swift */,
+				FF94BCA921A8473100860C65 /* DisasterInfoViewCell.xib */,
+			);
+			path = DisasterInfoViewCell;
+			sourceTree = "<group>";
+		};
 		FFED83D421A45CFD00470DD4 = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +319,7 @@
 		FFED83F521A4676B00470DD4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF94BCA421A846D500860C65 /* DisasterDetailTableView */,
 				FF1B90D721A7BEAB007BCDED /* SettlementModalView */,
 				FFED846021A5569300470DD4 /* NewsTableViewCell */,
 				FFED845221A5456F00470DD4 /* DisastersTableViewCell */,
@@ -513,6 +549,8 @@
 				FFED845D21A5457000470DD4 /* DisastersTableViewTopCell.xib in Resources */,
 				FFED848B21A66CA600470DD4 /* OriginalNewsSite.storyboard in Resources */,
 				FFED845A21A5457000470DD4 /* DisastersTableViewCell.xib in Resources */,
+				FF94BCB321A8510800860C65 /* DisasterBokinButtonViewCell.xib in Resources */,
+				FF94BCAB21A8473100860C65 /* DisasterInfoViewCell.xib in Resources */,
 				FFED83EB21A45D0000470DD4 /* LaunchScreen.storyboard in Resources */,
 				FFED849521A6A5BD00470DD4 /* DisasterDetail.storyboard in Resources */,
 				FF1B90DD21A7C7CF007BCDED /* SettlementModalView.storyboard in Resources */,
@@ -580,6 +618,7 @@
 				FFED847921A6662700470DD4 /* NewsBuilder.swift in Sources */,
 				FFED841121A46A9400470DD4 /* BokinAPIError.swift in Sources */,
 				FFED841921A46BA100470DD4 /* BokinRequest.swift in Sources */,
+				FF94BCB221A8510800860C65 /* DisasterBokinButtonViewCell.swift in Sources */,
 				FFED847C21A666BC00470DD4 /* Transitioner.swift in Sources */,
 				FFED841B21A46C3700470DD4 /* Disaster.swift in Sources */,
 				FFED848321A66A0600470DD4 /* NewsWireframe.swift in Sources */,
@@ -604,6 +643,7 @@
 				FFED849921A6BF6100470DD4 /* DisasterDetailViewBuilder.swift in Sources */,
 				FFED84A521A6C30800470DD4 /* BokinViewController.swift in Sources */,
 				FFED841D21A46D4100470DD4 /* User.swift in Sources */,
+				FF94BCAA21A8473100860C65 /* DisasterInfoViewCell.swift in Sources */,
 				FFED846C21A57EB400470DD4 /* Nuke+.swift in Sources */,
 				FFED848D21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift in Sources */,
 				FFED848021A6676C00470DD4 /* assets-images.swift in Sources */,

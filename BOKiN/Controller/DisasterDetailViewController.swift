@@ -12,29 +12,21 @@ import RxCocoa
 
 class DisasterDetailViewController: UIViewController {
     
-    private let disposeBag = DisposeBag()
+    let disposeBag = DisposeBag()
     
-    @IBOutlet weak var bokinButton: UIButton!
-    @IBOutlet weak var disasterDetailDescription: UITextView!
+    @IBOutlet weak var disasterDetailTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        disasterDetailDescription.textContainerInset = UIEdgeInsets(top: 15, left: 30, bottom: 0, right: 30)
-        disasterDetailDescription.sizeToFit()
         
-        setupRx()
+        disasterDetailTableView.delegate = self
+        disasterDetailTableView.dataSource = self
+        
+        disasterDetailTableView.register(cellTypes: [DisasterInfoViewCell.self, DisasterBokinButtonViewCell.self])
     }
-    
-    private func setupRx() {
-        bokinButton.rx.tap
-            .subscribe { [self] _ in
-                SettlementModalViewWireframeImpl(transitioner: self).transitionToSettlementModalViewPage()
-        }
-        .disposed(by: disposeBag)
-    }
-    
+
 }
+
 
 extension DisasterDetailViewController: Transitioner {
     func transition(to: UIViewController, animated: Bool, completion: (() -> ())?) {
@@ -44,4 +36,33 @@ extension DisasterDetailViewController: Transitioner {
             to.view.alpha = 1.0
         })
     }
+}
+
+
+extension DisasterDetailViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.row {
+        case 0:
+            return tableView.dequeueReusableCell(with: DisasterInfoViewCell.self, for: indexPath)
+        case 1:
+            return tableView.dequeueReusableCell(with: DisasterBokinButtonViewCell.self, for: indexPath)
+        default:
+            return UITableViewCell.init()
+        }
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 0:
+            return 480
+        case 1:
+            return 60
+        default:
+            return 50
+        }
+    }
+    
 }
