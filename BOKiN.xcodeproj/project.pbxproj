@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF1B90DB21A7BEAB007BCDED /* SettlementModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1B90D921A7BEAB007BCDED /* SettlementModalViewController.swift */; };
+		FF1B90DD21A7C7CF007BCDED /* SettlementModalView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1B90DC21A7C7CF007BCDED /* SettlementModalView.storyboard */; };
 		FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E021A45CFD00470DD4 /* AppDelegate.swift */; };
 		FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */; };
 		FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED83E421A45CFD00470DD4 /* Main.storyboard */; };
@@ -66,8 +68,6 @@
 		FFED84A521A6C30800470DD4 /* BokinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84A421A6C30800470DD4 /* BokinViewController.swift */; };
 		FFED84A721A6C40E00470DD4 /* PrefectureResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84A621A6C40E00470DD4 /* PrefectureResponse.swift */; };
 		FFED84A921A6C46100470DD4 /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84A821A6C46100470DD4 /* Prefecture.swift */; };
-		FFED84AE21A6E17A00470DD4 /* SettlementModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED84AD21A6E17A00470DD4 /* SettlementModel.storyboard */; };
-		FFED84B021A6E1F100470DD4 /* SettlementModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84AF21A6E1F100470DD4 /* SettlementModalViewController.swift */; };
 		FFED84B221A6E5F000470DD4 /* SettlementModalViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84B121A6E5F000470DD4 /* SettlementModalViewWireframe.swift */; };
 		FFED84B421A6E61200470DD4 /* SettlementModalViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED84B321A6E61200470DD4 /* SettlementModalViewBuilder.swift */; };
 /* End PBXBuildFile section */
@@ -92,6 +92,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF1B90D921A7BEAB007BCDED /* SettlementModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettlementModalViewController.swift; sourceTree = "<group>"; };
+		FF1B90DC21A7C7CF007BCDED /* SettlementModalView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettlementModalView.storyboard; sourceTree = "<group>"; };
 		FFED83DD21A45CFD00470DD4 /* BOKiN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOKiN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFED83E021A45CFD00470DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisastersViewController.swift; sourceTree = "<group>"; };
@@ -147,8 +149,6 @@
 		FFED84A421A6C30800470DD4 /* BokinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BokinViewController.swift; sourceTree = "<group>"; };
 		FFED84A621A6C40E00470DD4 /* PrefectureResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureResponse.swift; sourceTree = "<group>"; };
 		FFED84A821A6C46100470DD4 /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
-		FFED84AD21A6E17A00470DD4 /* SettlementModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettlementModel.storyboard; sourceTree = "<group>"; };
-		FFED84AF21A6E1F100470DD4 /* SettlementModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementModalViewController.swift; sourceTree = "<group>"; };
 		FFED84B121A6E5F000470DD4 /* SettlementModalViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementModalViewWireframe.swift; sourceTree = "<group>"; };
 		FFED84B321A6E61200470DD4 /* SettlementModalViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlementModalViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +170,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF1B90D721A7BEAB007BCDED /* SettlementModalView */ = {
+			isa = PBXGroup;
+			children = (
+				FF1B90D921A7BEAB007BCDED /* SettlementModalViewController.swift */,
+				FF1B90DC21A7C7CF007BCDED /* SettlementModalView.storyboard */,
+			);
+			path = SettlementModalView;
+			sourceTree = "<group>";
+		};
 		FFED83D421A45CFD00470DD4 = {
 			isa = PBXGroup;
 			children = (
@@ -246,7 +255,7 @@
 		FFED83F521A4676B00470DD4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FFED84AA21A6DFFA00470DD4 /* SettlementModelView */,
+				FF1B90D721A7BEAB007BCDED /* SettlementModalView */,
 				FFED846021A5569300470DD4 /* NewsTableViewCell */,
 				FFED845221A5456F00470DD4 /* DisastersTableViewCell */,
 				FFED845521A5457000470DD4 /* DisastersTableViewTopCell */,
@@ -402,15 +411,6 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
-		FFED84AA21A6DFFA00470DD4 /* SettlementModelView */ = {
-			isa = PBXGroup;
-			children = (
-				FFED84AD21A6E17A00470DD4 /* SettlementModel.storyboard */,
-				FFED84AF21A6E1F100470DD4 /* SettlementModalViewController.swift */,
-			);
-			path = SettlementModelView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -478,8 +478,8 @@
 				FFED845A21A5457000470DD4 /* DisastersTableViewCell.xib in Resources */,
 				FFED83EB21A45D0000470DD4 /* LaunchScreen.storyboard in Resources */,
 				FFED849521A6A5BD00470DD4 /* DisasterDetail.storyboard in Resources */,
+				FF1B90DD21A7C7CF007BCDED /* SettlementModalView.storyboard in Resources */,
 				FFED847421A6628A00470DD4 /* News.storyboard in Resources */,
-				FFED84AE21A6E17A00470DD4 /* SettlementModel.storyboard in Resources */,
 				FFED83E821A45D0000470DD4 /* Assets.xcassets in Resources */,
 				FFED84A321A6C2D600470DD4 /* Bokin.storyboard in Resources */,
 				FFED846421A556B100470DD4 /* NewsTableViewCell.xib in Resources */,
@@ -545,6 +545,7 @@
 				FFED841B21A46C3700470DD4 /* Disaster.swift in Sources */,
 				FFED848321A66A0600470DD4 /* NewsWireframe.swift in Sources */,
 				FFED84B421A6E61200470DD4 /* SettlementModalViewBuilder.swift in Sources */,
+				FF1B90DB21A7BEAB007BCDED /* SettlementModalViewController.swift in Sources */,
 				FFED840F21A46A7700470DD4 /* APIIClientError.swift in Sources */,
 				FFED84B221A6E5F000470DD4 /* SettlementModalViewWireframe.swift in Sources */,
 				FFED846821A559A400470DD4 /* NewsViewModel.swift in Sources */,
@@ -557,7 +558,6 @@
 				FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */,
 				FFED848121A6676C00470DD4 /* storyboards.swift in Sources */,
 				FFED848921A66C5500470DD4 /* OriginalNewsSiteViewController.swift in Sources */,
-				FFED84B021A6E1F100470DD4 /* SettlementModalViewController.swift in Sources */,
 				FFED849721A6A5D000470DD4 /* DisasterDetailViewController.swift in Sources */,
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
 				FFED849921A6BF6100470DD4 /* DisasterDetailViewBuilder.swift in Sources */,
