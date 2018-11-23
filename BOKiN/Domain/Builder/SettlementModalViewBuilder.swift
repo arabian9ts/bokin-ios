@@ -10,7 +10,7 @@ import UIKit
 
 class SettlementModalViewBuilder {
     func build() -> SettlementModalViewController {
-        let settlementModalVC = StoryboardScene.SettlementModel.initialScene.instantiate()
+        let settlementModalVC = StoryboardScene.SettlementModalView.initialScene.instantiate()
         return settlementModalVC
     }
 }
