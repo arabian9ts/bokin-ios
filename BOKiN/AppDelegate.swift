@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         KeyChainManager.shared.restoreFromStorage()
+        
+        // Initialize the Google Mobile Ads SDK.
+        // Use Sample AdMob app ID
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
         
         let navigator: UINavigationController?
         let firstVC = StoryboardScene.Main.initialScene.instantiate()
