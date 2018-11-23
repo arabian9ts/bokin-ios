@@ -11,9 +11,7 @@ import GoogleMobileAds
 
 class AdMobViewController: UIViewController, GADRewardBasedVideoAdDelegate {
     
-    @IBOutlet weak var logLabel: UILabel!
-    @IBOutlet weak var showAdButton: UIButton!
-    var rewardBasedAd: GADRewardBasedVideoAd!
+    private var rewardBasedAd: GADRewardBasedVideoAd!
     
     override func viewDidLoad() {
         super.viewDidLoad()
