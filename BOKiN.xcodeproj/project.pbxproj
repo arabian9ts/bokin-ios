@@ -31,6 +31,7 @@
 		FF94BCBD21A867F100860C65 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF94BCBB21A867F100860C65 /* NewsCollectionViewCell.xib */; };
 		FF94BCBF21A8699A00860C65 /* CollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCBE21A8699A00860C65 /* CollectionView+.swift */; };
 		FF94BCC121A86D6100860C65 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCC021A86D6100860C65 /* UIApplication+.swift */; };
+		FF94BCC521A89AA700860C65 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCC421A89AA700860C65 /* UIViewController+.swift */; };
 		FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E021A45CFD00470DD4 /* AppDelegate.swift */; };
 		FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */; };
 		FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED83E421A45CFD00470DD4 /* Main.storyboard */; };
@@ -139,6 +140,7 @@
 		FF94BCBB21A867F100860C65 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		FF94BCBE21A8699A00860C65 /* CollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+.swift"; sourceTree = "<group>"; };
 		FF94BCC021A86D6100860C65 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		FF94BCC421A89AA700860C65 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		FFED83DD21A45CFD00470DD4 /* BOKiN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOKiN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFED83E021A45CFD00470DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisastersViewController.swift; sourceTree = "<group>"; };
@@ -422,6 +424,7 @@
 				DAA74CBA21A86B5200B87819 /* UILabel+BoundAnimation.swift */,
 				FF94BCBE21A8699A00860C65 /* CollectionView+.swift */,
 				FF94BCC021A86D6100860C65 /* UIApplication+.swift */,
+				FF94BCC421A89AA700860C65 /* UIViewController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -704,6 +707,7 @@
 				DABAC97221A7EE85000A625A /* AdMobViewController.swift in Sources */,
 				FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */,
 				FFED843D21A5275700470DD4 /* ClassName.swift in Sources */,
+				FF94BCC521A89AA700860C65 /* UIViewController+.swift in Sources */,
 				FFED843B21A525FC00470DD4 /* TableView+.swift in Sources */,
 				DA1B9C2221A82CE500F9AC5E /* AdvertisementSettlementModalViewController.swift in Sources */,
 				FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */,
