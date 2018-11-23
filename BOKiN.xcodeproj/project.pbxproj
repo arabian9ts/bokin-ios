@@ -21,6 +21,7 @@
 		FF1B90DD21A7C7CF007BCDED /* SettlementModalView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1B90DC21A7C7CF007BCDED /* SettlementModalView.storyboard */; };
 		FF1B90E021A7EABF007BCDED /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1B90DF21A7EABF007BCDED /* Stripe.framework */; };
 		FF1B90E121A7EABF007BCDED /* Stripe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF1B90DF21A7EABF007BCDED /* Stripe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF605E2521A8C6B800D9CDA8 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF605E2421A8C6B800D9CDA8 /* HttpResponse.swift */; };
 		FF94BCAA21A8473100860C65 /* DisasterInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCA821A8473100860C65 /* DisasterInfoViewCell.swift */; };
 		FF94BCAB21A8473100860C65 /* DisasterInfoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF94BCA921A8473100860C65 /* DisasterInfoViewCell.xib */; };
 		FF94BCB221A8510800860C65 /* DisasterBokinButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCB021A8510800860C65 /* DisasterBokinButtonViewCell.swift */; };
@@ -131,6 +132,7 @@
 		FF1B90DC21A7C7CF007BCDED /* SettlementModalView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettlementModalView.storyboard; sourceTree = "<group>"; };
 		FF1B90DE21A7E7CC007BCDED /* BOKiN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BOKiN.entitlements; sourceTree = "<group>"; };
 		FF1B90DF21A7EABF007BCDED /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = Carthage/Build/iOS/Stripe.framework; sourceTree = "<group>"; };
+		FF605E2421A8C6B800D9CDA8 /* HttpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
 		FF94BCA821A8473100860C65 /* DisasterInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterInfoViewCell.swift; sourceTree = "<group>"; };
 		FF94BCA921A8473100860C65 /* DisasterInfoViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisasterInfoViewCell.xib; sourceTree = "<group>"; };
 		FF94BCB021A8510800860C65 /* DisasterBokinButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterBokinButtonViewCell.swift; sourceTree = "<group>"; };
@@ -459,6 +461,7 @@
 				FFED846921A55D1200470DD4 /* NewsResponse.swift */,
 				FFED84A621A6C40E00470DD4 /* PrefectureResponse.swift */,
 				FF94BCC821A8C20200860C65 /* DonationResponse.swift */,
+				FF605E2421A8C6B800D9CDA8 /* HttpResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -720,6 +723,7 @@
 				FFED849721A6A5D000470DD4 /* DisasterDetailViewController.swift in Sources */,
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
 				FFED849921A6BF6100470DD4 /* DisasterDetailViewBuilder.swift in Sources */,
+				FF605E2521A8C6B800D9CDA8 /* HttpResponse.swift in Sources */,
 				FFED84A521A6C30800470DD4 /* BokinViewController.swift in Sources */,
 				FFED841D21A46D4100470DD4 /* User.swift in Sources */,
 				DA1B9C1E21A82C6900F9AC5E /* ApplePaySettlementModalViewController.swift in Sources */,
