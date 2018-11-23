@@ -22,6 +22,7 @@ class DisasterDetailViewWireframeImpl: DisasterDetailViewWireframe {
     
     func transitionToDisasterDetailViewPage(disaster: Disaster) {
         let disasterDetailVC = DisasterDetailViewBuilder().build()
+        disasterDetailVC.disaster.value = disaster
         transitioner.transition(to: disasterDetailVC, animated: true, completion: nil)
     }
 }

@@ -139,7 +139,7 @@
                 <outlet property="disasterImageView" destination="BOf-4h-HGQ" id="rXa-cN-NP5"/>
                 <outlet property="disasterTitleLabel" destination="0kf-VN-eOe" id="PeC-0Y-Pbi"/>
             </connections>
-            <point key="canvasLocation" x="2688.5" y="-127"/>
+            <point key="canvasLocation" x="2687.1999999999998" y="-127.736131934033"/>
         </tableViewCell>
     </objects>
     <resources>
