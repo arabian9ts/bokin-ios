@@ -14,5 +14,9 @@ class NewsCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func setupCell(news: News) {
+        
+    }
 
 }

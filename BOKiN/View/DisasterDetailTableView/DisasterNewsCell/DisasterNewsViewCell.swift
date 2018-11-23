@@ -14,15 +14,19 @@ class DisasterNewsViewCell: UITableViewCell {
     
     let disposeBag = DisposeBag()
     let dataSource = DisasterNewsDataSource()
-    let viewModel  = DisastersViewModele()
+    let viewModel  = NewsViewModele()
+    
+    var disasterId: Variable<Int> = Variable(0)
 
     @IBOutlet weak var newsCollectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        print(newsCollectionView)
+        
         newsCollectionView.delegate = dataSource
         newsCollectionView.backgroundColor = #colorLiteral(red: 0.9427082911, green: 0.72054101, blue: 0.2288987002, alpha: 1)
+        
+        setupRx()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -30,16 +34,17 @@ class DisasterNewsViewCell: UITableViewCell {
     }
     
     private func setupRx() {
-        newsTableView.register(cellType: NewsTableViewCell.self)
+        newsCollectionView.register(cellType: NewsCollectionViewCell.self)
         
         viewModel.news
             .asObservable()
-            .bind(to: newsTableView.rx.items(dataSource: dataSource))
+            .bind(to: newsCollectionView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
         
         dataSource.selectedNews
             .subscribe(onNext: { news in
-                OriginalNewsSiteWireframeImpl(transitioner: self)
+                let topController = UIApplication.topViewController()
+                OriginalNewsSiteWireframeImpl(transitioner: topController as! Transitioner)
                     .transitionToOriginalNewsSitePage(urlString: "\(String(describing: news.detailUrl))")
             })
             .disposed(by: disposeBag)
@@ -53,47 +58,39 @@ class DisasterNewsViewCell: UITableViewCell {
             .disposed(by: disposeBag)
     }
     
+    func setupCell(disaster: Disaster) {
+        disasterId.value = disaster.id
+    }
 }
 
 
-class DisasterNewsDataSource: NSObject, UITableViewDelegate, UITableViewDataSource, RxTableViewDataSourceType {
+class DisasterNewsDataSource: NSObject, UICollectionViewDelegate, UICollectionViewDataSource, RxCollectionViewDataSourceType {
     typealias Element = [News]
     
     var items: [News] = []
     fileprivate let selectedNews = PublishSubject<News>()
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(with: NewsTableViewCell.self, for: indexPath)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(with: NewsCollectionViewCell.self, for: indexPath)
         cell.setupCell(news: items[indexPath.row])
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if items[indexPath.row].opend {
-            return UITableView.automaticDimension
-        }
-        else {
-            return 150
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, observedEvent: Event<[News]>) {
+    func collectionView(_ collectionView: UICollectionView, observedEvent: Event<[News]>) {
         Binder(self) { dataSource, element in
             dataSource.items = element
             DispatchQueue.main.async {
-                tableView.reloadData()
+                collectionView.reloadData()
             }
-            }
-            .on(observedEvent)
+        }
+        .on(observedEvent)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        items[indexPath.row].toggleNews()
-        tableView.reloadRows(at: tableView.indexPathsForVisibleRows!, with: UITableView.RowAnimation.fade)
         selectedNews.onNext(items[indexPath.row])
     }
     

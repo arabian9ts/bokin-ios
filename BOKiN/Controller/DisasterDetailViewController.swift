@@ -14,6 +14,8 @@ class DisasterDetailViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     
+    var disaster: Variable<Disaster> = Variable<Disaster>(Disaster())
+    
     @IBOutlet weak var disasterDetailTableView: UITableView!
     
     override func viewDidLoad() {
@@ -21,8 +23,13 @@ class DisasterDetailViewController: UIViewController {
         
         disasterDetailTableView.delegate = self
         disasterDetailTableView.dataSource = self
+        disasterDetailTableView.allowsSelection = false
         
-        disasterDetailTableView.register(cellTypes: [DisasterInfoViewCell.self, DisasterBokinButtonViewCell.self])
+        disasterDetailTableView.register(cellTypes: [
+            DisasterInfoViewCell.self,
+            DisasterBokinButtonViewCell.self,
+            DisasterNewsViewCell.self
+        ])
     }
 
 }
@@ -47,9 +54,15 @@ extension DisasterDetailViewController: UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
-            return tableView.dequeueReusableCell(with: DisasterInfoViewCell.self, for: indexPath)
+            let cell = tableView.dequeueReusableCell(with: DisasterInfoViewCell.self, for: indexPath)
+            return cell
         case 1:
-            return tableView.dequeueReusableCell(with: DisasterBokinButtonViewCell.self, for: indexPath)
+            let cell = tableView.dequeueReusableCell(with: DisasterBokinButtonViewCell.self, for: indexPath)
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(with: DisasterNewsViewCell.self, for: indexPath)
+            cell.setupCell(disaster: disaster.value)
+            return cell
         default:
             return UITableViewCell.init()
         }
@@ -60,6 +73,8 @@ extension DisasterDetailViewController: UITableViewDelegate, UITableViewDataSour
             return 480
         case 1:
             return 60
+        case 2:
+            return 300
         default:
             return 50
         }
