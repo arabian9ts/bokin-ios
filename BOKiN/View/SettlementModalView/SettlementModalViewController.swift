@@ -17,10 +17,17 @@ class SettlementModalViewController: UIViewController {
     
     @IBOutlet var coverView: UIView!
     
+    @IBOutlet weak var prefecturePicker: UIPickerView!
+    
+    private var dataList = ["福岡県", "宮崎県", "熊本県", "佐賀県", "長崎県"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         coverView.addGestureRecognizer(tapGesture)
+        
+        prefecturePicker.delegate = self
+        prefecturePicker.dataSource = self
         
         setupRx()
     }
@@ -36,5 +43,26 @@ class SettlementModalViewController: UIViewController {
             }
         })
         .disposed(by: disposeBag)
+    }
+}
+
+extension SettlementModalViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return dataList.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        return dataList[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView,
+                    didSelectRow row: Int,
+                    inComponent component: Int) {
+    
     }
 }
