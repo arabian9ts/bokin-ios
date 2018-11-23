@@ -61,4 +61,46 @@ final class BokinAPI {
             path = "/disasters/\(id)/prefectures"
         }
     }
+    
+    struct PostBokinTransaction {
+        var path: String = "/disasters/:id/donations"
+        let method: HTTPMethod = .post
+        let params: Parameters? = [:]
+        var headers: HTTPHeaders? = [:]
+        
+        init(disasterId: Int = 1, prefectureId: Int = 1, amount: Int = 0) {
+            path = "/disasters/\(disasterId)/donations"
+            headers = [
+                "disaster_id": String(disasterId),
+                "prefecture_id": String(prefectureId),
+                "amount": String(amount)
+            ]
+        }
+    }
+    
+    struct GetBokinTransactions {
+//        typealias Response = PrefectureResponse
+        
+        var path: String = "/users/:id/donations"
+        let method: HTTPMethod = .get
+        let params: Parameters? = [:]
+        let headers: HTTPHeaders? = [:]
+        
+        init(id: Int = 1) {
+            path = "/users/donations"
+        }
+    }
+    
+    struct GetDonations {
+//        typealias Response = DonationResponse
+        
+        var path: String = "/disasters/:id/donations"
+        let method: HTTPMethod = .get
+        let params: Parameters? = [:]
+        let headers: HTTPHeaders? = [:]
+        
+        init(id: Int = 1) {
+            path = "/disasters/\(id)/donations"
+        }
+    }
 }
