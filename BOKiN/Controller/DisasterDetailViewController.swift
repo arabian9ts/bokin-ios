@@ -38,11 +38,10 @@ class DisasterDetailViewController: UIViewController {
 
 extension DisasterDetailViewController: Transitioner {
     func transition(to: UIViewController, animated: Bool, completion: (() -> ())?) {
-//        present(to, animated: animated, completion: completion)
-        to.view.alpha = 0.0
-        UIView.animate(withDuration: 0.10, delay: 0.0, options: [.curveEaseIn], animations: {
-            to.view.alpha = 1.0
-        }, completion: nil)
         self.navigationController?.view.addSubview(to.view)
+        to.view.alpha = 0.0
+        UIView.animate(withDuration: 0.16, delay: 0.0, options: [.curveEaseIn], animations: {
+            to.view.alpha = 1.0
+        })
     }
 }
