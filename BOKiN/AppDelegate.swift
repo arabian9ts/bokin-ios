@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        STPPaymentConfiguration.shared().publishableKey = "sk_test_edlvpzqAtUq7sKfV8xD02G4x"
+        STPPaymentConfiguration.shared().appleMerchantIdentifier = "merchant.bokin.redbottlecoffee"
         KeyChainManager.shared.restoreFromStorage()
         
         let navigator: UINavigationController?
