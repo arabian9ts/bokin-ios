@@ -49,7 +49,7 @@ final class BokinAPI {
         }
     }
     
-    struct GetPrefectures {
+    struct GetPrefectures: BokinRequest {
         typealias Response = PrefectureResponse
         
         var path: String = "/disasters/:id/prefectures"
@@ -62,7 +62,9 @@ final class BokinAPI {
         }
     }
     
-    struct PostBokinTransaction {
+    struct PostBokinTransaction: BokinRequest {
+        typealias Response = HttpResponse
+        
         var path: String = "/disasters/:id/donations"
         let method: HTTPMethod = .post
         let params: Parameters? = [:]
@@ -78,8 +80,8 @@ final class BokinAPI {
         }
     }
     
-    struct GetBokinTransactions {
-//        typealias Response = PrefectureResponse
+    struct GetBokinTransactions: BokinRequest {
+        typealias Response = HttpResponse
         
         var path: String = "/users/:id/donations"
         let method: HTTPMethod = .get
@@ -91,8 +93,8 @@ final class BokinAPI {
         }
     }
     
-    struct GetDonations {
-//        typealias Response = DonationResponse
+    struct GetDonations: BokinRequest {
+        typealias Response = DonationResponse
         
         var path: String = "/disasters/:id/donations"
         let method: HTTPMethod = .get
