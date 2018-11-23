@@ -14,6 +14,8 @@
 		DABAC97221A7EE85000A625A /* AdMobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC97121A7EE85000A625A /* AdMobViewController.swift */; };
 		FF1B90DB21A7BEAB007BCDED /* SettlementModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1B90D921A7BEAB007BCDED /* SettlementModalViewController.swift */; };
 		FF1B90DD21A7C7CF007BCDED /* SettlementModalView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1B90DC21A7C7CF007BCDED /* SettlementModalView.storyboard */; };
+		FF1B90E021A7EABF007BCDED /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1B90DF21A7EABF007BCDED /* Stripe.framework */; };
+		FF1B90E121A7EABF007BCDED /* Stripe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF1B90DF21A7EABF007BCDED /* Stripe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E021A45CFD00470DD4 /* AppDelegate.swift */; };
 		FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */; };
 		FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED83E421A45CFD00470DD4 /* Main.storyboard */; };
@@ -87,6 +89,7 @@
 				FFED840821A4688A00470DD4 /* RxSwift.framework in Embed Frameworks */,
 				FFED840521A4687500470DD4 /* RxCocoa.framework in Embed Frameworks */,
 				FFED840221A4685B00470DD4 /* ObjectMapper.framework in Embed Frameworks */,
+				FF1B90E121A7EABF007BCDED /* Stripe.framework in Embed Frameworks */,
 				FFED83FB21A4683100470DD4 /* Alamofire.framework in Embed Frameworks */,
 				FFED83FF21A4684200470DD4 /* Nuke.framework in Embed Frameworks */,
 				FFED844021A52F8D00470DD4 /* RxAtomic.framework in Embed Frameworks */,
@@ -104,6 +107,8 @@
 		DABAC97121A7EE85000A625A /* AdMobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobViewController.swift; sourceTree = "<group>"; };
 		FF1B90D921A7BEAB007BCDED /* SettlementModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettlementModalViewController.swift; sourceTree = "<group>"; };
 		FF1B90DC21A7C7CF007BCDED /* SettlementModalView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettlementModalView.storyboard; sourceTree = "<group>"; };
+		FF1B90DE21A7E7CC007BCDED /* BOKiN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BOKiN.entitlements; sourceTree = "<group>"; };
+		FF1B90DF21A7EABF007BCDED /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = Carthage/Build/iOS/Stripe.framework; sourceTree = "<group>"; };
 		FFED83DD21A45CFD00470DD4 /* BOKiN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOKiN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFED83E021A45CFD00470DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisastersViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +177,7 @@
 				FFED840721A4688A00470DD4 /* RxSwift.framework in Frameworks */,
 				FFED840421A4687500470DD4 /* RxCocoa.framework in Frameworks */,
 				FFED840121A4685B00470DD4 /* ObjectMapper.framework in Frameworks */,
+				FF1B90E021A7EABF007BCDED /* Stripe.framework in Frameworks */,
 				FFED83FA21A4683100470DD4 /* Alamofire.framework in Frameworks */,
 				FFED83FE21A4684200470DD4 /* Nuke.framework in Frameworks */,
 				FFED843F21A52F8D00470DD4 /* RxAtomic.framework in Frameworks */,
@@ -187,7 +193,7 @@
 				DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;
-      			sourceTree = "<group>";
+			sourceTree = "<group>";
 		};
 		FF1B90D721A7BEAB007BCDED /* SettlementModalView */ = {
 			isa = PBXGroup;
@@ -201,6 +207,7 @@
 		FFED83D421A45CFD00470DD4 = {
 			isa = PBXGroup;
 			children = (
+				FF1B90DF21A7EABF007BCDED /* Stripe.framework */,
 				FFED843E21A52F8C00470DD4 /* RxAtomic.framework */,
 				FFED840621A4688A00470DD4 /* RxSwift.framework */,
 				FFED840321A4687500470DD4 /* RxCocoa.framework */,
@@ -224,6 +231,7 @@
 		FFED83DF21A45CFD00470DD4 /* BOKiN */ = {
 			isa = PBXGroup;
 			children = (
+				FF1B90DE21A7E7CC007BCDED /* BOKiN.entitlements */,
 				FFED847D21A6676C00470DD4 /* Generated */,
 				FFED847521A665AF00470DD4 /* Domain */,
 				FFED83F821A4678100470DD4 /* Extension */,
@@ -471,6 +479,11 @@
 					FFED83DC21A45CFD00470DD4 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -505,7 +518,6 @@
 				FF1B90DD21A7C7CF007BCDED /* SettlementModalView.storyboard in Resources */,
 				FFED847421A6628A00470DD4 /* News.storyboard in Resources */,
 				DABAC97021A7EE42000A625A /* AdMob.storyboard in Resources */,
-				FFED84AE21A6E17A00470DD4 /* SettlementModel.storyboard in Resources */,
 				FFED83E821A45D0000470DD4 /* Assets.xcassets in Resources */,
 				FFED84A321A6C2D600470DD4 /* Bokin.storyboard in Resources */,
 				FFED846421A556B100470DD4 /* NewsTableViewCell.xib in Resources */,
@@ -529,6 +541,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Stripe.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -585,7 +598,6 @@
 				FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */,
 				FFED848121A6676C00470DD4 /* storyboards.swift in Sources */,
 				FFED848921A66C5500470DD4 /* OriginalNewsSiteViewController.swift in Sources */,
-				FFED84B021A6E1F100470DD4 /* SettlementModalViewController.swift in Sources */,
 				DABAC96C21A7EDB0000A625A /* AdMobViewWireframe.swift in Sources */,
 				FFED849721A6A5D000470DD4 /* DisasterDetailViewController.swift in Sources */,
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
@@ -754,6 +766,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BOKiN/BOKiN.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N97KZ29Q5G;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -767,7 +780,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rbcoffee.BOKiN.BOKiN;
+				PRODUCT_BUNDLE_IDENTIFIER = redbottlecoffee.bokin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -780,6 +793,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BOKiN/BOKiN.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N97KZ29Q5G;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -793,7 +807,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rbcoffee.BOKiN.BOKiN;
+				PRODUCT_BUNDLE_IDENTIFIER = redbottlecoffee.bokin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

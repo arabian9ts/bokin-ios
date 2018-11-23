@@ -12,9 +12,12 @@ class KeyChainManager {
     
     var storage: KeyChainStorage? = nil
     
-    var adUnitID = "ca-app-pub-3940256099942544/1712485313"
-    var googleAdMobID = "ca-app-pub-3940256099942544~1458002511"
+    var adUnitID:      String = "ca-app-pub-3940256099942544/1712485313"
+    var googleAdMobID: String = "ca-app-pub-3940256099942544~1458002511"
 
+    let stripeKey:  String = "pk_test_DdoOvb30f0qkxv4g7sW9QdHa"
+    let merchantId: String = "merchant.bokin.redbottlecoffee"
+    
     // Singleton Setting
     static var shared: KeyChainManager = {
         return KeyChainManager()
@@ -89,12 +92,12 @@ class KeyChainStorage: NSObject, NSSecureCoding {
     }
     
     func encode(with aCoder: NSCoder) {
-        aCoder.encode(self.name,  forKey: "userName")
-        aCoder.encode(self.token, forKey: "userToken")
+        aCoder.encode(self.name,       forKey: "userName")
+        aCoder.encode(self.token,      forKey: "userToken")
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.name  = aDecoder.decodeObject(forKey: "userName")  as! String
-        self.token = aDecoder.decodeObject(forKey: "userToken") as! String
+        self.name  = aDecoder.decodeObject(forKey: "userName")   as! String
+        self.token = aDecoder.decodeObject(forKey: "userToken")  as! String
     }
 }

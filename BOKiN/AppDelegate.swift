@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
+import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         KeyChainManager.shared.restoreFromStorage()
+        STPPaymentConfiguration.shared().publishableKey = KeyChainManager.shared.stripeKey
+        STPPaymentConfiguration.shared().appleMerchantIdentifier = KeyChainManager.shared.merchantId
         
         // Initialize the Google Mobile Ads SDK.
         // Use Sample AdMob app ID
@@ -41,7 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillResignActive(_ application: UIApplication) {
         KeyChainManager.shared.updateStorage(
             name:  nil,
-            token: "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.p0QTGHEptZedRFErL-RUytE_q4hJpPPBRiBZHunHyDU")
+            token: "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.p0QTGHEptZedRFErL-RUytE_q4hJpPPBRiBZHunHyDU"
+        )
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
