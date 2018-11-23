@@ -32,6 +32,7 @@
 		FF94BCBF21A8699A00860C65 /* CollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCBE21A8699A00860C65 /* CollectionView+.swift */; };
 		FF94BCC121A86D6100860C65 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCC021A86D6100860C65 /* UIApplication+.swift */; };
 		FF94BCC721A8C17F00860C65 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCC621A8C17F00860C65 /* Donation.swift */; };
+		FF94BCC921A8C20200860C65 /* DonationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCC821A8C20200860C65 /* DonationResponse.swift */; };
 		FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E021A45CFD00470DD4 /* AppDelegate.swift */; };
 		FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */; };
 		FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED83E421A45CFD00470DD4 /* Main.storyboard */; };
@@ -141,6 +142,7 @@
 		FF94BCBE21A8699A00860C65 /* CollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+.swift"; sourceTree = "<group>"; };
 		FF94BCC021A86D6100860C65 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		FF94BCC621A8C17F00860C65 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		FF94BCC821A8C20200860C65 /* DonationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationResponse.swift; sourceTree = "<group>"; };
 		FFED83DD21A45CFD00470DD4 /* BOKiN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOKiN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFED83E021A45CFD00470DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisastersViewController.swift; sourceTree = "<group>"; };
@@ -456,6 +458,7 @@
 				FFED841E21A46EDD00470DD4 /* UserResponse.swift */,
 				FFED846921A55D1200470DD4 /* NewsResponse.swift */,
 				FFED84A621A6C40E00470DD4 /* PrefectureResponse.swift */,
+				FF94BCC821A8C20200860C65 /* DonationResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -691,6 +694,7 @@
 				FFED841121A46A9400470DD4 /* BokinAPIError.swift in Sources */,
 				FF94BCBF21A8699A00860C65 /* CollectionView+.swift in Sources */,
 				FFED841921A46BA100470DD4 /* BokinRequest.swift in Sources */,
+				FF94BCC921A8C20200860C65 /* DonationResponse.swift in Sources */,
 				FF94BCB221A8510800860C65 /* DisasterBokinButtonViewCell.swift in Sources */,
 				FFED847C21A666BC00470DD4 /* Transitioner.swift in Sources */,
 				FFED841B21A46C3700470DD4 /* Disaster.swift in Sources */,
