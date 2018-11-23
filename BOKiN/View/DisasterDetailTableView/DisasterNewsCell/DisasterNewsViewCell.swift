@@ -93,9 +93,12 @@ class DisasterNewsDataSource: NSObject, UICollectionViewDelegate, UICollectionVi
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         targetContentOffset.pointee = scrollView.contentOffset
-        let indexOfMajorCell = fetchIndexOfMajorCell()
-        let indexPath = IndexPath(row: indexOfMajorCell, section: 0)
-        flowLayout?.collectionView!.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)    }
+        if items.count > 0 {
+            let indexOfMajorCell = fetchIndexOfMajorCell()
+            let indexPath = IndexPath(row: indexOfMajorCell, section: 0)
+            flowLayout?.collectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        }
+    }
     
     func collectionView(_ collectionView: UICollectionView, observedEvent: Event<[News]>) {
         Binder(self) { dataSource, element in
