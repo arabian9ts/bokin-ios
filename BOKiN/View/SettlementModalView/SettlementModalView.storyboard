@@ -112,7 +112,9 @@
                         <viewLayoutGuide key="safeArea" id="O6V-fD-IJ0"/>
                     </view>
                     <connections>
+                        <outlet property="contentsScrollView" destination="Ghl-kK-4op" id="6Tn-S0-vfV"/>
                         <outlet property="coverView" destination="mdy-VQ-eIa" id="C9a-Y2-haT"/>
+                        <outlet property="navigationHeaderView" destination="Qi0-kC-VRu" id="6eT-yN-6Z1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjS-UK-eE8" userLabel="First Responder" sceneMemberID="firstResponder"/>

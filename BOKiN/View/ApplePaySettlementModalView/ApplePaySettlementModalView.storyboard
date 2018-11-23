@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Advertisement Settlement Modal View Controller-->
+        <!--Apple Pay Settlement Modal View Controller-->
         <scene sceneID="XBs-uA-goR">
             <objects>
-                <viewController storyboardIdentifier="ApplePaySettlementModalView" id="v3H-F4-CtF" customClass="AdvertisementSettlementModalViewController" customModule="BOKiN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ApplePaySettlementModalView" id="v3H-F4-CtF" customClass="ApplePaySettlementModalViewController" customModule="BOKiN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QPd-9q-0P1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,6 +107,9 @@
                         <viewLayoutGuide key="safeArea" id="qCN-jW-wm6"/>
                     </view>
                     <size key="freeformSize" width="375" height="320"/>
+                    <connections>
+                        <outlet property="prefecturePicker" destination="uSb-G4-xf8" id="53E-zk-0uW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVP-K6-vDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

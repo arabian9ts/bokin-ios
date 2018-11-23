@@ -19,17 +19,39 @@ class SettlementModalViewController: UIViewController {
     
     @IBOutlet weak var prefecturePicker: UIPickerView!
     
-    private var dataList = ["福岡県", "宮崎県", "熊本県", "佐賀県", "長崎県"]
+    @IBOutlet weak var navigationHeaderView: UIScrollView!
+    @IBOutlet weak var contentsScrollView: UIScrollView!
+    
+    fileprivate let headerBottomLine = UIView()
+    fileprivate let navigationBottomLineH: CGFloat = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        contentsScrollView.delegate = self
+        navigationHeaderView.delegate = self
+        
+        contentsScrollView.isPagingEnabled = true
+        
+        self.setupNavigationBottomLine()
+        
         coverView.addGestureRecognizer(tapGesture)
         
-        prefecturePicker.delegate = self
-        prefecturePicker.dataSource = self
-        
         setupRx()
+    }
+    
+    fileprivate func setupNavigationBottomLine() {
+        let navigationHeaderViewW = navigationHeaderView.frame.size.width
+        let navigationHeaderViewH = navigationHeaderView.frame.size.height
+        headerBottomLine.frame = CGRect(
+            x: CGFloat(0),
+            y: CGFloat(navigationHeaderViewH - navigationBottomLineH),
+            width: CGFloat(navigationHeaderViewW / 2),
+            height: CGFloat(navigationBottomLineH)
+        )
+        self.headerBottomLine.backgroundColor = #colorLiteral(red: 1, green: 0.7493436933, blue: 0, alpha: 1)
+        
+        self.navigationHeaderView.addSubview(headerBottomLine)
     }
     
     private func setupRx() {
@@ -46,23 +68,31 @@ class SettlementModalViewController: UIViewController {
     }
 }
 
-extension SettlementModalViewController: UIPickerViewDelegate, UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
+extension SettlementModalViewController: UIScrollViewDelegate {
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return dataList.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let pageWidth = contentsScrollView.frame.width
+        let fractionalPage = Double(contentsScrollView.contentOffset.x / pageWidth)
+        animateNavigationBottomLine(page: fractionalPage)
         
-        return dataList[row]
     }
     
-    func pickerView(_ pickerView: UIPickerView,
-                    didSelectRow row: Int,
-                    inComponent component: Int) {
-    
+    fileprivate func animateNavigationBottomLine(page: Double) {
+        let navigationHeaderViewW = navigationHeaderView.frame.size.width
+        let navigationHeaderViewH = navigationHeaderView.frame.size.height
+        
+        let minX = Double(navigationHeaderViewW / 2) * page
+        
+        UIView.animate(withDuration: 0.1, animations: {
+            self.headerBottomLine.frame = CGRect(
+                x: CGFloat(minX),
+                y: CGFloat(navigationHeaderViewH - self.navigationBottomLineH),
+                width: CGFloat(navigationHeaderViewW / 2),
+                height: CGFloat(self.navigationBottomLineH)
+            )
+        })
     }
+    
+    
+    
 }

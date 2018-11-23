@@ -68,9 +68,9 @@ internal enum StoryboardScene {
   internal enum ApplePaySettlementModalView: StoryboardType {
     internal static let storyboardName = "ApplePaySettlementModalView"
 
-    internal static let initialScene = InitialSceneType<BOKiN.AdvertisementSettlementModalViewController>(storyboard: ApplePaySettlementModalView.self)
+    internal static let initialScene = InitialSceneType<BOKiN.ApplePaySettlementModalViewController>(storyboard: ApplePaySettlementModalView.self)
 
-    internal static let applePaySettlementModalView = SceneType<BOKiN.AdvertisementSettlementModalViewController>(storyboard: ApplePaySettlementModalView.self, identifier: "ApplePaySettlementModalView")
+    internal static let applePaySettlementModalView = SceneType<BOKiN.ApplePaySettlementModalViewController>(storyboard: ApplePaySettlementModalView.self, identifier: "ApplePaySettlementModalView")
   }
   internal enum Bokin: StoryboardType {
     internal static let storyboardName = "Bokin"

@@ -13,26 +13,96 @@
         <!--Advertisement Settlement Modal View Controller-->
         <scene sceneID="IuS-Ab-W2b">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sch-uS-D2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="AdvertisementSettlementModalView" id="mxd-lw-8tS" customClass="AdvertisementSettlementModalViewController" customModule="BOKiN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pol-Ow-L0m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="広告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIp-2p-QoN">
-                                <rect key="frame" x="135" y="150" width="35" height="21"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qVQ-kO-KDF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-4t-Raq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PgC-Im-Vxz"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="VSj-TL-4sf"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57p-Yz-DvX">
+                                        <rect key="frame" x="0.0" y="40" width="375" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jn4-tB-UPb">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTs-Of-anN">
+                                                        <rect key="frame" x="35" y="12" width="30" height="36"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="ー"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="LTs-Of-anN" firstAttribute="centerX" secondItem="jn4-tB-UPb" secondAttribute="centerX" id="7h5-El-Unf"/>
+                                                    <constraint firstItem="LTs-Of-anN" firstAttribute="centerY" secondItem="jn4-tB-UPb" secondAttribute="centerY" id="Y62-Zr-0TP"/>
+                                                    <constraint firstAttribute="width" constant="100" id="b36-kR-E1a"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZBW-VY-TOS">
+                                                <rect key="frame" x="100" y="0.0" width="175" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="175" id="Ufd-pU-kvC"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUy-i8-Qwe">
+                                                <rect key="frame" x="275" y="0.0" width="100" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsB-2m-wia">
+                                                        <rect key="frame" x="35" y="7.5" width="30" height="45"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                                        <state key="normal" title="＋"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="nsB-2m-wia" firstAttribute="centerY" secondItem="RUy-i8-Qwe" secondAttribute="centerY" id="4jm-Es-FO7"/>
+                                                    <constraint firstItem="nsB-2m-wia" firstAttribute="centerX" secondItem="RUy-i8-Qwe" secondAttribute="centerX" id="Cfh-bX-Bgd"/>
+                                                    <constraint firstAttribute="width" constant="100" id="k9k-kP-vlY"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="jCk-4Y-2wp"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="VX1-mp-dkA"/>
+                                    </stackView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ET9-cB-iK8">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="cGN-5b-LNB"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SU4-k3-Yli">
+                                        <rect key="frame" x="0.0" y="250" width="375" height="30"/>
+                                        <state key="normal" title="寄付する"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hP2-FM-GHB"/>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="375" height="370"/>
                     <size key="freeformSize" width="375" height="320"/>
+                    <connections>
+                        <outlet property="prefecturePicker" destination="ET9-cB-iK8" id="bjo-8u-s9H"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sch-uS-D2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-47.200000000000003" y="29.685157421289357"/>
         </scene>
