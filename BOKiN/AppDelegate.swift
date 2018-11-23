@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 import Stripe
 
 @UIApplicationMain
@@ -18,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         KeyChainManager.shared.restoreFromStorage()
         STPPaymentConfiguration.shared().publishableKey = KeyChainManager.shared.stripeKey
         STPPaymentConfiguration.shared().appleMerchantIdentifier = KeyChainManager.shared.merchantId
+        
+        // Initialize the Google Mobile Ads SDK.
+        // Use Sample AdMob app ID
+        GADMobileAds.configure(withApplicationID: KeyChainManager.shared.adUnitID)
         
         let navigator: UINavigationController?
         let firstVC = StoryboardScene.Main.initialScene.instantiate()

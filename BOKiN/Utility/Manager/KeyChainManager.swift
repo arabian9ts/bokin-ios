@@ -12,6 +12,9 @@ class KeyChainManager {
     
     var storage: KeyChainStorage? = nil
     
+    var adUnitID:      String = "ca-app-pub-3940256099942544/1712485313"
+    var googleAdMobID: String = "ca-app-pub-3940256099942544~1458002511"
+
     let stripeKey:  String = "pk_test_DdoOvb30f0qkxv4g7sW9QdHa"
     let merchantId: String = "merchant.bokin.redbottlecoffee"
     
