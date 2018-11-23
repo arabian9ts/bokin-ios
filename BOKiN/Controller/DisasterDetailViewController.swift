@@ -29,8 +29,7 @@ class DisasterDetailViewController: UIViewController {
     private func setupRx() {
         bokinButton.rx.tap
             .subscribe { [self] _ in
-                let bokinVC = SettlementModalViewBuilder().build()
-                self.view.addSubview(bokinVC.view)
+                SettlementModalViewWireframeImpl(transitioner: self).transitionToSettlementModalViewPage()
         }
         .disposed(by: disposeBag)
     }
@@ -39,6 +38,11 @@ class DisasterDetailViewController: UIViewController {
 
 extension DisasterDetailViewController: Transitioner {
     func transition(to: UIViewController, animated: Bool, completion: (() -> ())?) {
-        present(to, animated: animated, completion: completion)
+//        present(to, animated: animated, completion: completion)
+        to.view.alpha = 0.0
+        UIView.animate(withDuration: 0.10, delay: 0.0, options: [.curveEaseIn], animations: {
+            to.view.alpha = 1.0
+        }, completion: nil)
+        self.navigationController?.view.addSubview(to.view)
     }
 }
