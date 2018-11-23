@@ -135,6 +135,9 @@
                         <color key="backgroundColor" red="0.31598984771573602" green="0.31598984771573602" blue="0.31598984771573602" alpha="0.3633882705479452" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="O6V-fD-IJ0"/>
                     </view>
+                    <connections>
+                        <outlet property="coverView" destination="mdy-VQ-eIa" id="C9a-Y2-haT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjS-UK-eE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
