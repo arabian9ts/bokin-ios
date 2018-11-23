@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DABAC96A21A7ECC7000A625A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */; };
 		FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E021A45CFD00470DD4 /* AppDelegate.swift */; };
 		FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */; };
 		FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED83E421A45CFD00470DD4 /* Main.storyboard */; };
@@ -92,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		FFED83DD21A45CFD00470DD4 /* BOKiN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOKiN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFED83E021A45CFD00470DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisastersViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABAC96A21A7ECC7000A625A /* GoogleMobileAds.framework in Frameworks */,
 				FFED840721A4688A00470DD4 /* RxSwift.framework in Frameworks */,
 				FFED840421A4687500470DD4 /* RxCocoa.framework in Frameworks */,
 				FFED840121A4685B00470DD4 /* ObjectMapper.framework in Frameworks */,
@@ -170,6 +173,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DABAC96821A7ECC6000A625A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FFED83D421A45CFD00470DD4 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +192,7 @@
 				FFED83F921A4683100470DD4 /* Alamofire.framework */,
 				FFED83DF21A45CFD00470DD4 /* BOKiN */,
 				FFED83DE21A45CFD00470DD4 /* Products */,
+				DABAC96821A7ECC6000A625A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -725,10 +737,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6U5H77AN3Z;
+				DEVELOPMENT_TEAM = N97KZ29Q5G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/frameworks",
 				);
 				INFOPLIST_FILE = BOKiN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -750,10 +763,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6U5H77AN3Z;
+				DEVELOPMENT_TEAM = N97KZ29Q5G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/frameworks",
 				);
 				INFOPLIST_FILE = BOKiN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
