@@ -25,7 +25,7 @@ class KeyChainManager {
     
     // Bearer Token for Alamofire HTTPHeaders
     func getBearerToken() -> String {
-        return "Bearer \(self.storage?.token ?? "")"
+        return "Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.p0QTGHEptZedRFErL-RUytE_q4hJpPPBRiBZHunHyDU"
     }
     
     func updateStorage(name: String?, token: String?) {

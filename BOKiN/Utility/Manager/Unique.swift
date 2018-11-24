@@ -14,4 +14,6 @@ class Unique {
     }()
     
     var donations: [Donation] = []
+    var disaaster: Disaster   = Disaster()
+    var currentDonation: Donation = Donation()
 }

@@ -67,13 +67,15 @@ final class BokinAPI {
         
         var path: String = "/disasters/:id/donations"
         let method: HTTPMethod = .post
-        let params: Parameters? = [:]
+        var params: Parameters? = [:]
         var headers: HTTPHeaders? = [:]
         
         init(disasterId: Int = 1, prefectureId: Int = 1, amount: Int = 0) {
             path = "/disasters/\(disasterId)/donations"
             headers = [
-                "Authorization" : KeyChainManager.shared.getBearerToken(),
+                "Authorization" : KeyChainManager.shared.getBearerToken()
+            ]
+            params = [
                 "disaster_id": String(disasterId),
                 "prefecture_id": String(prefectureId),
                 "amount": String(amount)

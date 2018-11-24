@@ -200,6 +200,7 @@
                     </view>
                     <size key="freeformSize" width="350" height="320"/>
                     <connections>
+                        <outlet property="amountLabel" destination="5PA-Zf-VPv" id="VTB-z4-UrZ"/>
                         <outlet property="charityMoney" destination="x2L-jg-RSv" id="ldO-ka-FuA"/>
                         <outlet property="donateButton" destination="5SR-sV-D4R" id="der-yy-hwH"/>
                         <outlet property="minusButton" destination="9dM-r2-69c" id="9m1-0c-tGW"/>

@@ -38,6 +38,7 @@ class DisasterDetailViewController: UIViewController {
     private func setupRx() {
         disaster.asObservable().subscribe(onNext: { disaster in
             self.donationViewModel.fetchDonations(disasterId: disaster.id)
+            Unique.shared.disaaster = disaster
         })
         .disposed(by: disposeBag)
     }

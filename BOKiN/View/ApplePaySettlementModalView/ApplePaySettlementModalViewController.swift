@@ -18,6 +18,7 @@ class ApplePaySettlementModalViewController: UIViewController, PKPaymentAuthoriz
     @IBOutlet weak var donateButton: UIButton!
     @IBOutlet weak var minusButton: UIButton!
     @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var amountLabel: UILabel!
     
     @IBOutlet weak var prefecturePicker: UIPickerView!
     
@@ -25,6 +26,10 @@ class ApplePaySettlementModalViewController: UIViewController, PKPaymentAuthoriz
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let initialRow: Int = Int(Unique.shared.donations.count / 2)
+        amountLabel.text = "\(Unique.shared.donations[initialRow].amount)"
+        prefecturePicker.selectRow(initialRow, inComponent: 1, animated: true)
         
         prefecturePicker.delegate = self
         prefecturePicker.dataSource = self
@@ -75,6 +80,11 @@ class ApplePaySettlementModalViewController: UIViewController, PKPaymentAuthoriz
         dismiss(animated: true, completion: nil)
         DonatedModalViewWireframeImpl(transitioner: UIApplication.topViewController() as! Transitioner)
             .transitionToDonatedModalViewPage()
+        let request = BokinAPI.PostBokinTransaction(
+            disasterId: Unique.shared.disaaster.id,
+            prefectureId: Unique.shared.currentDonation.id, amount: Int(charityMoney.text!)!)
+        APIClient().send(request: request) { _ in }
+            DonatedModalViewWireframeImpl(transitioner: UIApplication.topViewController() as! Transitioner).transitionToDonatedModalViewPage()
     }
     
     func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, completion: @escaping (PKPaymentAuthorizationStatus) -> Void) {
@@ -98,13 +108,13 @@ extension ApplePaySettlementModalViewController: UIPickerViewDelegate, UIPickerV
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
         return Unique.shared.donations[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView,
                     didSelectRow row: Int,
                     inComponent component: Int) {
-        
+        amountLabel.text = "\(Unique.shared.donations[row].amount)"
+        Unique.shared.currentDonation = Unique.shared.donations[row]
     }
 }
