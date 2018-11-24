@@ -8,8 +8,12 @@
 
 import UIKit
 import GoogleMobileAds
+import RxSwift
+import RxCocoa
 
 class AdvertisementSettlementModalViewController: UIViewController {
+    
+    let disposeBag = DisposeBag()
     
     @IBOutlet weak var prefecturePicker: UIPickerView!
     
@@ -30,14 +34,19 @@ class AdvertisementSettlementModalViewController: UIViewController {
         rewardBasedAd = GADRewardBasedVideoAd.sharedInstance()
         rewardBasedAd.delegate = self
         rewardBasedAd.load(GADRequest(), withAdUnitID: KeyChainManager.shared.adUnitID)
+        
+        setupRx()
     }
     
-    @IBAction func pushAdMobButton(_ sender: UIButton) {
-        if rewardBasedAd.isReady {
-            adMobButton.isEnabled = false
-            rewardBasedAd.present(fromRootViewController: self)
-        }
-    }
+    private func setupRx() {
+        adMobButton.rx.tap
+            .subscribe { _ in
+                if self.rewardBasedAd.isReady {
+                    self.adMobButton.isEnabled = false
+                    self.rewardBasedAd.present(fromRootViewController: self)
+            }
+    }.disposed(by: disposeBag)
+}
 }
 
 extension AdvertisementSettlementModalViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -83,6 +92,8 @@ extension AdvertisementSettlementModalViewController: GADRewardBasedVideoAdDeleg
     
     func rewardBasedVideoAdDidClose(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
         adMobButton.isEnabled = true
+        DonatedModalViewWireframeImpl(transitioner: UIApplication.topViewController() as! Transitioner)
+            .transitionToDonatedModalViewPage()
     }
     
     func rewardBasedVideoAdWillLeaveApplication(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {

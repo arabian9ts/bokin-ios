@@ -74,6 +74,8 @@ class ApplePaySettlementModalViewController: UIViewController, PKPaymentAuthoriz
     
     func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
         dismiss(animated: true, completion: nil)
+        DonatedModalViewWireframeImpl(transitioner: UIApplication.topViewController() as! Transitioner)
+            .transitionToDonatedModalViewPage()
     }
     
     func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, completion: @escaping (PKPaymentAuthorizationStatus) -> Void) {
