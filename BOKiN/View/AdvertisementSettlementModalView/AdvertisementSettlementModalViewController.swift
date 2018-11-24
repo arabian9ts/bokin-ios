@@ -98,7 +98,7 @@ extension AdvertisementSettlementModalViewController: GADRewardBasedVideoAdDeleg
         let request = BokinAPI.PostBokinTransaction(
             disasterId: Unique.shared.disaaster.id,
             prefectureId: Unique.shared.currentDonation.id, amount: 10)
-        APIClient().send(request: request)
+        APIClient().send(request: request, completion: nil)
         adMobButton.isEnabled = true
         DonatedModalViewWireframeImpl(transitioner: UIApplication.topViewController() as! Transitioner)
             .transitionToDonatedModalViewPage()
