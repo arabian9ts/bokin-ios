@@ -39,9 +39,6 @@
                                                         <rect key="frame" x="35" y="12" width="30" height="36"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <state key="normal" title="ー"/>
-                                                        <connections>
-                                                            <action selector="pushMinusButton:" destination="v3H-F4-CtF" eventType="touchUpInside" id="YNt-oh-P7E"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,9 +83,6 @@
                                                         <rect key="frame" x="35" y="7.5" width="30" height="45"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                                         <state key="normal" title="＋"/>
-                                                        <connections>
-                                                            <action selector="pushPlusButton:" destination="v3H-F4-CtF" eventType="touchUpInside" id="NKC-8C-L9h"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,12 +149,15 @@
                     <size key="freeformSize" width="350" height="320"/>
                     <connections>
                         <outlet property="charityMoney" destination="x2L-jg-RSv" id="ldO-ka-FuA"/>
+                        <outlet property="donateButton" destination="5SR-sV-D4R" id="der-yy-hwH"/>
+                        <outlet property="minusButton" destination="9dM-r2-69c" id="9m1-0c-tGW"/>
+                        <outlet property="plusButton" destination="DAW-PT-m0j" id="bwX-sf-4Tk"/>
                         <outlet property="prefecturePicker" destination="uSb-G4-xf8" id="53E-zk-0uW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vVP-K6-vDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112.8" y="68.365817091454275"/>
+            <point key="canvasLocation" x="112" y="68.365817091454275"/>
         </scene>
     </scenes>
 </document>
