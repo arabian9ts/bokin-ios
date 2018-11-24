@@ -49,7 +49,7 @@ final class BokinAPI {
         }
     }
     
-    struct GetPrefectures {
+    struct GetPrefectures: BokinRequest {
         typealias Response = PrefectureResponse
         
         var path: String = "/disasters/:id/prefectures"
@@ -59,6 +59,51 @@ final class BokinAPI {
         
         init(id: Int = 0) {
             path = "/disasters/\(id)/prefectures"
+        }
+    }
+    
+    struct PostBokinTransaction: BokinRequest {
+        typealias Response = HttpResponse
+        
+        var path: String = "/disasters/:id/donations"
+        let method: HTTPMethod = .post
+        let params: Parameters? = [:]
+        var headers: HTTPHeaders? = [:]
+        
+        init(disasterId: Int = 1, prefectureId: Int = 1, amount: Int = 0) {
+            path = "/disasters/\(disasterId)/donations"
+            headers = [
+                "Authorization" : KeyChainManager.shared.getBearerToken(),
+                "disaster_id": String(disasterId),
+                "prefecture_id": String(prefectureId),
+                "amount": String(amount)
+            ]
+        }
+    }
+    
+    struct GetBokinTransactions: BokinRequest {
+        typealias Response = HttpResponse
+        
+        var path: String = "/users/:id/donations"
+        let method: HTTPMethod = .get
+        let params: Parameters? = [:]
+        let headers: HTTPHeaders? = [:]
+        
+        init(id: Int = 1) {
+            path = "/users/donations"
+        }
+    }
+    
+    struct GetDonations: BokinRequest {
+        typealias Response = DonationResponse
+        
+        var path: String = "/disasters/:id/donations"
+        let method: HTTPMethod = .get
+        let params: Parameters? = [:]
+        let headers: HTTPHeaders? = [:]
+        
+        init(id: Int = 1) {
+            path = "/disasters/\(id)/donations"
         }
     }
 }
