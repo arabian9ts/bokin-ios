@@ -13,10 +13,8 @@ class DonatedModalViewController: UIViewController {
      override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
-//            self.navigationController?.popToViewController(self.navigationController!.viewControllers[2], animated: true)
-//            self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
-//            self.dismiss(animated: true, completion: nil)
-            
+        self.view.removeFromSuperview()
+    self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
         }
      }
 }
