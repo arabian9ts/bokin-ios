@@ -24,7 +24,7 @@ class DisasterNewsViewCell: UITableViewCell {
         super.awakeFromNib()
         
         newsCollectionView.delegate = dataSource
-        newsCollectionView.backgroundColor = #colorLiteral(red: 0.9427082911, green: 0.72054101, blue: 0.2288987002, alpha: 1)
+        newsCollectionView.backgroundColor = #colorLiteral(red: 0.7701798081, green: 0.7656028867, blue: 0.7736989856, alpha: 1)
         
         setupCollectionView()
         
@@ -110,7 +110,7 @@ class DisasterNewsDataSource: NSObject, UICollectionViewDelegate, UICollectionVi
         .on(observedEvent)
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedNews.onNext(items[indexPath.row])
     }
     

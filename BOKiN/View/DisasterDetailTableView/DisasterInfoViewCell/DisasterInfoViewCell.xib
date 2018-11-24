@@ -81,6 +81,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="disasterDateTimeLabel" destination="3ho-op-PLH" id="2fK-Kw-NAo"/>
+                <outlet property="disasterImageView" destination="Amr-UN-8wD" id="PI4-ZS-pbS"/>
+                <outlet property="disasterTitleLabel" destination="7bY-9t-vg0" id="PUD-sv-enk"/>
                 <outlet property="summaryTextView" destination="xvP-Rh-wJm" id="s6G-ci-feS"/>
             </connections>
             <point key="canvasLocation" x="122.40000000000001" y="396.25187406296857"/>

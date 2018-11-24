@@ -10,13 +10,19 @@ import UIKit
 
 class NewsCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
     func setupCell(news: News) {
-        
+        loadImageWithNuke(url: news.imageUrl, imageView: imageView)
+        titleLabel.text = news.title
+        textView.text = news.summary
     }
 
 }

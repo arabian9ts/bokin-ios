@@ -70,7 +70,7 @@ class DisastersDataSource: NSObject, UITableViewDelegate, UITableViewDataSource,
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 160
+            return 240
         }
         else {
             return 80

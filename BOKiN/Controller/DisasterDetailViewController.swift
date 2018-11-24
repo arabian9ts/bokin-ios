@@ -21,6 +21,7 @@ class DisasterDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setLogoImageView()
+        disasterDetailTableView.separatorStyle = .none
         
         disasterDetailTableView.delegate = self
         disasterDetailTableView.dataSource = self
@@ -59,13 +60,14 @@ extension DisasterDetailViewController: Transitioner {
 
 extension DisasterDetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(with: DisasterInfoViewCell.self, for: indexPath)
+            cell.setupCell(disaster: self.disaster.value)
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(with: DisasterBokinButtonViewCell.self, for: indexPath)

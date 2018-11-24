@@ -10,7 +10,10 @@ import UIKit
 
 class DisasterInfoViewCell: UITableViewCell {
     
+    @IBOutlet weak var disasterTitleLabel: UILabel!
     @IBOutlet weak var summaryTextView: UITextView!
+    @IBOutlet weak var disasterImageView: UIImageView!
+    @IBOutlet weak var disasterDateTimeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,13 +24,13 @@ class DisasterInfoViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
-    @IBAction func bokinAction(_ sender: UIButton) {
-        print("tap")
-        
+    func setupCell(disaster: Disaster) {
+        disasterTitleLabel.text = disaster.title
+        summaryTextView.text = disaster.description
+        loadImageWithNuke(url: disaster.imageUrl, imageView: disasterImageView)
+        disasterDateTimeLabel.text = disaster.datetime
     }
     
 }
