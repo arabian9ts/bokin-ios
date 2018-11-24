@@ -15,6 +15,7 @@ class AdvertisementSettlementModalViewController: UIViewController {
     
     private let disposeBag        = DisposeBag()
     private let donationViewModel = DonationViewModel()
+    @IBOutlet weak var amountLabel: UILabel!
     
     @IBOutlet weak var prefecturePicker: UIPickerView!
     
@@ -24,6 +25,10 @@ class AdvertisementSettlementModalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let initialRow: Int = Int(Unique.shared.donations.count / 2)
+        amountLabel.text = "\(Unique.shared.donations[initialRow].amount)"
+        prefecturePicker.selectRow(initialRow, inComponent: 1, animated: true)
         
         adMobButton.isEnabled = false
         
@@ -64,9 +69,7 @@ extension AdvertisementSettlementModalViewController: UIPickerViewDelegate, UIPi
     func pickerView(_ pickerView: UIPickerView,
                     didSelectRow row: Int,
                     inComponent component: Int) {
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, observedEvent: Event<Donation>) {
+        amountLabel.text = "\(Unique.shared.donations[row].amount)"
     }
 }
 

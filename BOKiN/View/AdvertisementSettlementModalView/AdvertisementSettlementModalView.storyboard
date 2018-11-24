@@ -162,6 +162,7 @@
                     <size key="freeformSize" width="350" height="320"/>
                     <connections>
                         <outlet property="adMobButton" destination="Jbg-Dq-oF8" id="Z9p-wb-8Dd"/>
+                        <outlet property="amountLabel" destination="E1V-pl-xul" id="w7p-TU-Epx"/>
                         <outlet property="prefecturePicker" destination="ET9-cB-iK8" id="bjo-8u-s9H"/>
                     </connections>
                 </viewController>

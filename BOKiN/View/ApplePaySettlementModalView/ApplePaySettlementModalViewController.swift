@@ -18,6 +18,7 @@ class ApplePaySettlementModalViewController: UIViewController, PKPaymentAuthoriz
     @IBOutlet weak var donateButton: UIButton!
     @IBOutlet weak var minusButton: UIButton!
     @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var amountLabel: UILabel!
     
     @IBOutlet weak var prefecturePicker: UIPickerView!
     
@@ -25,6 +26,10 @@ class ApplePaySettlementModalViewController: UIViewController, PKPaymentAuthoriz
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let initialRow: Int = Int(Unique.shared.donations.count / 2)
+        amountLabel.text = "\(Unique.shared.donations[initialRow].amount)"
+        prefecturePicker.selectRow(initialRow, inComponent: 1, animated: true)
         
         prefecturePicker.delegate = self
         prefecturePicker.dataSource = self
@@ -105,6 +110,6 @@ extension ApplePaySettlementModalViewController: UIPickerViewDelegate, UIPickerV
     func pickerView(_ pickerView: UIPickerView,
                     didSelectRow row: Int,
                     inComponent component: Int) {
-        
+        amountLabel.text = "\(Unique.shared.donations[row].amount)"
     }
 }
