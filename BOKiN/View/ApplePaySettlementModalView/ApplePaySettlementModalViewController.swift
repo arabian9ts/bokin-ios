@@ -83,7 +83,7 @@ class ApplePaySettlementModalViewController: UIViewController, PKPaymentAuthoriz
         let request = BokinAPI.PostBokinTransaction(
             disasterId: Unique.shared.disaaster.id,
             prefectureId: Unique.shared.currentDonation.id, amount: Int(charityMoney.text!)!)
-            APIClient().send(request: request, completion: nil)
+        APIClient().send(request: request) { _ in }
             DonatedModalViewWireframeImpl(transitioner: UIApplication.topViewController() as! Transitioner).transitionToDonatedModalViewPage()
     }
     
