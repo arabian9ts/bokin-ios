@@ -24,6 +24,8 @@
 		FF1B90E021A7EABF007BCDED /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1B90DF21A7EABF007BCDED /* Stripe.framework */; };
 		FF1B90E121A7EABF007BCDED /* Stripe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF1B90DF21A7EABF007BCDED /* Stripe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF605E2521A8C6B800D9CDA8 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF605E2421A8C6B800D9CDA8 /* HttpResponse.swift */; };
+		FF605E2721A8DDBF00D9CDA8 /* DonationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF605E2621A8DDBF00D9CDA8 /* DonationViewModel.swift */; };
+		FF605E2921A8EE5F00D9CDA8 /* Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF605E2821A8EE5F00D9CDA8 /* Unique.swift */; };
 		FF94BCAA21A8473100860C65 /* DisasterInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCA821A8473100860C65 /* DisasterInfoViewCell.swift */; };
 		FF94BCAB21A8473100860C65 /* DisasterInfoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF94BCA921A8473100860C65 /* DisasterInfoViewCell.xib */; };
 		FF94BCB221A8510800860C65 /* DisasterBokinButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCB021A8510800860C65 /* DisasterBokinButtonViewCell.swift */; };
@@ -34,9 +36,9 @@
 		FF94BCBD21A867F100860C65 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF94BCBB21A867F100860C65 /* NewsCollectionViewCell.xib */; };
 		FF94BCBF21A8699A00860C65 /* CollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCBE21A8699A00860C65 /* CollectionView+.swift */; };
 		FF94BCC121A86D6100860C65 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCC021A86D6100860C65 /* UIApplication+.swift */; };
+		FF94BCC521A89AA700860C65 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCC421A89AA700860C65 /* UIViewController+.swift */; };
 		FF94BCC721A8C17F00860C65 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCC621A8C17F00860C65 /* Donation.swift */; };
 		FF94BCC921A8C20200860C65 /* DonationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCC821A8C20200860C65 /* DonationResponse.swift */; };
-		FF94BCC521A89AA700860C65 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94BCC421A89AA700860C65 /* UIViewController+.swift */; };
 		FFED83E121A45CFD00470DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E021A45CFD00470DD4 /* AppDelegate.swift */; };
 		FFED83E321A45CFD00470DD4 /* DisastersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */; };
 		FFED83E621A45CFD00470DD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFED83E421A45CFD00470DD4 /* Main.storyboard */; };
@@ -138,6 +140,8 @@
 		FF1B90DE21A7E7CC007BCDED /* BOKiN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BOKiN.entitlements; sourceTree = "<group>"; };
 		FF1B90DF21A7EABF007BCDED /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = Carthage/Build/iOS/Stripe.framework; sourceTree = "<group>"; };
 		FF605E2421A8C6B800D9CDA8 /* HttpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		FF605E2621A8DDBF00D9CDA8 /* DonationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewModel.swift; sourceTree = "<group>"; };
+		FF605E2821A8EE5F00D9CDA8 /* Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unique.swift; sourceTree = "<group>"; };
 		FF94BCA821A8473100860C65 /* DisasterInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterInfoViewCell.swift; sourceTree = "<group>"; };
 		FF94BCA921A8473100860C65 /* DisasterInfoViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisasterInfoViewCell.xib; sourceTree = "<group>"; };
 		FF94BCB021A8510800860C65 /* DisasterBokinButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisasterBokinButtonViewCell.swift; sourceTree = "<group>"; };
@@ -148,9 +152,9 @@
 		FF94BCBB21A867F100860C65 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		FF94BCBE21A8699A00860C65 /* CollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+.swift"; sourceTree = "<group>"; };
 		FF94BCC021A86D6100860C65 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		FF94BCC421A89AA700860C65 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		FF94BCC621A8C17F00860C65 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
 		FF94BCC821A8C20200860C65 /* DonationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationResponse.swift; sourceTree = "<group>"; };
-		FF94BCC421A89AA700860C65 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		FFED83DD21A45CFD00470DD4 /* BOKiN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOKiN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFED83E021A45CFD00470DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFED83E221A45CFD00470DD4 /* DisastersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisastersViewController.swift; sourceTree = "<group>"; };
@@ -394,6 +398,7 @@
 			children = (
 				FFED842C21A5188F00470DD4 /* DisastersViewModel.swift */,
 				FFED846721A559A400470DD4 /* NewsViewModel.swift */,
+				FF605E2621A8DDBF00D9CDA8 /* DonationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -496,6 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				FFED842321A47B1300470DD4 /* KeyChainManager.swift */,
+				FF605E2821A8EE5F00D9CDA8 /* Unique.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -759,8 +765,10 @@
 				FFED84A921A6C46100470DD4 /* Prefecture.swift in Sources */,
 				FFED841F21A46EDD00470DD4 /* UserResponse.swift in Sources */,
 				FFED848721A66B5800470DD4 /* OriginalNewsSiteBuilder.swift in Sources */,
+				FF605E2721A8DDBF00D9CDA8 /* DonationViewModel.swift in Sources */,
 				FFED846A21A55D1200470DD4 /* NewsResponse.swift in Sources */,
 				FFED846621A5583700470DD4 /* News.swift in Sources */,
+				FF605E2921A8EE5F00D9CDA8 /* Unique.swift in Sources */,
 				DABAC96E21A7EDDE000A625A /* DonatedModalViewBuilder.swift in Sources */,
 				FF94BCC121A86D6100860C65 /* UIApplication+.swift in Sources */,
 				FFED849B21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift in Sources */,
