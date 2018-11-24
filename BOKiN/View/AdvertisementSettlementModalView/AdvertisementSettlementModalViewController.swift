@@ -70,6 +70,7 @@ extension AdvertisementSettlementModalViewController: UIPickerViewDelegate, UIPi
                     didSelectRow row: Int,
                     inComponent component: Int) {
         amountLabel.text = "\(Unique.shared.donations[row].amount)"
+        Unique.shared.currentDonation = Unique.shared.donations[row]
     }
 }
 
@@ -94,6 +95,10 @@ extension AdvertisementSettlementModalViewController: GADRewardBasedVideoAdDeleg
     }
     
     func rewardBasedVideoAdDidClose(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
+        let request = BokinAPI.PostBokinTransaction(
+            disasterId: Unique.shared.disaaster.id,
+            prefectureId: Unique.shared.currentDonation.id, amount: 10)
+        APIClient().send(request: request)
         adMobButton.isEnabled = true
         DonatedModalViewWireframeImpl(transitioner: UIApplication.topViewController() as! Transitioner)
             .transitionToDonatedModalViewPage()

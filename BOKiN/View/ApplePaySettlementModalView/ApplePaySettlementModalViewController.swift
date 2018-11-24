@@ -80,6 +80,11 @@ class ApplePaySettlementModalViewController: UIViewController, PKPaymentAuthoriz
         dismiss(animated: true, completion: nil)
         DonatedModalViewWireframeImpl(transitioner: UIApplication.topViewController() as! Transitioner)
             .transitionToDonatedModalViewPage()
+        let request = BokinAPI.PostBokinTransaction(
+            disasterId: Unique.shared.disaaster.id,
+            prefectureId: Unique.shared.currentDonation.id, amount: Int(charityMoney.text!)!)
+            APIClient().send(request: request)
+            DonatedModalViewWireframeImpl(transitioner: UIApplication.topViewController() as! Transitioner).transitionToDonatedModalViewPage()
     }
     
     func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, completion: @escaping (PKPaymentAuthorizationStatus) -> Void) {
@@ -103,7 +108,6 @@ extension ApplePaySettlementModalViewController: UIPickerViewDelegate, UIPickerV
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
         return Unique.shared.donations[row].name
     }
     
@@ -111,5 +115,6 @@ extension ApplePaySettlementModalViewController: UIPickerViewDelegate, UIPickerV
                     didSelectRow row: Int,
                     inComponent component: Int) {
         amountLabel.text = "\(Unique.shared.donations[row].amount)"
+        Unique.shared.currentDonation = Unique.shared.donations[row]
     }
 }
