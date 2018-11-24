@@ -84,6 +84,8 @@ internal enum StoryboardScene {
   }
   internal enum DonatedModalView: StoryboardType {
     internal static let storyboardName = "DonatedModalView"
+
+    internal static let initialScene = InitialSceneType<BOKiN.DonatedModalViewController>(storyboard: DonatedModalView.self)
   }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"

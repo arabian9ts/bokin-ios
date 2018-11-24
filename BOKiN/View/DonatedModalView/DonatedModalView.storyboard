@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Of4-g4-Xlm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,21 +10,64 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Donated Modal View Controller-->
         <scene sceneID="T60-44-yGF">
             <objects>
-                <viewController id="Of4-g4-Xlm" sceneMemberID="viewController">
+                <viewController id="Of4-g4-Xlm" customClass="DonatedModalViewController" customModule="BOKiN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Txd-fN-CyL">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Wp-eN-f3C">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXm-go-7Ul">
+                                <rect key="frame" x="55" y="60" width="240" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paid" translatesAutoresizingMaskIntoConstraints="NO" id="WCB-Po-0nw">
+                                        <rect key="frame" x="80" y="40" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="cmf-do-dva"/>
+                                            <constraint firstAttribute="height" constant="80" id="sXn-0Z-1fX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寄付が完了しました" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7B-mk-dsj">
+                                        <rect key="frame" x="42" y="140" width="156" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="WCB-Po-0nw" firstAttribute="top" secondItem="cXm-go-7Ul" secondAttribute="top" constant="40" id="ALH-Ek-9wB"/>
+                                    <constraint firstItem="y7B-mk-dsj" firstAttribute="centerX" secondItem="cXm-go-7Ul" secondAttribute="centerX" id="E27-7d-18j"/>
+                                    <constraint firstAttribute="height" constant="200" id="bo9-lV-6NO"/>
+                                    <constraint firstAttribute="width" constant="240" id="exW-r4-bZf"/>
+                                    <constraint firstItem="WCB-Po-0nw" firstAttribute="centerX" secondItem="cXm-go-7Ul" secondAttribute="centerX" id="fzq-Ry-hAr"/>
+                                    <constraint firstItem="y7B-mk-dsj" firstAttribute="top" secondItem="WCB-Po-0nw" secondAttribute="bottom" constant="20" id="qXO-8D-Mxc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="G60-Jy-wOe" firstAttribute="trailing" secondItem="0Wp-eN-f3C" secondAttribute="trailing" id="JwX-ZO-WW5"/>
+                            <constraint firstItem="G60-Jy-wOe" firstAttribute="bottom" secondItem="0Wp-eN-f3C" secondAttribute="bottom" id="XGX-0x-q0u"/>
+                            <constraint firstItem="cXm-go-7Ul" firstAttribute="centerY" secondItem="Txd-fN-CyL" secondAttribute="centerY" id="lHJ-y9-3uC"/>
+                            <constraint firstItem="0Wp-eN-f3C" firstAttribute="top" secondItem="G60-Jy-wOe" secondAttribute="top" id="nEp-0g-vnu"/>
+                            <constraint firstItem="0Wp-eN-f3C" firstAttribute="leading" secondItem="G60-Jy-wOe" secondAttribute="leading" id="oAK-HB-i4L"/>
+                            <constraint firstItem="cXm-go-7Ul" firstAttribute="centerX" secondItem="Txd-fN-CyL" secondAttribute="centerX" id="sRN-x2-QDO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="G60-Jy-wOe"/>
                     </view>
-                    <size key="freeformSize" width="200" height="180"/>
+                    <size key="freeformSize" width="350" height="320"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22f-tJ-3Lt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-113" y="81"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paid" width="1024" height="1024"/>
+    </resources>
 </document>

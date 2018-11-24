@@ -130,9 +130,6 @@
                                                 <state key="normal" title="広告を見て寄付する">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="pushAdMobButton:" destination="mxd-lw-8tS" eventType="touchUpInside" id="Buj-aS-7cm"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -15,8 +15,8 @@
 		DA8AA6B921A8C0710002DF9B /* DonatedModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AA6B821A8C0710002DF9B /* DonatedModalView.swift */; };
 		DAA74CBB21A86B5200B87819 /* UILabel+BoundAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA74CBA21A86B5200B87819 /* UILabel+BoundAnimation.swift */; };
 		DABAC96A21A7ECC7000A625A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */; };
-		DABAC96C21A7EDB0000A625A /* AdMobViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC96B21A7EDB0000A625A /* AdMobViewWireframe.swift */; };
-		DABAC96E21A7EDDE000A625A /* AdMobBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC96D21A7EDDE000A625A /* AdMobBuilder.swift */; };
+		DABAC96C21A7EDB0000A625A /* DonatedModalViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC96B21A7EDB0000A625A /* DonatedModalViewWireframe.swift */; };
+		DABAC96E21A7EDDE000A625A /* DonatedModalViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC96D21A7EDDE000A625A /* DonatedModalViewBuilder.swift */; };
 		DABAC97021A7EE42000A625A /* AdMob.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABAC96F21A7EE42000A625A /* AdMob.storyboard */; };
 		DABAC97221A7EE85000A625A /* AdMobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC97121A7EE85000A625A /* AdMobViewController.swift */; };
 		FF1B90DB21A7BEAB007BCDED /* SettlementModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1B90D921A7BEAB007BCDED /* SettlementModalViewController.swift */; };
@@ -126,8 +126,8 @@
 		DA8AA6B821A8C0710002DF9B /* DonatedModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonatedModalView.swift; sourceTree = "<group>"; };
 		DAA74CBA21A86B5200B87819 /* UILabel+BoundAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+BoundAnimation.swift"; sourceTree = "<group>"; };
 		DABAC96921A7ECC7000A625A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
-		DABAC96B21A7EDB0000A625A /* AdMobViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobViewWireframe.swift; sourceTree = "<group>"; };
-		DABAC96D21A7EDDE000A625A /* AdMobBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobBuilder.swift; sourceTree = "<group>"; };
+		DABAC96B21A7EDB0000A625A /* DonatedModalViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonatedModalViewWireframe.swift; sourceTree = "<group>"; };
+		DABAC96D21A7EDDE000A625A /* DonatedModalViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonatedModalViewBuilder.swift; sourceTree = "<group>"; };
 		DABAC96F21A7EE42000A625A /* AdMob.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdMob.storyboard; sourceTree = "<group>"; };
 		DABAC97121A7EE85000A625A /* AdMobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobViewController.swift; sourceTree = "<group>"; };
 		FF1B90D921A7BEAB007BCDED /* SettlementModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettlementModalViewController.swift; sourceTree = "<group>"; };
@@ -534,7 +534,7 @@
 				FFED848621A66B5800470DD4 /* OriginalNewsSiteBuilder.swift */,
 				FFED849821A6BF6100470DD4 /* DisasterDetailViewBuilder.swift */,
 				FFED84B321A6E61200470DD4 /* SettlementModalViewBuilder.swift */,
-				DABAC96D21A7EDDE000A625A /* AdMobBuilder.swift */,
+				DABAC96D21A7EDDE000A625A /* DonatedModalViewBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -547,7 +547,7 @@
 				FFED848C21A66EB300470DD4 /* OriginalNewsSiteWireframe.swift */,
 				FFED849A21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift */,
 				FFED84B121A6E5F000470DD4 /* SettlementModalViewWireframe.swift */,
-				DABAC96B21A7EDB0000A625A /* AdMobViewWireframe.swift */,
+				DABAC96B21A7EDB0000A625A /* DonatedModalViewWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -729,7 +729,7 @@
 				FFED842421A47B1300470DD4 /* KeyChainManager.swift in Sources */,
 				FFED848121A6676C00470DD4 /* storyboards.swift in Sources */,
 				FFED848921A66C5500470DD4 /* OriginalNewsSiteViewController.swift in Sources */,
-				DABAC96C21A7EDB0000A625A /* AdMobViewWireframe.swift in Sources */,
+				DABAC96C21A7EDB0000A625A /* DonatedModalViewWireframe.swift in Sources */,
 				FFED849721A6A5D000470DD4 /* DisasterDetailViewController.swift in Sources */,
 				FFED841421A46AB900470DD4 /* DisasterResponse.swift in Sources */,
 				FFED849921A6BF6100470DD4 /* DisasterDetailViewBuilder.swift in Sources */,
@@ -750,7 +750,7 @@
 				FFED848721A66B5800470DD4 /* OriginalNewsSiteBuilder.swift in Sources */,
 				FFED846A21A55D1200470DD4 /* NewsResponse.swift in Sources */,
 				FFED846621A5583700470DD4 /* News.swift in Sources */,
-				DABAC96E21A7EDDE000A625A /* AdMobBuilder.swift in Sources */,
+				DABAC96E21A7EDDE000A625A /* DonatedModalViewBuilder.swift in Sources */,
 				FF94BCC121A86D6100860C65 /* UIApplication+.swift in Sources */,
 				FFED849B21A6BF8900470DD4 /* DisasterDetailViewWireframe.swift in Sources */,
 				FF94BCB721A8672900860C65 /* DisasterNewsViewCell.swift in Sources */,
