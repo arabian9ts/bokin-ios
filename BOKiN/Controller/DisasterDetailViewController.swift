@@ -13,7 +13,7 @@ import RxCocoa
 class DisasterDetailViewController: UIViewController {
     
     let disposeBag = DisposeBag()
-    
+    let donationViewModel = DonationViewModel()
     var disaster: Variable<Disaster> = Variable<Disaster>(Disaster())
     
     @IBOutlet weak var disasterDetailTableView: UITableView!
@@ -31,6 +31,15 @@ class DisasterDetailViewController: UIViewController {
             DisasterBokinButtonViewCell.self,
             DisasterNewsViewCell.self
         ])
+        
+        setupRx()
+    }
+    
+    private func setupRx() {
+        disaster.asObservable().subscribe(onNext: { disaster in
+            self.donationViewModel.fetchDonations(disasterId: disaster.id)
+        })
+        .disposed(by: disposeBag)
     }
 
 }

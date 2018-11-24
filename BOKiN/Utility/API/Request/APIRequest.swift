@@ -102,8 +102,8 @@ final class BokinAPI {
         let params: Parameters? = [:]
         let headers: HTTPHeaders? = [:]
         
-        init(id: Int = 1) {
-            path = "/disasters/\(id)/donations"
+        init(disasterId: Int = 1) {
+            path = "/disasters/\(disasterId)/donations"
         }
     }
 }

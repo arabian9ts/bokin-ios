@@ -13,11 +13,10 @@ import RxCocoa
 
 class AdvertisementSettlementModalViewController: UIViewController {
     
-    let disposeBag = DisposeBag()
+    private let disposeBag        = DisposeBag()
+    private let donationViewModel = DonationViewModel()
     
     @IBOutlet weak var prefecturePicker: UIPickerView!
-    
-    private var prefectureList = ["福岡県", "宮崎県", "熊本県", "佐賀県", "長崎県"]
     
     @IBOutlet weak var adMobButton: UIButton!
     
@@ -45,8 +44,8 @@ class AdvertisementSettlementModalViewController: UIViewController {
                     self.adMobButton.isEnabled = false
                     self.rewardBasedAd.present(fromRootViewController: self)
             }
-    }.disposed(by: disposeBag)
-}
+        }.disposed(by: disposeBag)
+    }
 }
 
 extension AdvertisementSettlementModalViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -55,18 +54,19 @@ extension AdvertisementSettlementModalViewController: UIPickerViewDelegate, UIPi
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return prefectureList.count
+        return Unique.shared.donations.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
-        return prefectureList[row]
+        return Unique.shared.donations[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView,
                     didSelectRow row: Int,
                     inComponent component: Int) {
-        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, observedEvent: Event<Donation>) {
     }
 }
 
