@@ -83,7 +83,7 @@ extension DisasterDetailViewController: UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
-            return 480
+            return 350
         case 1:
             return 60
         case 2:
